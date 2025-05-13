@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cagmc6urn3y22"
 path.s3tc="res://.godot/imported/muzzle flash plane main1_muzzle flash plane3.png-0bb4fb64720e67c1bf15f121d5eefd7f.s3tc.ctex"
+path.etc2="res://.godot/imported/muzzle flash plane main1_muzzle flash plane3.png-0bb4fb64720e67c1bf15f121d5eefd7f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/misc/muzzle flash plane main/muzzle flash plane main1_muzzle flash plane3.png"
-dest_files=["res://.godot/imported/muzzle flash plane main1_muzzle flash plane3.png-0bb4fb64720e67c1bf15f121d5eefd7f.s3tc.ctex"]
+dest_files=["res://.godot/imported/muzzle flash plane main1_muzzle flash plane3.png-0bb4fb64720e67c1bf15f121d5eefd7f.s3tc.ctex", "res://.godot/imported/muzzle flash plane main1_muzzle flash plane3.png-0bb4fb64720e67c1bf15f121d5eefd7f.etc2.ctex"]
 
 [params]
 

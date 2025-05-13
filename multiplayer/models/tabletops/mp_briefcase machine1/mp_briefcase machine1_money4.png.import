@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc45y0erdbtx2"
 path.s3tc="res://.godot/imported/mp_briefcase machine1_money4.png-d27ca3fa239e057f9e7e2cc42647093c.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_briefcase machine1_money4.png-d27ca3fa239e057f9e7e2cc42647093c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_briefcase machine1/mp_briefcase machine1_money4.png"
-dest_files=["res://.godot/imported/mp_briefcase machine1_money4.png-d27ca3fa239e057f9e7e2cc42647093c.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_briefcase machine1_money4.png-d27ca3fa239e057f9e7e2cc42647093c.s3tc.ctex", "res://.godot/imported/mp_briefcase machine1_money4.png-d27ca3fa239e057f9e7e2cc42647093c.etc2.ctex"]
 
 [params]
 

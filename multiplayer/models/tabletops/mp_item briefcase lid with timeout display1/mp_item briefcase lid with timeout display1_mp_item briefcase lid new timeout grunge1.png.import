@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2seuge86l5ky"
 path.s3tc="res://.godot/imported/mp_item briefcase lid with timeout display1_mp_item briefcase lid new timeout grunge1.png-e034e66641d45f7a87de98944439eeea.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_item briefcase lid with timeout display1_mp_item briefcase lid new timeout grunge1.png-e034e66641d45f7a87de98944439eeea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_item briefcase lid with timeout display1/mp_item briefcase lid with timeout display1_mp_item briefcase lid new timeout grunge1.png"
-dest_files=["res://.godot/imported/mp_item briefcase lid with timeout display1_mp_item briefcase lid new timeout grunge1.png-e034e66641d45f7a87de98944439eeea.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_item briefcase lid with timeout display1_mp_item briefcase lid new timeout grunge1.png-e034e66641d45f7a87de98944439eeea.s3tc.ctex", "res://.godot/imported/mp_item briefcase lid with timeout display1_mp_item briefcase lid new timeout grunge1.png-e034e66641d45f7a87de98944439eeea.etc2.ctex"]
 
 [params]
 

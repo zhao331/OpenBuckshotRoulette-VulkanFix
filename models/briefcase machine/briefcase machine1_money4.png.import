@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqgmyymwwuoa2"
 path.s3tc="res://.godot/imported/briefcase machine1_money4.png-a192b414f55435a833be5619fe2ab0bf.s3tc.ctex"
+path.etc2="res://.godot/imported/briefcase machine1_money4.png-a192b414f55435a833be5619fe2ab0bf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/briefcase machine/briefcase machine1_money4.png"
-dest_files=["res://.godot/imported/briefcase machine1_money4.png-a192b414f55435a833be5619fe2ab0bf.s3tc.ctex"]
+dest_files=["res://.godot/imported/briefcase machine1_money4.png-a192b414f55435a833be5619fe2ab0bf.s3tc.ctex", "res://.godot/imported/briefcase machine1_money4.png-a192b414f55435a833be5619fe2ab0bf.etc2.ctex"]
 
 [params]
 

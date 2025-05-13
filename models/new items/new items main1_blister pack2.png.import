@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://nu44swwvg720"
 path.s3tc="res://.godot/imported/new items main1_blister pack2.png-1e0c09dd5f62788fb564bef8a7dbf436.s3tc.ctex"
+path.etc2="res://.godot/imported/new items main1_blister pack2.png-1e0c09dd5f62788fb564bef8a7dbf436.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/new items/new items main1_blister pack2.png"
-dest_files=["res://.godot/imported/new items main1_blister pack2.png-1e0c09dd5f62788fb564bef8a7dbf436.s3tc.ctex"]
+dest_files=["res://.godot/imported/new items main1_blister pack2.png-1e0c09dd5f62788fb564bef8a7dbf436.s3tc.ctex", "res://.godot/imported/new items main1_blister pack2.png-1e0c09dd5f62788fb564bef8a7dbf436.etc2.ctex"]
 
 [params]
 

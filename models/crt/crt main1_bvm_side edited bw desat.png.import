@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0qep61ebff88"
 path.s3tc="res://.godot/imported/crt main1_bvm_side edited bw desat.png-f4f1dbaa7aa7a031d29329d64c1bcb02.s3tc.ctex"
+path.etc2="res://.godot/imported/crt main1_bvm_side edited bw desat.png-f4f1dbaa7aa7a031d29329d64c1bcb02.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/crt/crt main1_bvm_side edited bw desat.png"
-dest_files=["res://.godot/imported/crt main1_bvm_side edited bw desat.png-f4f1dbaa7aa7a031d29329d64c1bcb02.s3tc.ctex"]
+dest_files=["res://.godot/imported/crt main1_bvm_side edited bw desat.png-f4f1dbaa7aa7a031d29329d64c1bcb02.s3tc.ctex", "res://.godot/imported/crt main1_bvm_side edited bw desat.png-f4f1dbaa7aa7a031d29329d64c1bcb02.etc2.ctex"]
 
 [params]
 

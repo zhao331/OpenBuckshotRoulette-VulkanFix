@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://g7v4l4y1art3"
 path.s3tc="res://.godot/imported/dealer hands_inverter1_plastic stained.png-1ba85e0fbaa27d7064531ebaea3aa6f0.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hands_inverter1_plastic stained.png-1ba85e0fbaa27d7064531ebaea3aa6f0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hands_inverter/dealer hands_inverter1_plastic stained.png"
-dest_files=["res://.godot/imported/dealer hands_inverter1_plastic stained.png-1ba85e0fbaa27d7064531ebaea3aa6f0.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hands_inverter1_plastic stained.png-1ba85e0fbaa27d7064531ebaea3aa6f0.s3tc.ctex", "res://.godot/imported/dealer hands_inverter1_plastic stained.png-1ba85e0fbaa27d7064531ebaea3aa6f0.etc2.ctex"]
 
 [params]
 

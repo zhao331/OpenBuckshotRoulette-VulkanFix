@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb5q3pnqcp35s"
 path.s3tc="res://.godot/imported/player vehicle1_money4.png-2fa4d1573a016db6b742a4264bbac6e7.s3tc.ctex"
+path.etc2="res://.godot/imported/player vehicle1_money4.png-2fa4d1573a016db6b742a4264bbac6e7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/player vehicle/player vehicle1_money4.png"
-dest_files=["res://.godot/imported/player vehicle1_money4.png-2fa4d1573a016db6b742a4264bbac6e7.s3tc.ctex"]
+dest_files=["res://.godot/imported/player vehicle1_money4.png-2fa4d1573a016db6b742a4264bbac6e7.s3tc.ctex", "res://.godot/imported/player vehicle1_money4.png-2fa4d1573a016db6b742a4264bbac6e7.etc2.ctex"]
 
 [params]
 

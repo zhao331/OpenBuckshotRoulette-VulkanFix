@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpadmi0hiatmi"
 path.s3tc="res://.godot/imported/mp_shotgun mesh cut segment1_metal024 pump action painted normal.png-9c028e46874527d1cfc6e25a5719f48b.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_shotgun mesh cut segment1_metal024 pump action painted normal.png-9c028e46874527d1cfc6e25a5719f48b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_shotgun mesh cut segment1/mp_shotgun mesh cut segment1_metal024 pump action painted normal.png"
-dest_files=["res://.godot/imported/mp_shotgun mesh cut segment1_metal024 pump action painted normal.png-9c028e46874527d1cfc6e25a5719f48b.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_shotgun mesh cut segment1_metal024 pump action painted normal.png-9c028e46874527d1cfc6e25a5719f48b.s3tc.ctex", "res://.godot/imported/mp_shotgun mesh cut segment1_metal024 pump action painted normal.png-9c028e46874527d1cfc6e25a5719f48b.etc2.ctex"]
 
 [params]
 

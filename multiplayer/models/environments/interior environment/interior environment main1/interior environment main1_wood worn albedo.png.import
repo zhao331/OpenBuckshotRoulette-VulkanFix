@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://i2suotvq53it"
 path.s3tc="res://.godot/imported/interior environment main1_wood worn albedo.png-edd31c0167c9086d6544d4bbd2c3dd4e.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_wood worn albedo.png-edd31c0167c9086d6544d4bbd2c3dd4e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_wood worn albedo.png"
-dest_files=["res://.godot/imported/interior environment main1_wood worn albedo.png-edd31c0167c9086d6544d4bbd2c3dd4e.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_wood worn albedo.png-edd31c0167c9086d6544d4bbd2c3dd4e.s3tc.ctex", "res://.godot/imported/interior environment main1_wood worn albedo.png-edd31c0167c9086d6544d4bbd2c3dd4e.etc2.ctex"]
 
 [params]
 

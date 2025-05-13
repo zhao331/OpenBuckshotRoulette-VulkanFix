@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://be6d1qoaql1i0"
 path.s3tc="res://.godot/imported/brass texture_shell marking improved normal.png-45e10d703951d86034179d0b0004ef58.s3tc.ctex"
+path.etc2="res://.godot/imported/brass texture_shell marking improved normal.png-45e10d703951d86034179d0b0004ef58.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://textures/brass main menu/brass texture_shell marking improved normal.png"
-dest_files=["res://.godot/imported/brass texture_shell marking improved normal.png-45e10d703951d86034179d0b0004ef58.s3tc.ctex"]
+dest_files=["res://.godot/imported/brass texture_shell marking improved normal.png-45e10d703951d86034179d0b0004ef58.s3tc.ctex", "res://.godot/imported/brass texture_shell marking improved normal.png-45e10d703951d86034179d0b0004ef58.etc2.ctex"]
 
 [params]
 

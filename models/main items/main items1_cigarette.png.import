@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://blgurm0a51yyq"
 path.s3tc="res://.godot/imported/main items1_cigarette.png-571933e0f202812eb048294b3361e560.s3tc.ctex"
+path.etc2="res://.godot/imported/main items1_cigarette.png-571933e0f202812eb048294b3361e560.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/main items/main items1_cigarette.png"
-dest_files=["res://.godot/imported/main items1_cigarette.png-571933e0f202812eb048294b3361e560.s3tc.ctex"]
+dest_files=["res://.godot/imported/main items1_cigarette.png-571933e0f202812eb048294b3361e560.s3tc.ctex", "res://.godot/imported/main items1_cigarette.png-571933e0f202812eb048294b3361e560.etc2.ctex"]
 
 [params]
 

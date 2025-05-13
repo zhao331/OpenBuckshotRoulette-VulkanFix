@@ -1,12 +1,13 @@
 extends Node
 
-var currentVersion_nr = "v2.2.0 Open Modified"
+var currentVersion_nr = "v0.1.0 / v2.2.0 Modified"
 var currentVersion_hotfix = 6
-var using_steam = true
+var using_steam = false
 
 var currentVersion = ""
 var versuffix_steam = " (STEAM)"
 var versuffix_itch = " (ITCH.IO)"
+var versuffix_community = ' (COMMUNITY)'
 
 var discord_link = "https://discord.gg/UdjMNaKkQe"
 
@@ -272,7 +273,7 @@ var debug_match_customization = {
 
 func _ready():
 	if using_steam: currentVersion = currentVersion_nr + versuffix_steam
-	else: currentVersion = currentVersion_nr + versuffix_itch
+	else: currentVersion = currentVersion_nr + versuffix_community
 	debug_round_index_to_end_game_at = 2
 	original_volume_linear_interaction = db_to_linear(AudioServer.get_bus_volume_db(3))
 	original_volume_linear_music = db_to_linear(AudioServer.get_bus_volume_db(1))

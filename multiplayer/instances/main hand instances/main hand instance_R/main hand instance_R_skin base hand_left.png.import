@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://p8180wuweyeh"
 path.s3tc="res://.godot/imported/main hand instance_R_skin base hand_left.png-8e002fda5be5e3738ee16ca632b9d624.s3tc.ctex"
+path.etc2="res://.godot/imported/main hand instance_R_skin base hand_left.png-8e002fda5be5e3738ee16ca632b9d624.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/instances/main hand instances/main hand instance_R/main hand instance_R_skin base hand_left.png"
-dest_files=["res://.godot/imported/main hand instance_R_skin base hand_left.png-8e002fda5be5e3738ee16ca632b9d624.s3tc.ctex"]
+dest_files=["res://.godot/imported/main hand instance_R_skin base hand_left.png-8e002fda5be5e3738ee16ca632b9d624.s3tc.ctex", "res://.godot/imported/main hand instance_R_skin base hand_left.png-8e002fda5be5e3738ee16ca632b9d624.etc2.ctex"]
 
 [params]
 

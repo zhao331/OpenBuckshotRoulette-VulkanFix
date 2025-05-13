@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4q20mhs7w83f"
 path.s3tc="res://.godot/imported/table mp_shell sequence machine3_tabletop felt highres9.png-8f25088f456b0fd1986b36ce6cd2ddb6.s3tc.ctex"
+path.etc2="res://.godot/imported/table mp_shell sequence machine3_tabletop felt highres9.png-8f25088f456b0fd1986b36ce6cd2ddb6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/table mp_shell sequence machine3/table mp_shell sequence machine3_tabletop felt highres9.png"
-dest_files=["res://.godot/imported/table mp_shell sequence machine3_tabletop felt highres9.png-8f25088f456b0fd1986b36ce6cd2ddb6.s3tc.ctex"]
+dest_files=["res://.godot/imported/table mp_shell sequence machine3_tabletop felt highres9.png-8f25088f456b0fd1986b36ce6cd2ddb6.s3tc.ctex", "res://.godot/imported/table mp_shell sequence machine3_tabletop felt highres9.png-8f25088f456b0fd1986b36ce6cd2ddb6.etc2.ctex"]
 
 [params]
 

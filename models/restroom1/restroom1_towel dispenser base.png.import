@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ugq1p3ecx6qk"
 path.s3tc="res://.godot/imported/restroom1_towel dispenser base.png-2924d15bddb723cec5f842939ae59047.s3tc.ctex"
+path.etc2="res://.godot/imported/restroom1_towel dispenser base.png-2924d15bddb723cec5f842939ae59047.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/restroom1/restroom1_towel dispenser base.png"
-dest_files=["res://.godot/imported/restroom1_towel dispenser base.png-2924d15bddb723cec5f842939ae59047.s3tc.ctex"]
+dest_files=["res://.godot/imported/restroom1_towel dispenser base.png-2924d15bddb723cec5f842939ae59047.s3tc.ctex", "res://.godot/imported/restroom1_towel dispenser base.png-2924d15bddb723cec5f842939ae59047.etc2.ctex"]
 
 [params]
 

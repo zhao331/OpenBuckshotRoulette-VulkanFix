@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://byw6h8h1mrohn"
 path.s3tc="res://.godot/imported/dealer hands_adrenaline1_aehathateh.png-4a3fe01168526adbc1a75e7af3122b26.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hands_adrenaline1_aehathateh.png-4a3fe01168526adbc1a75e7af3122b26.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hand adrenaline/dealer hands_adrenaline1_aehathateh.png"
-dest_files=["res://.godot/imported/dealer hands_adrenaline1_aehathateh.png-4a3fe01168526adbc1a75e7af3122b26.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hands_adrenaline1_aehathateh.png-4a3fe01168526adbc1a75e7af3122b26.s3tc.ctex", "res://.godot/imported/dealer hands_adrenaline1_aehathateh.png-4a3fe01168526adbc1a75e7af3122b26.etc2.ctex"]
 
 [params]
 

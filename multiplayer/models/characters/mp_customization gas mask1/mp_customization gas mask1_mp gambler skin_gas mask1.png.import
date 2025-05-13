@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr5f2ygnbatjr"
 path.s3tc="res://.godot/imported/mp_customization gas mask1_mp gambler skin_gas mask1.png-0a8d3e138f2c63a6506a2f7a8cb847f8.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_customization gas mask1_mp gambler skin_gas mask1.png-0a8d3e138f2c63a6506a2f7a8cb847f8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/characters/mp_customization gas mask1/mp_customization gas mask1_mp gambler skin_gas mask1.png"
-dest_files=["res://.godot/imported/mp_customization gas mask1_mp gambler skin_gas mask1.png-0a8d3e138f2c63a6506a2f7a8cb847f8.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_customization gas mask1_mp gambler skin_gas mask1.png-0a8d3e138f2c63a6506a2f7a8cb847f8.s3tc.ctex", "res://.godot/imported/mp_customization gas mask1_mp gambler skin_gas mask1.png-0a8d3e138f2c63a6506a2f7a8cb847f8.etc2.ctex"]
 
 [params]
 

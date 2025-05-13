@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://7f6hp2sh1fpp"
 path.s3tc="res://.godot/imported/mp_wall gasket1_asphalt seamless temp.png-5447a5bf6022dfa5971002edb662804c.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_wall gasket1_asphalt seamless temp.png-5447a5bf6022dfa5971002edb662804c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/mp_wall gasket1/mp_wall gasket1_asphalt seamless temp.png"
-dest_files=["res://.godot/imported/mp_wall gasket1_asphalt seamless temp.png-5447a5bf6022dfa5971002edb662804c.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_wall gasket1_asphalt seamless temp.png-5447a5bf6022dfa5971002edb662804c.s3tc.ctex", "res://.godot/imported/mp_wall gasket1_asphalt seamless temp.png-5447a5bf6022dfa5971002edb662804c.etc2.ctex"]
 
 [params]
 

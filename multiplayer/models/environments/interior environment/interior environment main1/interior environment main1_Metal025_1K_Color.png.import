@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcikgxdy23h8i"
 path.s3tc="res://.godot/imported/interior environment main1_Metal025_1K_Color.png-83f36ac3cb66502f5d5c46e26376f582.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_Metal025_1K_Color.png-83f36ac3cb66502f5d5c46e26376f582.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_Metal025_1K_Color.png"
-dest_files=["res://.godot/imported/interior environment main1_Metal025_1K_Color.png-83f36ac3cb66502f5d5c46e26376f582.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_Metal025_1K_Color.png-83f36ac3cb66502f5d5c46e26376f582.s3tc.ctex", "res://.godot/imported/interior environment main1_Metal025_1K_Color.png-83f36ac3cb66502f5d5c46e26376f582.etc2.ctex"]
 
 [params]
 

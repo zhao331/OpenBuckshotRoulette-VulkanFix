@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cu20j0fu0wg0p"
 path.s3tc="res://.godot/imported/exterior environment main1_anodized aluminum red 1024.png-81541c4e9a0c218136545a3817fbcbea.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior environment main1_anodized aluminum red 1024.png-81541c4e9a0c218136545a3817fbcbea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/exterior environment/exterior environment main1/exterior environment main1_anodized aluminum red 1024.png"
-dest_files=["res://.godot/imported/exterior environment main1_anodized aluminum red 1024.png-81541c4e9a0c218136545a3817fbcbea.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior environment main1_anodized aluminum red 1024.png-81541c4e9a0c218136545a3817fbcbea.s3tc.ctex", "res://.godot/imported/exterior environment main1_anodized aluminum red 1024.png-81541c4e9a0c218136545a3817fbcbea.etc2.ctex"]
 
 [params]
 

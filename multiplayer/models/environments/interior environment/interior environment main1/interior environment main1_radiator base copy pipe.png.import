@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8n0p3pat7c0p"
 path.s3tc="res://.godot/imported/interior environment main1_radiator base copy pipe.png-e97e17a8b4a27017b575925e3a7b4079.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_radiator base copy pipe.png-e97e17a8b4a27017b575925e3a7b4079.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_radiator base copy pipe.png"
-dest_files=["res://.godot/imported/interior environment main1_radiator base copy pipe.png-e97e17a8b4a27017b575925e3a7b4079.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_radiator base copy pipe.png-e97e17a8b4a27017b575925e3a7b4079.s3tc.ctex", "res://.godot/imported/interior environment main1_radiator base copy pipe.png-e97e17a8b4a27017b575925e3a7b4079.etc2.ctex"]
 
 [params]
 

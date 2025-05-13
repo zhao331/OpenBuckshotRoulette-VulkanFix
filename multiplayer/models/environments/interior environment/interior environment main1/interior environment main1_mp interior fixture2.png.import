@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfuqnuhn0wnic"
 path.s3tc="res://.godot/imported/interior environment main1_mp interior fixture2.png-a5d17c5d3b782e2f9a7dce5599c2b5d5.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_mp interior fixture2.png-a5d17c5d3b782e2f9a7dce5599c2b5d5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_mp interior fixture2.png"
-dest_files=["res://.godot/imported/interior environment main1_mp interior fixture2.png-a5d17c5d3b782e2f9a7dce5599c2b5d5.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_mp interior fixture2.png-a5d17c5d3b782e2f9a7dce5599c2b5d5.s3tc.ctex", "res://.godot/imported/interior environment main1_mp interior fixture2.png-a5d17c5d3b782e2f9a7dce5599c2b5d5.etc2.ctex"]
 
 [params]
 

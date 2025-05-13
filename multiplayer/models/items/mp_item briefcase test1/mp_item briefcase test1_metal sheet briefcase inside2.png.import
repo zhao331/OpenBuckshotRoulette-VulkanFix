@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6u5dv05flecn"
 path.s3tc="res://.godot/imported/mp_item briefcase test1_metal sheet briefcase inside2.png-39180c41f4bb24c1351ba3e215b8bc0f.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_item briefcase test1_metal sheet briefcase inside2.png-39180c41f4bb24c1351ba3e215b8bc0f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_item briefcase test1/mp_item briefcase test1_metal sheet briefcase inside2.png"
-dest_files=["res://.godot/imported/mp_item briefcase test1_metal sheet briefcase inside2.png-39180c41f4bb24c1351ba3e215b8bc0f.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_item briefcase test1_metal sheet briefcase inside2.png-39180c41f4bb24c1351ba3e215b8bc0f.s3tc.ctex", "res://.godot/imported/mp_item briefcase test1_metal sheet briefcase inside2.png-39180c41f4bb24c1351ba3e215b8bc0f.etc2.ctex"]
 
 [params]
 

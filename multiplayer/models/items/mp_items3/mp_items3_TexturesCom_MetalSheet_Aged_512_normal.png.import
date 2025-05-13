@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://8v7yvuab4dhc"
 path.s3tc="res://.godot/imported/mp_items3_TexturesCom_MetalSheet_Aged_512_normal.png-953d1d50e692145874599058c8907a1c.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_items3_TexturesCom_MetalSheet_Aged_512_normal.png-953d1d50e692145874599058c8907a1c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_items3/mp_items3_TexturesCom_MetalSheet_Aged_512_normal.png"
-dest_files=["res://.godot/imported/mp_items3_TexturesCom_MetalSheet_Aged_512_normal.png-953d1d50e692145874599058c8907a1c.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_items3_TexturesCom_MetalSheet_Aged_512_normal.png-953d1d50e692145874599058c8907a1c.s3tc.ctex", "res://.godot/imported/mp_items3_TexturesCom_MetalSheet_Aged_512_normal.png-953d1d50e692145874599058c8907a1c.etc2.ctex"]
 
 [params]
 

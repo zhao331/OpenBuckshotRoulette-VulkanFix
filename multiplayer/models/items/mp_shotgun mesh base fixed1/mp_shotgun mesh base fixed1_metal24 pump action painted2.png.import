@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://yoivh5uhwmc4"
 path.s3tc="res://.godot/imported/mp_shotgun mesh base fixed1_metal24 pump action painted2.png-d0a2c66a13954ba72dcba0db5499cf80.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_shotgun mesh base fixed1_metal24 pump action painted2.png-d0a2c66a13954ba72dcba0db5499cf80.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_shotgun mesh base fixed1/mp_shotgun mesh base fixed1_metal24 pump action painted2.png"
-dest_files=["res://.godot/imported/mp_shotgun mesh base fixed1_metal24 pump action painted2.png-d0a2c66a13954ba72dcba0db5499cf80.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_shotgun mesh base fixed1_metal24 pump action painted2.png-d0a2c66a13954ba72dcba0db5499cf80.s3tc.ctex", "res://.godot/imported/mp_shotgun mesh base fixed1_metal24 pump action painted2.png-d0a2c66a13954ba72dcba0db5499cf80.etc2.ctex"]
 
 [params]
 

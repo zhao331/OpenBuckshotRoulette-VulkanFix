@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://csei1bh4hp4vu"
 path.s3tc="res://.godot/imported/dealer hands main1_TCom_Wood_Worn2_512_normal.png-7d097cd6ee73ed988cd08344364f6425.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hands main1_TCom_Wood_Worn2_512_normal.png-7d097cd6ee73ed988cd08344364f6425.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hands main/dealer hands main1_TCom_Wood_Worn2_512_normal.png"
-dest_files=["res://.godot/imported/dealer hands main1_TCom_Wood_Worn2_512_normal.png-7d097cd6ee73ed988cd08344364f6425.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hands main1_TCom_Wood_Worn2_512_normal.png-7d097cd6ee73ed988cd08344364f6425.s3tc.ctex", "res://.godot/imported/dealer hands main1_TCom_Wood_Worn2_512_normal.png-7d097cd6ee73ed988cd08344364f6425.etc2.ctex"]
 
 [params]
 

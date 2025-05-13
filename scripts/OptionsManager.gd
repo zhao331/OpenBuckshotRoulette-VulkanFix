@@ -61,7 +61,7 @@ func _ready():
 		setting_language = defaultOption_language
 		setting_inputmap_keyboard = defaultOption_inputmap_keyboard
 		setting_inputmap_controller = defaultOption_inputmap_controller
-		ApplySettings_window()
+		#ApplySettings_window()
 		ApplySettings_controller()
 		ApplySettings_language()
 		ApplySettings_inputmap()
@@ -140,6 +140,7 @@ func UpdateDisplay():
 	ui_volume.text = str(snapped(setting_volume * 100, .01)) + "%"
 
 func ApplySettings_window(is_windowed = setting_windowed):
+	if OpenBrGlobal.is_android(): return
 	OpenBrGlobal.is_fullscreen = !is_windowed
 	if (!is_windowed): 
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)

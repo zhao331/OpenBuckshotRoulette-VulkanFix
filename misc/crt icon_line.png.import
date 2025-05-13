@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d83pr43iy3wl"
 path.s3tc="res://.godot/imported/crt icon_line.png-56e4b557562ba5cf49d78a86aa173baf.s3tc.ctex"
+path.etc2="res://.godot/imported/crt icon_line.png-56e4b557562ba5cf49d78a86aa173baf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://misc/crt icon_line.png"
-dest_files=["res://.godot/imported/crt icon_line.png-56e4b557562ba5cf49d78a86aa173baf.s3tc.ctex"]
+dest_files=["res://.godot/imported/crt icon_line.png-56e4b557562ba5cf49d78a86aa173baf.s3tc.ctex", "res://.godot/imported/crt icon_line.png-56e4b557562ba5cf49d78a86aa173baf.etc2.ctex"]
 
 [params]
 

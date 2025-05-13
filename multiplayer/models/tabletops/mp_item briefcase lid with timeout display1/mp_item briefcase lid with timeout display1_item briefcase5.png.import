@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cepe8e22spruj"
 path.s3tc="res://.godot/imported/mp_item briefcase lid with timeout display1_item briefcase5.png-211f063692619d4ba204a5b026fc1f3e.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_item briefcase lid with timeout display1_item briefcase5.png-211f063692619d4ba204a5b026fc1f3e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_item briefcase lid with timeout display1/mp_item briefcase lid with timeout display1_item briefcase5.png"
-dest_files=["res://.godot/imported/mp_item briefcase lid with timeout display1_item briefcase5.png-211f063692619d4ba204a5b026fc1f3e.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_item briefcase lid with timeout display1_item briefcase5.png-211f063692619d4ba204a5b026fc1f3e.s3tc.ctex", "res://.godot/imported/mp_item briefcase lid with timeout display1_item briefcase5.png-211f063692619d4ba204a5b026fc1f3e.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cceywvgyfdetk"
 path.s3tc="res://.godot/imported/stars.png-4f48d3934b24eadfd9160b9322c5e167.s3tc.ctex"
+path.etc2="res://.godot/imported/stars.png-4f48d3934b24eadfd9160b9322c5e167.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://multiplayer/misc/stars.png"
-dest_files=["res://.godot/imported/stars.png-4f48d3934b24eadfd9160b9322c5e167.s3tc.ctex"]
+dest_files=["res://.godot/imported/stars.png-4f48d3934b24eadfd9160b9322c5e167.s3tc.ctex", "res://.godot/imported/stars.png-4f48d3934b24eadfd9160b9322c5e167.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://gbp3lhhh5jyw"
 path.s3tc="res://.godot/imported/dealer hands main1_metal sheet_hand saw.png-2252bcb2c7e25b196370c2ac9c685116.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hands main1_metal sheet_hand saw.png-2252bcb2c7e25b196370c2ac9c685116.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hands main/dealer hands main1_metal sheet_hand saw.png"
-dest_files=["res://.godot/imported/dealer hands main1_metal sheet_hand saw.png-2252bcb2c7e25b196370c2ac9c685116.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hands main1_metal sheet_hand saw.png-2252bcb2c7e25b196370c2ac9c685116.s3tc.ctex", "res://.godot/imported/dealer hands main1_metal sheet_hand saw.png-2252bcb2c7e25b196370c2ac9c685116.etc2.ctex"]
 
 [params]
 

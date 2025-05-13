@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cucgad4gbh4hl"
 path.s3tc="res://.godot/imported/interior environment main1_pipe base blue1 valve2.png-6c21ae52048aab45e885d4d237de626d.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_pipe base blue1 valve2.png-6c21ae52048aab45e885d4d237de626d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_pipe base blue1 valve2.png"
-dest_files=["res://.godot/imported/interior environment main1_pipe base blue1 valve2.png-6c21ae52048aab45e885d4d237de626d.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_pipe base blue1 valve2.png-6c21ae52048aab45e885d4d237de626d.s3tc.ctex", "res://.godot/imported/interior environment main1_pipe base blue1 valve2.png-6c21ae52048aab45e885d4d237de626d.etc2.ctex"]
 
 [params]
 

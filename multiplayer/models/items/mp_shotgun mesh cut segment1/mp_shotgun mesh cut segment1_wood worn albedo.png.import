@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://btdiywtri4pik"
 path.s3tc="res://.godot/imported/mp_shotgun mesh cut segment1_wood worn albedo.png-fd86cbdc8378d6b0f1a020b2cd2e09a1.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_shotgun mesh cut segment1_wood worn albedo.png-fd86cbdc8378d6b0f1a020b2cd2e09a1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_shotgun mesh cut segment1/mp_shotgun mesh cut segment1_wood worn albedo.png"
-dest_files=["res://.godot/imported/mp_shotgun mesh cut segment1_wood worn albedo.png-fd86cbdc8378d6b0f1a020b2cd2e09a1.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_shotgun mesh cut segment1_wood worn albedo.png-fd86cbdc8378d6b0f1a020b2cd2e09a1.s3tc.ctex", "res://.godot/imported/mp_shotgun mesh cut segment1_wood worn albedo.png-fd86cbdc8378d6b0f1a020b2cd2e09a1.etc2.ctex"]
 
 [params]
 

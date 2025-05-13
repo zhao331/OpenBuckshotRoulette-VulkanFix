@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd8d71oxglrad"
 path.s3tc="res://.godot/imported/tabletop export6_wood worn albedo.png-d949d8f22d2a3aa39d0556ecc9f32986.s3tc.ctex"
+path.etc2="res://.godot/imported/tabletop export6_wood worn albedo.png-d949d8f22d2a3aa39d0556ecc9f32986.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/tabletop export6/tabletop export6_wood worn albedo.png"
-dest_files=["res://.godot/imported/tabletop export6_wood worn albedo.png-d949d8f22d2a3aa39d0556ecc9f32986.s3tc.ctex"]
+dest_files=["res://.godot/imported/tabletop export6_wood worn albedo.png-d949d8f22d2a3aa39d0556ecc9f32986.s3tc.ctex", "res://.godot/imported/tabletop export6_wood worn albedo.png-d949d8f22d2a3aa39d0556ecc9f32986.etc2.ctex"]
 
 [params]
 

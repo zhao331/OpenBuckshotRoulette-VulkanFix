@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://batney5t1lrb"
 path.s3tc="res://.godot/imported/mp_items3_magnifying glass.png-5f5987216db8bd4998247861034a59e6.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_items3_magnifying glass.png-5f5987216db8bd4998247861034a59e6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_items3/mp_items3_magnifying glass.png"
-dest_files=["res://.godot/imported/mp_items3_magnifying glass.png-5f5987216db8bd4998247861034a59e6.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_items3_magnifying glass.png-5f5987216db8bd4998247861034a59e6.s3tc.ctex", "res://.godot/imported/mp_items3_magnifying glass.png-5f5987216db8bd4998247861034a59e6.etc2.ctex"]
 
 [params]
 

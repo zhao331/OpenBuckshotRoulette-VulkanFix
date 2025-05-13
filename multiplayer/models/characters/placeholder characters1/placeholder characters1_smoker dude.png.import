@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6duymkpg5j21"
 path.s3tc="res://.godot/imported/placeholder characters1_smoker dude.png-d394808400c27efea34ee722e3bc44ce.s3tc.ctex"
+path.etc2="res://.godot/imported/placeholder characters1_smoker dude.png-d394808400c27efea34ee722e3bc44ce.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/characters/placeholder characters1/placeholder characters1_smoker dude.png"
-dest_files=["res://.godot/imported/placeholder characters1_smoker dude.png-d394808400c27efea34ee722e3bc44ce.s3tc.ctex"]
+dest_files=["res://.godot/imported/placeholder characters1_smoker dude.png-d394808400c27efea34ee722e3bc44ce.s3tc.ctex", "res://.godot/imported/placeholder characters1_smoker dude.png-d394808400c27efea34ee722e3bc44ce.etc2.ctex"]
 
 [params]
 

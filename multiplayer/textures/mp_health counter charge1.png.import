@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://na5wuv28qyls"
 path.s3tc="res://.godot/imported/mp_health counter charge1.png-bba04b908c4a65e99d88a18ecd3f84ff.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_health counter charge1.png-bba04b908c4a65e99d88a18ecd3f84ff.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://multiplayer/textures/mp_health counter charge1.png"
-dest_files=["res://.godot/imported/mp_health counter charge1.png-bba04b908c4a65e99d88a18ecd3f84ff.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_health counter charge1.png-bba04b908c4a65e99d88a18ecd3f84ff.s3tc.ctex", "res://.godot/imported/mp_health counter charge1.png-bba04b908c4a65e99d88a18ecd3f84ff.etc2.ctex"]
 
 [params]
 

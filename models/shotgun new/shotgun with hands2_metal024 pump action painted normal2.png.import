@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg3xpljxh4tgt"
 path.s3tc="res://.godot/imported/shotgun with hands2_metal024 pump action painted normal2.png-b35468d3950ecb266b72def8404cd6c2.s3tc.ctex"
+path.etc2="res://.godot/imported/shotgun with hands2_metal024 pump action painted normal2.png-b35468d3950ecb266b72def8404cd6c2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/shotgun new/shotgun with hands2_metal024 pump action painted normal2.png"
-dest_files=["res://.godot/imported/shotgun with hands2_metal024 pump action painted normal2.png-b35468d3950ecb266b72def8404cd6c2.s3tc.ctex"]
+dest_files=["res://.godot/imported/shotgun with hands2_metal024 pump action painted normal2.png-b35468d3950ecb266b72def8404cd6c2.s3tc.ctex", "res://.godot/imported/shotgun with hands2_metal024 pump action painted normal2.png-b35468d3950ecb266b72def8404cd6c2.etc2.ctex"]
 
 [params]
 

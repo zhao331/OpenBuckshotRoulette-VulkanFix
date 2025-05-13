@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3pbgoycklwca"
 path.s3tc="res://.godot/imported/interior environment wall separate1_concrete dark1.png-99c70fc032a85cced4f13ddc4fc5384a.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment wall separate1_concrete dark1.png-99c70fc032a85cced4f13ddc4fc5384a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment wall separate1/interior environment wall separate1_concrete dark1.png"
-dest_files=["res://.godot/imported/interior environment wall separate1_concrete dark1.png-99c70fc032a85cced4f13ddc4fc5384a.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment wall separate1_concrete dark1.png-99c70fc032a85cced4f13ddc4fc5384a.s3tc.ctex", "res://.godot/imported/interior environment wall separate1_concrete dark1.png-99c70fc032a85cced4f13ddc4fc5384a.etc2.ctex"]
 
 [params]
 

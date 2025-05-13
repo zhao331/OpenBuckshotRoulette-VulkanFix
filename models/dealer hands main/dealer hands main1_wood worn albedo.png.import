@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://i8rkn5i51667"
 path.s3tc="res://.godot/imported/dealer hands main1_wood worn albedo.png-db2bb10e31de8b782830c32e1e9d8d11.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hands main1_wood worn albedo.png-db2bb10e31de8b782830c32e1e9d8d11.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hands main/dealer hands main1_wood worn albedo.png"
-dest_files=["res://.godot/imported/dealer hands main1_wood worn albedo.png-db2bb10e31de8b782830c32e1e9d8d11.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hands main1_wood worn albedo.png-db2bb10e31de8b782830c32e1e9d8d11.s3tc.ctex", "res://.godot/imported/dealer hands main1_wood worn albedo.png-db2bb10e31de8b782830c32e1e9d8d11.etc2.ctex"]
 
 [params]
 

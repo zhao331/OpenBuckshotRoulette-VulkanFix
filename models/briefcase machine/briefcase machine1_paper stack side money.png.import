@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbm1b2ek05lgx"
 path.s3tc="res://.godot/imported/briefcase machine1_paper stack side money.png-d4527d3d653229ebdd8a2b11935c8d61.s3tc.ctex"
+path.etc2="res://.godot/imported/briefcase machine1_paper stack side money.png-d4527d3d653229ebdd8a2b11935c8d61.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/briefcase machine/briefcase machine1_paper stack side money.png"
-dest_files=["res://.godot/imported/briefcase machine1_paper stack side money.png-d4527d3d653229ebdd8a2b11935c8d61.s3tc.ctex"]
+dest_files=["res://.godot/imported/briefcase machine1_paper stack side money.png-d4527d3d653229ebdd8a2b11935c8d61.s3tc.ctex", "res://.godot/imported/briefcase machine1_paper stack side money.png-d4527d3d653229ebdd8a2b11935c8d61.etc2.ctex"]
 
 [params]
 

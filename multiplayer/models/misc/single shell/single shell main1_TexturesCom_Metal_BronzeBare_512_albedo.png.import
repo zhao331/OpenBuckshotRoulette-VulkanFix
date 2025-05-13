@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7kty66rmjmxc"
 path.s3tc="res://.godot/imported/single shell main1_TexturesCom_Metal_BronzeBare_512_albedo.png-3b82f8c937d608efd53e5e96026bd061.s3tc.ctex"
+path.etc2="res://.godot/imported/single shell main1_TexturesCom_Metal_BronzeBare_512_albedo.png-3b82f8c937d608efd53e5e96026bd061.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/misc/single shell/single shell main1_TexturesCom_Metal_BronzeBare_512_albedo.png"
-dest_files=["res://.godot/imported/single shell main1_TexturesCom_Metal_BronzeBare_512_albedo.png-3b82f8c937d608efd53e5e96026bd061.s3tc.ctex"]
+dest_files=["res://.godot/imported/single shell main1_TexturesCom_Metal_BronzeBare_512_albedo.png-3b82f8c937d608efd53e5e96026bd061.s3tc.ctex", "res://.godot/imported/single shell main1_TexturesCom_Metal_BronzeBare_512_albedo.png-3b82f8c937d608efd53e5e96026bd061.etc2.ctex"]
 
 [params]
 

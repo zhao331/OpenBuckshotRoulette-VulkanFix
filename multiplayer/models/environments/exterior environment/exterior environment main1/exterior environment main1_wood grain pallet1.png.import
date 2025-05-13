@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp2le6neqgogl"
 path.s3tc="res://.godot/imported/exterior environment main1_wood grain pallet1.png-f95017c45b70ba1ec7bd3a303840ac8d.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior environment main1_wood grain pallet1.png-f95017c45b70ba1ec7bd3a303840ac8d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/exterior environment/exterior environment main1/exterior environment main1_wood grain pallet1.png"
-dest_files=["res://.godot/imported/exterior environment main1_wood grain pallet1.png-f95017c45b70ba1ec7bd3a303840ac8d.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior environment main1_wood grain pallet1.png-f95017c45b70ba1ec7bd3a303840ac8d.s3tc.ctex", "res://.godot/imported/exterior environment main1_wood grain pallet1.png-f95017c45b70ba1ec7bd3a303840ac8d.etc2.ctex"]
 
 [params]
 

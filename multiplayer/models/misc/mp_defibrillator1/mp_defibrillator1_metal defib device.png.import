@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dia45g01ejj0v"
 path.s3tc="res://.godot/imported/mp_defibrillator1_metal defib device.png-9bcb3c8eec877490e1f46e0b5931758b.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_defibrillator1_metal defib device.png-9bcb3c8eec877490e1f46e0b5931758b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/misc/mp_defibrillator1/mp_defibrillator1_metal defib device.png"
-dest_files=["res://.godot/imported/mp_defibrillator1_metal defib device.png-9bcb3c8eec877490e1f46e0b5931758b.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_defibrillator1_metal defib device.png-9bcb3c8eec877490e1f46e0b5931758b.s3tc.ctex", "res://.godot/imported/mp_defibrillator1_metal defib device.png-9bcb3c8eec877490e1f46e0b5931758b.etc2.ctex"]
 
 [params]
 

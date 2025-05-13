@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cm7xdb310isav"
 path.s3tc="res://.godot/imported/table mp_shell sequence machine3_metal sheet shell sequence machine base13.png-0f84967d01bf435f94c4cd34ac86b7b9.s3tc.ctex"
+path.etc2="res://.godot/imported/table mp_shell sequence machine3_metal sheet shell sequence machine base13.png-0f84967d01bf435f94c4cd34ac86b7b9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/table mp_shell sequence machine3/table mp_shell sequence machine3_metal sheet shell sequence machine base13.png"
-dest_files=["res://.godot/imported/table mp_shell sequence machine3_metal sheet shell sequence machine base13.png-0f84967d01bf435f94c4cd34ac86b7b9.s3tc.ctex"]
+dest_files=["res://.godot/imported/table mp_shell sequence machine3_metal sheet shell sequence machine base13.png-0f84967d01bf435f94c4cd34ac86b7b9.s3tc.ctex", "res://.godot/imported/table mp_shell sequence machine3_metal sheet shell sequence machine base13.png-0f84967d01bf435f94c4cd34ac86b7b9.etc2.ctex"]
 
 [params]
 

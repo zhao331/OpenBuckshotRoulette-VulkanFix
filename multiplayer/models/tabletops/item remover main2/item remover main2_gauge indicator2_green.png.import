@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs66bgft5rvrb"
 path.s3tc="res://.godot/imported/item remover main2_gauge indicator2_green.png-1974727aa9f2522fb1d017f51104d465.s3tc.ctex"
+path.etc2="res://.godot/imported/item remover main2_gauge indicator2_green.png-1974727aa9f2522fb1d017f51104d465.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/item remover main2/item remover main2_gauge indicator2_green.png"
-dest_files=["res://.godot/imported/item remover main2_gauge indicator2_green.png-1974727aa9f2522fb1d017f51104d465.s3tc.ctex"]
+dest_files=["res://.godot/imported/item remover main2_gauge indicator2_green.png-1974727aa9f2522fb1d017f51104d465.s3tc.ctex", "res://.godot/imported/item remover main2_gauge indicator2_green.png-1974727aa9f2522fb1d017f51104d465.etc2.ctex"]
 
 [params]
 

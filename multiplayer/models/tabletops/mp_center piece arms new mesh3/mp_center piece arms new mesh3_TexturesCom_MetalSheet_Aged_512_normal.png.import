@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://culyv0sslx6na"
 path.s3tc="res://.godot/imported/mp_center piece arms new mesh3_TexturesCom_MetalSheet_Aged_512_normal.png-6c806f5b64db863a6ec1249c17f9ab99.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_center piece arms new mesh3_TexturesCom_MetalSheet_Aged_512_normal.png-6c806f5b64db863a6ec1249c17f9ab99.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_center piece arms new mesh3/mp_center piece arms new mesh3_TexturesCom_MetalSheet_Aged_512_normal.png"
-dest_files=["res://.godot/imported/mp_center piece arms new mesh3_TexturesCom_MetalSheet_Aged_512_normal.png-6c806f5b64db863a6ec1249c17f9ab99.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_center piece arms new mesh3_TexturesCom_MetalSheet_Aged_512_normal.png-6c806f5b64db863a6ec1249c17f9ab99.s3tc.ctex", "res://.godot/imported/mp_center piece arms new mesh3_TexturesCom_MetalSheet_Aged_512_normal.png-6c806f5b64db863a6ec1249c17f9ab99.etc2.ctex"]
 
 [params]
 

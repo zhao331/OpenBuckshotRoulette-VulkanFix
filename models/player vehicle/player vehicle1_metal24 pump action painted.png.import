@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmrp2uh7k54pc"
 path.s3tc="res://.godot/imported/player vehicle1_metal24 pump action painted.png-0e6d73d8512d0d3045c99d867e180daa.s3tc.ctex"
+path.etc2="res://.godot/imported/player vehicle1_metal24 pump action painted.png-0e6d73d8512d0d3045c99d867e180daa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/player vehicle/player vehicle1_metal24 pump action painted.png"
-dest_files=["res://.godot/imported/player vehicle1_metal24 pump action painted.png-0e6d73d8512d0d3045c99d867e180daa.s3tc.ctex"]
+dest_files=["res://.godot/imported/player vehicle1_metal24 pump action painted.png-0e6d73d8512d0d3045c99d867e180daa.s3tc.ctex", "res://.godot/imported/player vehicle1_metal24 pump action painted.png-0e6d73d8512d0d3045c99d867e180daa.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://br6ga6k0i1lvu"
 path.s3tc="res://.godot/imported/interior environment wall separate1_outlet1.png-a46c1d56578fb7390ec262bcdf65652c.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment wall separate1_outlet1.png-a46c1d56578fb7390ec262bcdf65652c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment wall separate1/interior environment wall separate1_outlet1.png"
-dest_files=["res://.godot/imported/interior environment wall separate1_outlet1.png-a46c1d56578fb7390ec262bcdf65652c.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment wall separate1_outlet1.png-a46c1d56578fb7390ec262bcdf65652c.s3tc.ctex", "res://.godot/imported/interior environment wall separate1_outlet1.png-a46c1d56578fb7390ec262bcdf65652c.etc2.ctex"]
 
 [params]
 

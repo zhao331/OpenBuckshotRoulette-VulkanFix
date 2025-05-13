@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjf35kn1anrke"
 path.s3tc="res://.godot/imported/placeholder characters1_TCom_Wood_Worn2_512_normal.png-0ccb15dd47d313d83cdff4821b96022f.s3tc.ctex"
+path.etc2="res://.godot/imported/placeholder characters1_TCom_Wood_Worn2_512_normal.png-0ccb15dd47d313d83cdff4821b96022f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/characters/placeholder characters1/placeholder characters1_TCom_Wood_Worn2_512_normal.png"
-dest_files=["res://.godot/imported/placeholder characters1_TCom_Wood_Worn2_512_normal.png-0ccb15dd47d313d83cdff4821b96022f.s3tc.ctex"]
+dest_files=["res://.godot/imported/placeholder characters1_TCom_Wood_Worn2_512_normal.png-0ccb15dd47d313d83cdff4821b96022f.s3tc.ctex", "res://.godot/imported/placeholder characters1_TCom_Wood_Worn2_512_normal.png-0ccb15dd47d313d83cdff4821b96022f.etc2.ctex"]
 
 [params]
 

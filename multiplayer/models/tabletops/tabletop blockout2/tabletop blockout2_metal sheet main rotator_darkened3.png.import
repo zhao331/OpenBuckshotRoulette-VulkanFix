@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://w17sgr480yi8"
 path.s3tc="res://.godot/imported/tabletop blockout2_metal sheet main rotator_darkened3.png-dcf127f3b87c7e24bf11ffafff70c3d9.s3tc.ctex"
+path.etc2="res://.godot/imported/tabletop blockout2_metal sheet main rotator_darkened3.png-dcf127f3b87c7e24bf11ffafff70c3d9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/tabletop blockout2/tabletop blockout2_metal sheet main rotator_darkened3.png"
-dest_files=["res://.godot/imported/tabletop blockout2_metal sheet main rotator_darkened3.png-dcf127f3b87c7e24bf11ffafff70c3d9.s3tc.ctex"]
+dest_files=["res://.godot/imported/tabletop blockout2_metal sheet main rotator_darkened3.png-dcf127f3b87c7e24bf11ffafff70c3d9.s3tc.ctex", "res://.godot/imported/tabletop blockout2_metal sheet main rotator_darkened3.png-dcf127f3b87c7e24bf11ffafff70c3d9.etc2.ctex"]
 
 [params]
 

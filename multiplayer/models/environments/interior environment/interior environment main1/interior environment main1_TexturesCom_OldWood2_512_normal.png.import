@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyjogkl7dpyuy"
 path.s3tc="res://.godot/imported/interior environment main1_TexturesCom_OldWood2_512_normal.png-6329edc5213f0e7de4f8fe6b96db872a.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_TexturesCom_OldWood2_512_normal.png-6329edc5213f0e7de4f8fe6b96db872a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_TexturesCom_OldWood2_512_normal.png"
-dest_files=["res://.godot/imported/interior environment main1_TexturesCom_OldWood2_512_normal.png-6329edc5213f0e7de4f8fe6b96db872a.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_TexturesCom_OldWood2_512_normal.png-6329edc5213f0e7de4f8fe6b96db872a.s3tc.ctex", "res://.godot/imported/interior environment main1_TexturesCom_OldWood2_512_normal.png-6329edc5213f0e7de4f8fe6b96db872a.etc2.ctex"]
 
 [params]
 

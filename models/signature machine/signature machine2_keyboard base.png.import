@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyh7nafnpuani"
 path.s3tc="res://.godot/imported/signature machine2_keyboard base.png-4641573e45b99c780eaa3d18df2362df.s3tc.ctex"
+path.etc2="res://.godot/imported/signature machine2_keyboard base.png-4641573e45b99c780eaa3d18df2362df.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/signature machine/signature machine2_keyboard base.png"
-dest_files=["res://.godot/imported/signature machine2_keyboard base.png-4641573e45b99c780eaa3d18df2362df.s3tc.ctex"]
+dest_files=["res://.godot/imported/signature machine2_keyboard base.png-4641573e45b99c780eaa3d18df2362df.s3tc.ctex", "res://.godot/imported/signature machine2_keyboard base.png-4641573e45b99c780eaa3d18df2362df.etc2.ctex"]
 
 [params]
 

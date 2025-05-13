@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bol30fsl1kii7"
 path.s3tc="res://.godot/imported/tabletop health counter export1_health counter metal.png-aaa445f0f9d89ecd71832f693176d8c8.s3tc.ctex"
+path.etc2="res://.godot/imported/tabletop health counter export1_health counter metal.png-aaa445f0f9d89ecd71832f693176d8c8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/tabletop health counter/tabletop health counter export1_health counter metal.png"
-dest_files=["res://.godot/imported/tabletop health counter export1_health counter metal.png-aaa445f0f9d89ecd71832f693176d8c8.s3tc.ctex"]
+dest_files=["res://.godot/imported/tabletop health counter export1_health counter metal.png-aaa445f0f9d89ecd71832f693176d8c8.s3tc.ctex", "res://.godot/imported/tabletop health counter export1_health counter metal.png-aaa445f0f9d89ecd71832f693176d8c8.etc2.ctex"]
 
 [params]
 

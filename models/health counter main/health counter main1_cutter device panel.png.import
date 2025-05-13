@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl3oxpocqb1e2"
 path.s3tc="res://.godot/imported/health counter main1_cutter device panel.png-df820e8103e149f1414c2f66a37160c2.s3tc.ctex"
+path.etc2="res://.godot/imported/health counter main1_cutter device panel.png-df820e8103e149f1414c2f66a37160c2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/health counter main/health counter main1_cutter device panel.png"
-dest_files=["res://.godot/imported/health counter main1_cutter device panel.png-df820e8103e149f1414c2f66a37160c2.s3tc.ctex"]
+dest_files=["res://.godot/imported/health counter main1_cutter device panel.png-df820e8103e149f1414c2f66a37160c2.s3tc.ctex", "res://.godot/imported/health counter main1_cutter device panel.png-df820e8103e149f1414c2f66a37160c2.etc2.ctex"]
 
 [params]
 

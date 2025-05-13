@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bksxujcmoxgn1"
 path.s3tc="res://.godot/imported/mp_inverter interaction1_inverter.png-fd8b572637bfaad10d555dddc023c7ad.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_inverter interaction1_inverter.png-fd8b572637bfaad10d555dddc023c7ad.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_inverter interaction1/mp_inverter interaction1_inverter.png"
-dest_files=["res://.godot/imported/mp_inverter interaction1_inverter.png-fd8b572637bfaad10d555dddc023c7ad.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_inverter interaction1_inverter.png-fd8b572637bfaad10d555dddc023c7ad.s3tc.ctex", "res://.godot/imported/mp_inverter interaction1_inverter.png-fd8b572637bfaad10d555dddc023c7ad.etc2.ctex"]
 
 [params]
 

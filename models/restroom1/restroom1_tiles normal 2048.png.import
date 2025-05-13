@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyu0y1sd0myo"
 path.s3tc="res://.godot/imported/restroom1_tiles normal 2048.png-e48afab04d9b117b11f07cdede0d1189.s3tc.ctex"
+path.etc2="res://.godot/imported/restroom1_tiles normal 2048.png-e48afab04d9b117b11f07cdede0d1189.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/restroom1/restroom1_tiles normal 2048.png"
-dest_files=["res://.godot/imported/restroom1_tiles normal 2048.png-e48afab04d9b117b11f07cdede0d1189.s3tc.ctex"]
+dest_files=["res://.godot/imported/restroom1_tiles normal 2048.png-e48afab04d9b117b11f07cdede0d1189.s3tc.ctex", "res://.godot/imported/restroom1_tiles normal 2048.png-e48afab04d9b117b11f07cdede0d1189.etc2.ctex"]
 
 [params]
 

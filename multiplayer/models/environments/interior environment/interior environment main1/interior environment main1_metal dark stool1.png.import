@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clknsxee3pqfd"
 path.s3tc="res://.godot/imported/interior environment main1_metal dark stool1.png-b701af15e323537c282f6a39caed05d9.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_metal dark stool1.png-b701af15e323537c282f6a39caed05d9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_metal dark stool1.png"
-dest_files=["res://.godot/imported/interior environment main1_metal dark stool1.png-b701af15e323537c282f6a39caed05d9.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_metal dark stool1.png-b701af15e323537c282f6a39caed05d9.s3tc.ctex", "res://.godot/imported/interior environment main1_metal dark stool1.png-b701af15e323537c282f6a39caed05d9.etc2.ctex"]
 
 [params]
 

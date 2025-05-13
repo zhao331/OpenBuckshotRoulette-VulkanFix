@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5ikbqk2qgksh"
 path.s3tc="res://.godot/imported/shell waterfall2_metal sheet red new.png-4af8bd141a0bfc2dca7b4ae2923639cd.s3tc.ctex"
+path.etc2="res://.godot/imported/shell waterfall2_metal sheet red new.png-4af8bd141a0bfc2dca7b4ae2923639cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/shell waterfall/shell waterfall2_metal sheet red new.png"
-dest_files=["res://.godot/imported/shell waterfall2_metal sheet red new.png-4af8bd141a0bfc2dca7b4ae2923639cd.s3tc.ctex"]
+dest_files=["res://.godot/imported/shell waterfall2_metal sheet red new.png-4af8bd141a0bfc2dca7b4ae2923639cd.s3tc.ctex", "res://.godot/imported/shell waterfall2_metal sheet red new.png-4af8bd141a0bfc2dca7b4ae2923639cd.etc2.ctex"]
 
 [params]
 

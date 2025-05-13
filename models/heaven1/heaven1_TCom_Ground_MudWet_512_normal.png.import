@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b123038h2hpys"
 path.s3tc="res://.godot/imported/heaven1_TCom_Ground_MudWet_512_normal.png-41076b081e98f4f54f14304ebd8aa23f.s3tc.ctex"
+path.etc2="res://.godot/imported/heaven1_TCom_Ground_MudWet_512_normal.png-41076b081e98f4f54f14304ebd8aa23f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/heaven1/heaven1_TCom_Ground_MudWet_512_normal.png"
-dest_files=["res://.godot/imported/heaven1_TCom_Ground_MudWet_512_normal.png-41076b081e98f4f54f14304ebd8aa23f.s3tc.ctex"]
+dest_files=["res://.godot/imported/heaven1_TCom_Ground_MudWet_512_normal.png-41076b081e98f4f54f14304ebd8aa23f.s3tc.ctex", "res://.godot/imported/heaven1_TCom_Ground_MudWet_512_normal.png-41076b081e98f4f54f14304ebd8aa23f.etc2.ctex"]
 
 [params]
 

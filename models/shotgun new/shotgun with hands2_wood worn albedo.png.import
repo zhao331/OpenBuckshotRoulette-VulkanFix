@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bow1emkpjh68f"
 path.s3tc="res://.godot/imported/shotgun with hands2_wood worn albedo.png-cc2b33d4365913be69690b7c32662ddf.s3tc.ctex"
+path.etc2="res://.godot/imported/shotgun with hands2_wood worn albedo.png-cc2b33d4365913be69690b7c32662ddf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/shotgun new/shotgun with hands2_wood worn albedo.png"
-dest_files=["res://.godot/imported/shotgun with hands2_wood worn albedo.png-cc2b33d4365913be69690b7c32662ddf.s3tc.ctex"]
+dest_files=["res://.godot/imported/shotgun with hands2_wood worn albedo.png-cc2b33d4365913be69690b7c32662ddf.s3tc.ctex", "res://.godot/imported/shotgun with hands2_wood worn albedo.png-cc2b33d4365913be69690b7c32662ddf.etc2.ctex"]
 
 [params]
 

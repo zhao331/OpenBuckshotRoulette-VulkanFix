@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://iatv2ue4agsk"
 path.s3tc="res://.godot/imported/display round indicator.png-9d1758a820f58a782ca033819999837b.s3tc.ctex"
+path.etc2="res://.godot/imported/display round indicator.png-9d1758a820f58a782ca033819999837b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://misc/display round indicator.png"
-dest_files=["res://.godot/imported/display round indicator.png-9d1758a820f58a782ca033819999837b.s3tc.ctex"]
+dest_files=["res://.godot/imported/display round indicator.png-9d1758a820f58a782ca033819999837b.s3tc.ctex", "res://.godot/imported/display round indicator.png-9d1758a820f58a782ca033819999837b.etc2.ctex"]
 
 [params]
 

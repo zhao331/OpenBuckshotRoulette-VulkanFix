@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd3dn1n403wsu"
 path.s3tc="res://.godot/imported/handcuffs_player bar2_metal sheet copy_handcuffs.png-9c62f65a722420677c13cd2dd34ee97e.s3tc.ctex"
+path.etc2="res://.godot/imported/handcuffs_player bar2_metal sheet copy_handcuffs.png-9c62f65a722420677c13cd2dd34ee97e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/player handcuffs on bar/handcuffs_player bar2_metal sheet copy_handcuffs.png"
-dest_files=["res://.godot/imported/handcuffs_player bar2_metal sheet copy_handcuffs.png-9c62f65a722420677c13cd2dd34ee97e.s3tc.ctex"]
+dest_files=["res://.godot/imported/handcuffs_player bar2_metal sheet copy_handcuffs.png-9c62f65a722420677c13cd2dd34ee97e.s3tc.ctex", "res://.godot/imported/handcuffs_player bar2_metal sheet copy_handcuffs.png-9c62f65a722420677c13cd2dd34ee97e.etc2.ctex"]
 
 [params]
 

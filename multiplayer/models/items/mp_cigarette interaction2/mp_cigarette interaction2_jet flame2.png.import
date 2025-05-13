@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxv0ncqx8pfqm"
 path.s3tc="res://.godot/imported/mp_cigarette interaction2_jet flame2.png-8e7e88e74d452410cb078f386fe865fe.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_cigarette interaction2_jet flame2.png-8e7e88e74d452410cb078f386fe865fe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_cigarette interaction2/mp_cigarette interaction2_jet flame2.png"
-dest_files=["res://.godot/imported/mp_cigarette interaction2_jet flame2.png-8e7e88e74d452410cb078f386fe865fe.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_cigarette interaction2_jet flame2.png-8e7e88e74d452410cb078f386fe865fe.s3tc.ctex", "res://.godot/imported/mp_cigarette interaction2_jet flame2.png-8e7e88e74d452410cb078f386fe865fe.etc2.ctex"]
 
 [params]
 

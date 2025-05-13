@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cts383ug0medp"
 path.s3tc="res://.godot/imported/backroom blockout6_magazine2.png-32f89a2d63668b0968a75ede277357e7.s3tc.ctex"
+path.etc2="res://.godot/imported/backroom blockout6_magazine2.png-32f89a2d63668b0968a75ede277357e7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/backroom blockout5/backroom blockout6_magazine2.png"
-dest_files=["res://.godot/imported/backroom blockout6_magazine2.png-32f89a2d63668b0968a75ede277357e7.s3tc.ctex"]
+dest_files=["res://.godot/imported/backroom blockout6_magazine2.png-32f89a2d63668b0968a75ede277357e7.s3tc.ctex", "res://.godot/imported/backroom blockout6_magazine2.png-32f89a2d63668b0968a75ede277357e7.etc2.ctex"]
 
 [params]
 

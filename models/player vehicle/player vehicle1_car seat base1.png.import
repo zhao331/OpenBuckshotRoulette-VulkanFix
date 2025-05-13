@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx3vjtisagidk"
 path.s3tc="res://.godot/imported/player vehicle1_car seat base1.png-1bb6a013f41b1c0b307e88ebb6298025.s3tc.ctex"
+path.etc2="res://.godot/imported/player vehicle1_car seat base1.png-1bb6a013f41b1c0b307e88ebb6298025.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/player vehicle/player vehicle1_car seat base1.png"
-dest_files=["res://.godot/imported/player vehicle1_car seat base1.png-1bb6a013f41b1c0b307e88ebb6298025.s3tc.ctex"]
+dest_files=["res://.godot/imported/player vehicle1_car seat base1.png-1bb6a013f41b1c0b307e88ebb6298025.s3tc.ctex", "res://.godot/imported/player vehicle1_car seat base1.png-1bb6a013f41b1c0b307e88ebb6298025.etc2.ctex"]
 
 [params]
 

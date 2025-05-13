@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://du38uqjpqvwxm"
 path.s3tc="res://.godot/imported/muzzle flash test1_muzzle flash.png-3fa7196ebf2d34a262552847b164d5b3.s3tc.ctex"
+path.etc2="res://.godot/imported/muzzle flash test1_muzzle flash.png-3fa7196ebf2d34a262552847b164d5b3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/muzzle flash1/muzzle flash test1_muzzle flash.png"
-dest_files=["res://.godot/imported/muzzle flash test1_muzzle flash.png-3fa7196ebf2d34a262552847b164d5b3.s3tc.ctex"]
+dest_files=["res://.godot/imported/muzzle flash test1_muzzle flash.png-3fa7196ebf2d34a262552847b164d5b3.s3tc.ctex", "res://.godot/imported/muzzle flash test1_muzzle flash.png-3fa7196ebf2d34a262552847b164d5b3.etc2.ctex"]
 
 [params]
 

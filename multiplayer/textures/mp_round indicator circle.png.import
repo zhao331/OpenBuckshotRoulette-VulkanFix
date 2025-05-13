@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cujv24k3arcgg"
 path.s3tc="res://.godot/imported/mp_round indicator circle.png-15bc9fea1440c0885d0cb832b8143894.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_round indicator circle.png-15bc9fea1440c0885d0cb832b8143894.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://multiplayer/textures/mp_round indicator circle.png"
-dest_files=["res://.godot/imported/mp_round indicator circle.png-15bc9fea1440c0885d0cb832b8143894.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_round indicator circle.png-15bc9fea1440c0885d0cb832b8143894.s3tc.ctex", "res://.godot/imported/mp_round indicator circle.png-15bc9fea1440c0885d0cb832b8143894.etc2.ctex"]
 
 [params]
 

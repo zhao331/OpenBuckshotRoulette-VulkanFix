@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw7iuo5d4o6vf"
 path.s3tc="res://.godot/imported/exterior environment main1_asphalt painted sector1.png-63fff3ce1e0e20a6f6d7e7dd91c89aa9.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior environment main1_asphalt painted sector1.png-63fff3ce1e0e20a6f6d7e7dd91c89aa9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/exterior environment/exterior environment main1/exterior environment main1_asphalt painted sector1.png"
-dest_files=["res://.godot/imported/exterior environment main1_asphalt painted sector1.png-63fff3ce1e0e20a6f6d7e7dd91c89aa9.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior environment main1_asphalt painted sector1.png-63fff3ce1e0e20a6f6d7e7dd91c89aa9.s3tc.ctex", "res://.godot/imported/exterior environment main1_asphalt painted sector1.png-63fff3ce1e0e20a6f6d7e7dd91c89aa9.etc2.ctex"]
 
 [params]
 

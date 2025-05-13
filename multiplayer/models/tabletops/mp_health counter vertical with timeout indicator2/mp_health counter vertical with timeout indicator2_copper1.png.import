@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c78oemsf508uh"
 path.s3tc="res://.godot/imported/mp_health counter vertical with timeout indicator2_copper1.png-e79f3c07dd93f10504eb56a62187b10d.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_health counter vertical with timeout indicator2_copper1.png-e79f3c07dd93f10504eb56a62187b10d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_health counter vertical with timeout indicator2/mp_health counter vertical with timeout indicator2_copper1.png"
-dest_files=["res://.godot/imported/mp_health counter vertical with timeout indicator2_copper1.png-e79f3c07dd93f10504eb56a62187b10d.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_health counter vertical with timeout indicator2_copper1.png-e79f3c07dd93f10504eb56a62187b10d.s3tc.ctex", "res://.godot/imported/mp_health counter vertical with timeout indicator2_copper1.png-e79f3c07dd93f10504eb56a62187b10d.etc2.ctex"]
 
 [params]
 

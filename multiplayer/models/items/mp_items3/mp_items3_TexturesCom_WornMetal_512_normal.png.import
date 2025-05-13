@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dum5tv1a6afeh"
 path.s3tc="res://.godot/imported/mp_items3_TexturesCom_WornMetal_512_normal.png-1d9ad441502bfe3daf7b9686d1982274.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_items3_TexturesCom_WornMetal_512_normal.png-1d9ad441502bfe3daf7b9686d1982274.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_items3/mp_items3_TexturesCom_WornMetal_512_normal.png"
-dest_files=["res://.godot/imported/mp_items3_TexturesCom_WornMetal_512_normal.png-1d9ad441502bfe3daf7b9686d1982274.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_items3_TexturesCom_WornMetal_512_normal.png-1d9ad441502bfe3daf7b9686d1982274.s3tc.ctex", "res://.godot/imported/mp_items3_TexturesCom_WornMetal_512_normal.png-1d9ad441502bfe3daf7b9686d1982274.etc2.ctex"]
 
 [params]
 

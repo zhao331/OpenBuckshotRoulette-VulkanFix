@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://gv68x0crpp4j"
 path.s3tc="res://.godot/imported/exterior window environment new2_windows1.png-8e9c8e5cf9dbb537471bfc1be0e4af1e.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior window environment new2_windows1.png-8e9c8e5cf9dbb537471bfc1be0e4af1e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior club environment/exterior window environment new2_windows1.png"
-dest_files=["res://.godot/imported/exterior window environment new2_windows1.png-8e9c8e5cf9dbb537471bfc1be0e4af1e.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior window environment new2_windows1.png-8e9c8e5cf9dbb537471bfc1be0e4af1e.s3tc.ctex", "res://.godot/imported/exterior window environment new2_windows1.png-8e9c8e5cf9dbb537471bfc1be0e4af1e.etc2.ctex"]
 
 [params]
 

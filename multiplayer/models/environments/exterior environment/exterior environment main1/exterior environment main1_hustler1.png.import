@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://do13bg0v8x8dq"
 path.s3tc="res://.godot/imported/exterior environment main1_hustler1.png-57bf7c45c0b5c2bea698d1d345635e5a.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior environment main1_hustler1.png-57bf7c45c0b5c2bea698d1d345635e5a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/exterior environment/exterior environment main1/exterior environment main1_hustler1.png"
-dest_files=["res://.godot/imported/exterior environment main1_hustler1.png-57bf7c45c0b5c2bea698d1d345635e5a.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior environment main1_hustler1.png-57bf7c45c0b5c2bea698d1d345635e5a.s3tc.ctex", "res://.godot/imported/exterior environment main1_hustler1.png-57bf7c45c0b5c2bea698d1d345635e5a.etc2.ctex"]
 
 [params]
 

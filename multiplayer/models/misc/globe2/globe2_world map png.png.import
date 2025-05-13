@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://6lyrvewebsbc"
 path.s3tc="res://.godot/imported/globe2_world map png.png-32ed9fa724656bb6bd30e9450e87cd03.s3tc.ctex"
+path.etc2="res://.godot/imported/globe2_world map png.png-32ed9fa724656bb6bd30e9450e87cd03.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/misc/globe2/globe2_world map png.png"
-dest_files=["res://.godot/imported/globe2_world map png.png-32ed9fa724656bb6bd30e9450e87cd03.s3tc.ctex"]
+dest_files=["res://.godot/imported/globe2_world map png.png-32ed9fa724656bb6bd30e9450e87cd03.s3tc.ctex", "res://.godot/imported/globe2_world map png.png-32ed9fa724656bb6bd30e9450e87cd03.etc2.ctex"]
 
 [params]
 

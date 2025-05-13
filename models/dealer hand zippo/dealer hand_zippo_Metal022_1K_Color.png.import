@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfqhl2u0n014d"
 path.s3tc="res://.godot/imported/dealer hand_zippo_Metal022_1K_Color.png-3aea0a613e786ae46839815670439505.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hand_zippo_Metal022_1K_Color.png-3aea0a613e786ae46839815670439505.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hand zippo/dealer hand_zippo_Metal022_1K_Color.png"
-dest_files=["res://.godot/imported/dealer hand_zippo_Metal022_1K_Color.png-3aea0a613e786ae46839815670439505.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hand_zippo_Metal022_1K_Color.png-3aea0a613e786ae46839815670439505.s3tc.ctex", "res://.godot/imported/dealer hand_zippo_Metal022_1K_Color.png-3aea0a613e786ae46839815670439505.etc2.ctex"]
 
 [params]
 

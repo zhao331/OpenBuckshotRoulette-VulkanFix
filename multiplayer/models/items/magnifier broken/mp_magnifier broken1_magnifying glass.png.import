@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://tc7gb2pb5by3"
 path.s3tc="res://.godot/imported/mp_magnifier broken1_magnifying glass.png-e30c3442e21623ff9d6a8721ec03e5b5.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_magnifier broken1_magnifying glass.png-e30c3442e21623ff9d6a8721ec03e5b5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/magnifier broken/mp_magnifier broken1_magnifying glass.png"
-dest_files=["res://.godot/imported/mp_magnifier broken1_magnifying glass.png-e30c3442e21623ff9d6a8721ec03e5b5.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_magnifier broken1_magnifying glass.png-e30c3442e21623ff9d6a8721ec03e5b5.s3tc.ctex", "res://.godot/imported/mp_magnifier broken1_magnifying glass.png-e30c3442e21623ff9d6a8721ec03e5b5.etc2.ctex"]
 
 [params]
 

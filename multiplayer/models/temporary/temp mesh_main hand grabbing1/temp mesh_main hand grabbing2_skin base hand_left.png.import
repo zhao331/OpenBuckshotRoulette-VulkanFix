@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwb2gria66u2g"
 path.s3tc="res://.godot/imported/temp mesh_main hand grabbing2_skin base hand_left.png-04a859a37184aa261124c0492d117030.s3tc.ctex"
+path.etc2="res://.godot/imported/temp mesh_main hand grabbing2_skin base hand_left.png-04a859a37184aa261124c0492d117030.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/temporary/temp mesh_main hand grabbing1/temp mesh_main hand grabbing2_skin base hand_left.png"
-dest_files=["res://.godot/imported/temp mesh_main hand grabbing2_skin base hand_left.png-04a859a37184aa261124c0492d117030.s3tc.ctex"]
+dest_files=["res://.godot/imported/temp mesh_main hand grabbing2_skin base hand_left.png-04a859a37184aa261124c0492d117030.s3tc.ctex", "res://.godot/imported/temp mesh_main hand grabbing2_skin base hand_left.png-04a859a37184aa261124c0492d117030.etc2.ctex"]
 
 [params]
 

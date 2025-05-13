@@ -16,3 +16,8 @@ func _input(event: InputEvent) -> void:
 			else: DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	elif Input.is_action_just_pressed('OpenBR_test'):
 		get_window()
+
+func is_android() -> bool:
+	#return true
+	if OS.get_name() == 'Android': return true
+	return false

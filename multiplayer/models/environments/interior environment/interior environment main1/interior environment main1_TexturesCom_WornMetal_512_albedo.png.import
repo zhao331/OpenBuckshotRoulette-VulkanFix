@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3tivmlgh1mj8"
 path.s3tc="res://.godot/imported/interior environment main1_TexturesCom_WornMetal_512_albedo.png-9e6a9ecbd764aa20a428476e7c77a9dc.s3tc.ctex"
+path.etc2="res://.godot/imported/interior environment main1_TexturesCom_WornMetal_512_albedo.png-9e6a9ecbd764aa20a428476e7c77a9dc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/interior environment/interior environment main1/interior environment main1_TexturesCom_WornMetal_512_albedo.png"
-dest_files=["res://.godot/imported/interior environment main1_TexturesCom_WornMetal_512_albedo.png-9e6a9ecbd764aa20a428476e7c77a9dc.s3tc.ctex"]
+dest_files=["res://.godot/imported/interior environment main1_TexturesCom_WornMetal_512_albedo.png-9e6a9ecbd764aa20a428476e7c77a9dc.s3tc.ctex", "res://.godot/imported/interior environment main1_TexturesCom_WornMetal_512_albedo.png-9e6a9ecbd764aa20a428476e7c77a9dc.etc2.ctex"]
 
 [params]
 

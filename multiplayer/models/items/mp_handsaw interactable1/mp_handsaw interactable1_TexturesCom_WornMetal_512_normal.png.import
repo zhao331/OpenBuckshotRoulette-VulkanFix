@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b47q2w5ulcbh5"
 path.s3tc="res://.godot/imported/mp_handsaw interactable1_TexturesCom_WornMetal_512_normal.png-18bab3f116cc3db3575d00c14f3b9c35.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_handsaw interactable1_TexturesCom_WornMetal_512_normal.png-18bab3f116cc3db3575d00c14f3b9c35.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_handsaw interactable1/mp_handsaw interactable1_TexturesCom_WornMetal_512_normal.png"
-dest_files=["res://.godot/imported/mp_handsaw interactable1_TexturesCom_WornMetal_512_normal.png-18bab3f116cc3db3575d00c14f3b9c35.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_handsaw interactable1_TexturesCom_WornMetal_512_normal.png-18bab3f116cc3db3575d00c14f3b9c35.s3tc.ctex", "res://.godot/imported/mp_handsaw interactable1_TexturesCom_WornMetal_512_normal.png-18bab3f116cc3db3575d00c14f3b9c35.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhbn8rwyoy8kp"
 path.s3tc="res://.godot/imported/mp_items3_health counter metal.png-61674854295f7f2c0f7b31cf6756f28b.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_items3_health counter metal.png-61674854295f7f2c0f7b31cf6756f28b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_items3/mp_items3_health counter metal.png"
-dest_files=["res://.godot/imported/mp_items3_health counter metal.png-61674854295f7f2c0f7b31cf6756f28b.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_items3_health counter metal.png-61674854295f7f2c0f7b31cf6756f28b.s3tc.ctex", "res://.godot/imported/mp_items3_health counter metal.png-61674854295f7f2c0f7b31cf6756f28b.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cplnqxybwgdxa"
 path.s3tc="res://.godot/imported/exterior window emission plane1_window mask.png-ea1f116737663d1a4609054969d82930.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior window emission plane1_window mask.png-ea1f116737663d1a4609054969d82930.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/exterior environment/exterior window emission plane1/exterior window emission plane1_window mask.png"
-dest_files=["res://.godot/imported/exterior window emission plane1_window mask.png-ea1f116737663d1a4609054969d82930.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior window emission plane1_window mask.png-ea1f116737663d1a4609054969d82930.s3tc.ctex", "res://.godot/imported/exterior window emission plane1_window mask.png-ea1f116737663d1a4609054969d82930.etc2.ctex"]
 
 [params]
 

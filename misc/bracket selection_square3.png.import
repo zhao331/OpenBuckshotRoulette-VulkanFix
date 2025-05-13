@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1bmxtghtlsta"
 path.s3tc="res://.godot/imported/bracket selection_square3.png-0a2e8e8a58ea0e22fbb678b3288fe545.s3tc.ctex"
+path.etc2="res://.godot/imported/bracket selection_square3.png-0a2e8e8a58ea0e22fbb678b3288fe545.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://misc/bracket selection_square3.png"
-dest_files=["res://.godot/imported/bracket selection_square3.png-0a2e8e8a58ea0e22fbb678b3288fe545.s3tc.ctex"]
+dest_files=["res://.godot/imported/bracket selection_square3.png-0a2e8e8a58ea0e22fbb678b3288fe545.s3tc.ctex", "res://.godot/imported/bracket selection_square3.png-0a2e8e8a58ea0e22fbb678b3288fe545.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://da856rhwhkjyf"
 path.s3tc="res://.godot/imported/tabletop export6_metal24 pump action painted.png-4e9a578671cbb758152f4956f371611d.s3tc.ctex"
+path.etc2="res://.godot/imported/tabletop export6_metal24 pump action painted.png-4e9a578671cbb758152f4956f371611d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/tabletop export6/tabletop export6_metal24 pump action painted.png"
-dest_files=["res://.godot/imported/tabletop export6_metal24 pump action painted.png-4e9a578671cbb758152f4956f371611d.s3tc.ctex"]
+dest_files=["res://.godot/imported/tabletop export6_metal24 pump action painted.png-4e9a578671cbb758152f4956f371611d.s3tc.ctex", "res://.godot/imported/tabletop export6_metal24 pump action painted.png-4e9a578671cbb758152f4956f371611d.etc2.ctex"]
 
 [params]
 

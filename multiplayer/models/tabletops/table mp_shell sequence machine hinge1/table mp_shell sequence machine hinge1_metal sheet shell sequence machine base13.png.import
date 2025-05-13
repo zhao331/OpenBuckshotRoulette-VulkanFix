@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2c6vv7ahlak8"
 path.s3tc="res://.godot/imported/table mp_shell sequence machine hinge1_metal sheet shell sequence machine base13.png-afa23e375c9971c7ecace31295cbc22b.s3tc.ctex"
+path.etc2="res://.godot/imported/table mp_shell sequence machine hinge1_metal sheet shell sequence machine base13.png-afa23e375c9971c7ecace31295cbc22b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/table mp_shell sequence machine hinge1/table mp_shell sequence machine hinge1_metal sheet shell sequence machine base13.png"
-dest_files=["res://.godot/imported/table mp_shell sequence machine hinge1_metal sheet shell sequence machine base13.png-afa23e375c9971c7ecace31295cbc22b.s3tc.ctex"]
+dest_files=["res://.godot/imported/table mp_shell sequence machine hinge1_metal sheet shell sequence machine base13.png-afa23e375c9971c7ecace31295cbc22b.s3tc.ctex", "res://.godot/imported/table mp_shell sequence machine hinge1_metal sheet shell sequence machine base13.png-afa23e375c9971c7ecace31295cbc22b.etc2.ctex"]
 
 [params]
 

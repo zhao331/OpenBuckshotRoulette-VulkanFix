@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://xbsqdn21qxtt"
 path.s3tc="res://.godot/imported/mp_briefcase machine1_base metal_briefcase machine darkened3.png-8c18abeeec26ed3c0a5d5b684d2cd61f.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_briefcase machine1_base metal_briefcase machine darkened3.png-8c18abeeec26ed3c0a5d5b684d2cd61f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_briefcase machine1/mp_briefcase machine1_base metal_briefcase machine darkened3.png"
-dest_files=["res://.godot/imported/mp_briefcase machine1_base metal_briefcase machine darkened3.png-8c18abeeec26ed3c0a5d5b684d2cd61f.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_briefcase machine1_base metal_briefcase machine darkened3.png-8c18abeeec26ed3c0a5d5b684d2cd61f.s3tc.ctex", "res://.godot/imported/mp_briefcase machine1_base metal_briefcase machine darkened3.png-8c18abeeec26ed3c0a5d5b684d2cd61f.etc2.ctex"]
 
 [params]
 

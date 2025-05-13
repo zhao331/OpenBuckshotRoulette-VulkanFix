@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2h388i8ul2o6"
 path.s3tc="res://.godot/imported/placeholder characters1_metal24 pump action painted.png-148ff7fafc95e00ac8169af4e210732b.s3tc.ctex"
+path.etc2="res://.godot/imported/placeholder characters1_metal24 pump action painted.png-148ff7fafc95e00ac8169af4e210732b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/characters/placeholder characters1/placeholder characters1_metal24 pump action painted.png"
-dest_files=["res://.godot/imported/placeholder characters1_metal24 pump action painted.png-148ff7fafc95e00ac8169af4e210732b.s3tc.ctex"]
+dest_files=["res://.godot/imported/placeholder characters1_metal24 pump action painted.png-148ff7fafc95e00ac8169af4e210732b.s3tc.ctex", "res://.godot/imported/placeholder characters1_metal24 pump action painted.png-148ff7fafc95e00ac8169af4e210732b.etc2.ctex"]
 
 [params]
 

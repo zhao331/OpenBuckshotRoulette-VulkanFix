@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ua77d4qsse2q"
 path.s3tc="res://.godot/imported/table mp_main padding item remover1_TexturesCom_MetalSheet_Aged_512_normal.png-586cbfb178aff210c5d2e26048ab392d.s3tc.ctex"
+path.etc2="res://.godot/imported/table mp_main padding item remover1_TexturesCom_MetalSheet_Aged_512_normal.png-586cbfb178aff210c5d2e26048ab392d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/table mp_main padding item remover1/table mp_main padding item remover1_TexturesCom_MetalSheet_Aged_512_normal.png"
-dest_files=["res://.godot/imported/table mp_main padding item remover1_TexturesCom_MetalSheet_Aged_512_normal.png-586cbfb178aff210c5d2e26048ab392d.s3tc.ctex"]
+dest_files=["res://.godot/imported/table mp_main padding item remover1_TexturesCom_MetalSheet_Aged_512_normal.png-586cbfb178aff210c5d2e26048ab392d.s3tc.ctex", "res://.godot/imported/table mp_main padding item remover1_TexturesCom_MetalSheet_Aged_512_normal.png-586cbfb178aff210c5d2e26048ab392d.etc2.ctex"]
 
 [params]
 

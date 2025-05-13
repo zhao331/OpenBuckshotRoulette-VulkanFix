@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://k0ner5b2rlnh"
 path.s3tc="res://.godot/imported/release form patched2_release form new2.png-2edd3ddfc32b1070cdd3d5b03f2cd74d.s3tc.ctex"
+path.etc2="res://.godot/imported/release form patched2_release form new2.png-2edd3ddfc32b1070cdd3d5b03f2cd74d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/release form patched/release form patched2_release form new2.png"
-dest_files=["res://.godot/imported/release form patched2_release form new2.png-2edd3ddfc32b1070cdd3d5b03f2cd74d.s3tc.ctex"]
+dest_files=["res://.godot/imported/release form patched2_release form new2.png-2edd3ddfc32b1070cdd3d5b03f2cd74d.s3tc.ctex", "res://.godot/imported/release form patched2_release form new2.png-2edd3ddfc32b1070cdd3d5b03f2cd74d.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cin8nl8gob3nm"
 path.s3tc="res://.godot/imported/shotgun main1_wood worn albedo.png-dd4c4c009ec8cdd1d83e0a5fba18facd.s3tc.ctex"
+path.etc2="res://.godot/imported/shotgun main1_wood worn albedo.png-dd4c4c009ec8cdd1d83e0a5fba18facd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/shotgun main1/shotgun main1_wood worn albedo.png"
-dest_files=["res://.godot/imported/shotgun main1_wood worn albedo.png-dd4c4c009ec8cdd1d83e0a5fba18facd.s3tc.ctex"]
+dest_files=["res://.godot/imported/shotgun main1_wood worn albedo.png-dd4c4c009ec8cdd1d83e0a5fba18facd.s3tc.ctex", "res://.godot/imported/shotgun main1_wood worn albedo.png-dd4c4c009ec8cdd1d83e0a5fba18facd.etc2.ctex"]
 
 [params]
 

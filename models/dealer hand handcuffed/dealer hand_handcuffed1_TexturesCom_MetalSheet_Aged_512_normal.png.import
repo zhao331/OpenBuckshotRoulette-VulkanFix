@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://byp3mgpbxpp38"
 path.s3tc="res://.godot/imported/dealer hand_handcuffed1_TexturesCom_MetalSheet_Aged_512_normal.png-b1e2ac8c538c6d7e95bade5bb73489a6.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hand_handcuffed1_TexturesCom_MetalSheet_Aged_512_normal.png-b1e2ac8c538c6d7e95bade5bb73489a6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hand handcuffed/dealer hand_handcuffed1_TexturesCom_MetalSheet_Aged_512_normal.png"
-dest_files=["res://.godot/imported/dealer hand_handcuffed1_TexturesCom_MetalSheet_Aged_512_normal.png-b1e2ac8c538c6d7e95bade5bb73489a6.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hand_handcuffed1_TexturesCom_MetalSheet_Aged_512_normal.png-b1e2ac8c538c6d7e95bade5bb73489a6.s3tc.ctex", "res://.godot/imported/dealer hand_handcuffed1_TexturesCom_MetalSheet_Aged_512_normal.png-b1e2ac8c538c6d7e95bade5bb73489a6.etc2.ctex"]
 
 [params]
 

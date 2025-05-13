@@ -11,15 +11,14 @@ config_version=5
 [application]
 
 config/name="Open Buckshot Roulette"
-run/main_scene="res://scenes/menu.tscn"
+run/main_scene="uid://bvumuv2g7ohx3"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="dev1503.openbuckshotroulette"
 config/features=PackedStringArray("4.4", "Forward Plus")
+run/max_fps=90
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/show_image=false
-boot_splash/image="res://misc/CR White splash.png"
-config/icon="res://misc/icon1.png"
-boot_splash/minimum_display_time=3000
+boot_splash/image="uid://doaelbhkss47o"
+config/icon="uid://daxtm8kkxiw4q"
 
 [autoload]
 
@@ -35,7 +34,10 @@ file_logging/enable_file_logging=true
 
 window/size/viewport_width=960
 window/size/viewport_height=540
+window/size/window_width_override=1280
+window/size/window_height_override=675
 window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://misc/cursor xp_point.png"
 mouse_cursor/custom_image_hotspot=Vector2(9, 0)
 
@@ -596,6 +598,8 @@ locale/locale_filter_mode=0
 
 renderer/rendering_method="mobile"
 textures/vram_compression/import_etc2_astc=true
+global_illumination/gi/use_half_resolution=true
+environment/ssao/quality=0
 limits/opengl/max_lights_per_object=20
 environment/defaults/default_clear_color=Color(0.254902, 0.254902, 0.254902, 1)
 environment/size/mode=0

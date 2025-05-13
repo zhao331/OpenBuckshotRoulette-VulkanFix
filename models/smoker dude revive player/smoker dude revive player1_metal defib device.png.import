@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ejhpdmdv1lon"
 path.s3tc="res://.godot/imported/smoker dude revive player1_metal defib device.png-24bee19c3b093182edc4cc77ca79c532.s3tc.ctex"
+path.etc2="res://.godot/imported/smoker dude revive player1_metal defib device.png-24bee19c3b093182edc4cc77ca79c532.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/smoker dude revive player/smoker dude revive player1_metal defib device.png"
-dest_files=["res://.godot/imported/smoker dude revive player1_metal defib device.png-24bee19c3b093182edc4cc77ca79c532.s3tc.ctex"]
+dest_files=["res://.godot/imported/smoker dude revive player1_metal defib device.png-24bee19c3b093182edc4cc77ca79c532.s3tc.ctex", "res://.godot/imported/smoker dude revive player1_metal defib device.png-24bee19c3b093182edc4cc77ca79c532.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dya02xoeiv4is"
 path.s3tc="res://.godot/imported/table mp_main padding item remover1_metal sheet_lower table1.png-bca5d78c35b65e01871ca55cd3b5976a.s3tc.ctex"
+path.etc2="res://.godot/imported/table mp_main padding item remover1_metal sheet_lower table1.png-bca5d78c35b65e01871ca55cd3b5976a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/table mp_main padding item remover1/table mp_main padding item remover1_metal sheet_lower table1.png"
-dest_files=["res://.godot/imported/table mp_main padding item remover1_metal sheet_lower table1.png-bca5d78c35b65e01871ca55cd3b5976a.s3tc.ctex"]
+dest_files=["res://.godot/imported/table mp_main padding item remover1_metal sheet_lower table1.png-bca5d78c35b65e01871ca55cd3b5976a.s3tc.ctex", "res://.godot/imported/table mp_main padding item remover1_metal sheet_lower table1.png-bca5d78c35b65e01871ca55cd3b5976a.etc2.ctex"]
 
 [params]
 

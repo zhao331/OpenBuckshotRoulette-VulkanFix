@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3h5csvcnamxr"
 path.s3tc="res://.godot/imported/smoker dude revive player1_smoker dude.png-65ee8faa1585f186500f5584bb0d78b1.s3tc.ctex"
+path.etc2="res://.godot/imported/smoker dude revive player1_smoker dude.png-65ee8faa1585f186500f5584bb0d78b1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/smoker dude revive player/smoker dude revive player1_smoker dude.png"
-dest_files=["res://.godot/imported/smoker dude revive player1_smoker dude.png-65ee8faa1585f186500f5584bb0d78b1.s3tc.ctex"]
+dest_files=["res://.godot/imported/smoker dude revive player1_smoker dude.png-65ee8faa1585f186500f5584bb0d78b1.s3tc.ctex", "res://.godot/imported/smoker dude revive player1_smoker dude.png-65ee8faa1585f186500f5584bb0d78b1.etc2.ctex"]
 
 [params]
 

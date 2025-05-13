@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ed7wi5760yqc"
 path.s3tc="res://.godot/imported/dealer hands main1_cigarette.png-f436f0698fff8d7e18ac78e18272c44a.s3tc.ctex"
+path.etc2="res://.godot/imported/dealer hands main1_cigarette.png-f436f0698fff8d7e18ac78e18272c44a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/dealer hands main/dealer hands main1_cigarette.png"
-dest_files=["res://.godot/imported/dealer hands main1_cigarette.png-f436f0698fff8d7e18ac78e18272c44a.s3tc.ctex"]
+dest_files=["res://.godot/imported/dealer hands main1_cigarette.png-f436f0698fff8d7e18ac78e18272c44a.s3tc.ctex", "res://.godot/imported/dealer hands main1_cigarette.png-f436f0698fff8d7e18ac78e18272c44a.etc2.ctex"]
 
 [params]
 

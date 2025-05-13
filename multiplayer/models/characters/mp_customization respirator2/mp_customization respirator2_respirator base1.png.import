@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clj6bdld3ucdc"
 path.s3tc="res://.godot/imported/mp_customization respirator2_respirator base1.png-c0d5440dd1d11cb9d80557c7a92e6683.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_customization respirator2_respirator base1.png-c0d5440dd1d11cb9d80557c7a92e6683.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/characters/mp_customization respirator2/mp_customization respirator2_respirator base1.png"
-dest_files=["res://.godot/imported/mp_customization respirator2_respirator base1.png-c0d5440dd1d11cb9d80557c7a92e6683.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_customization respirator2_respirator base1.png-c0d5440dd1d11cb9d80557c7a92e6683.s3tc.ctex", "res://.godot/imported/mp_customization respirator2_respirator base1.png-c0d5440dd1d11cb9d80557c7a92e6683.etc2.ctex"]
 
 [params]
 

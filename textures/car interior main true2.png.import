@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw8718ngpktp6"
 path.s3tc="res://.godot/imported/car interior main true2.png-6619379767e7ee10a363f22c09fd2245.s3tc.ctex"
+path.etc2="res://.godot/imported/car interior main true2.png-6619379767e7ee10a363f22c09fd2245.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://textures/car interior main true2.png"
-dest_files=["res://.godot/imported/car interior main true2.png-6619379767e7ee10a363f22c09fd2245.s3tc.ctex"]
+dest_files=["res://.godot/imported/car interior main true2.png-6619379767e7ee10a363f22c09fd2245.s3tc.ctex", "res://.godot/imported/car interior main true2.png-6619379767e7ee10a363f22c09fd2245.etc2.ctex"]
 
 [params]
 

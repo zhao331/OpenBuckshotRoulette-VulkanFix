@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw2vl7wn4i187"
 path.s3tc="res://.godot/imported/mp_briefcase machine1_tabletop export6_carbon fiber albedo png.png-8b4ac38fa0057086f375aa70688e3a99.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_briefcase machine1_tabletop export6_carbon fiber albedo png.png-8b4ac38fa0057086f375aa70688e3a99.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_briefcase machine1/mp_briefcase machine1_tabletop export6_carbon fiber albedo png.png"
-dest_files=["res://.godot/imported/mp_briefcase machine1_tabletop export6_carbon fiber albedo png.png-8b4ac38fa0057086f375aa70688e3a99.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_briefcase machine1_tabletop export6_carbon fiber albedo png.png-8b4ac38fa0057086f375aa70688e3a99.s3tc.ctex", "res://.godot/imported/mp_briefcase machine1_tabletop export6_carbon fiber albedo png.png-8b4ac38fa0057086f375aa70688e3a99.etc2.ctex"]
 
 [params]
 

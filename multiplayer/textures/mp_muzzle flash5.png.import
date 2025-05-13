@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqye2yxoktnqd"
 path.s3tc="res://.godot/imported/mp_muzzle flash5.png-b15fea3312970145217d003e32badcf0.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_muzzle flash5.png-b15fea3312970145217d003e32badcf0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://multiplayer/textures/mp_muzzle flash5.png"
-dest_files=["res://.godot/imported/mp_muzzle flash5.png-b15fea3312970145217d003e32badcf0.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_muzzle flash5.png-b15fea3312970145217d003e32badcf0.s3tc.ctex", "res://.godot/imported/mp_muzzle flash5.png-b15fea3312970145217d003e32badcf0.etc2.ctex"]
 
 [params]
 

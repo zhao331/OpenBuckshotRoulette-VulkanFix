@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d17kcsidq1a1t"
 path.s3tc="res://.godot/imported/briefcase machine1_tabletop briefcase1_carbon fiber normal png.png-a11dee28c005ec175a9a0f52a32dcd1c.s3tc.ctex"
+path.etc2="res://.godot/imported/briefcase machine1_tabletop briefcase1_carbon fiber normal png.png-a11dee28c005ec175a9a0f52a32dcd1c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/briefcase machine/briefcase machine1_tabletop briefcase1_carbon fiber normal png.png"
-dest_files=["res://.godot/imported/briefcase machine1_tabletop briefcase1_carbon fiber normal png.png-a11dee28c005ec175a9a0f52a32dcd1c.s3tc.ctex"]
+dest_files=["res://.godot/imported/briefcase machine1_tabletop briefcase1_carbon fiber normal png.png-a11dee28c005ec175a9a0f52a32dcd1c.s3tc.ctex", "res://.godot/imported/briefcase machine1_tabletop briefcase1_carbon fiber normal png.png-a11dee28c005ec175a9a0f52a32dcd1c.etc2.ctex"]
 
 [params]
 

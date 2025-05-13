@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2c3s1floenbr"
 path.s3tc="res://.godot/imported/mp_shell live default.png-a9b69ee8d034b916ec6ed2fe85b1a10e.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_shell live default.png-a9b69ee8d034b916ec6ed2fe85b1a10e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://multiplayer/textures/mp_shell live default.png"
-dest_files=["res://.godot/imported/mp_shell live default.png-a9b69ee8d034b916ec6ed2fe85b1a10e.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_shell live default.png-a9b69ee8d034b916ec6ed2fe85b1a10e.s3tc.ctex", "res://.godot/imported/mp_shell live default.png-a9b69ee8d034b916ec6ed2fe85b1a10e.etc2.ctex"]
 
 [params]
 

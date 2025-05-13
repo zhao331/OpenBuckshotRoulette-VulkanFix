@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ue5r43befeum"
 path.s3tc="res://.godot/imported/mp_handsaw interactable1_TexturesCom_Rust_Heavy_MediumRust_512_albedo.png-17da44a71616a588fb7c3bde8f91308e.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_handsaw interactable1_TexturesCom_Rust_Heavy_MediumRust_512_albedo.png-17da44a71616a588fb7c3bde8f91308e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_handsaw interactable1/mp_handsaw interactable1_TexturesCom_Rust_Heavy_MediumRust_512_albedo.png"
-dest_files=["res://.godot/imported/mp_handsaw interactable1_TexturesCom_Rust_Heavy_MediumRust_512_albedo.png-17da44a71616a588fb7c3bde8f91308e.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_handsaw interactable1_TexturesCom_Rust_Heavy_MediumRust_512_albedo.png-17da44a71616a588fb7c3bde8f91308e.s3tc.ctex", "res://.godot/imported/mp_handsaw interactable1_TexturesCom_Rust_Heavy_MediumRust_512_albedo.png-17da44a71616a588fb7c3bde8f91308e.etc2.ctex"]
 
 [params]
 

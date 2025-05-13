@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5y3raldqrmal"
 path.s3tc="res://.godot/imported/tabletop inner circle plates1_tabletop main4.png-6b41f31ee92bd7bb047ba60ba2398ef7.s3tc.ctex"
+path.etc2="res://.godot/imported/tabletop inner circle plates1_tabletop main4.png-6b41f31ee92bd7bb047ba60ba2398ef7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/tabletop inner circle plates1/tabletop inner circle plates1_tabletop main4.png"
-dest_files=["res://.godot/imported/tabletop inner circle plates1_tabletop main4.png-6b41f31ee92bd7bb047ba60ba2398ef7.s3tc.ctex"]
+dest_files=["res://.godot/imported/tabletop inner circle plates1_tabletop main4.png-6b41f31ee92bd7bb047ba60ba2398ef7.s3tc.ctex", "res://.godot/imported/tabletop inner circle plates1_tabletop main4.png-6b41f31ee92bd7bb047ba60ba2398ef7.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh1oinrst2yyf"
 path.s3tc="res://.godot/imported/exterior environment main1_windows1.png-37ec1d2449249e1cde16d26329e98eab.s3tc.ctex"
+path.etc2="res://.godot/imported/exterior environment main1_windows1.png-37ec1d2449249e1cde16d26329e98eab.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/environments/exterior environment/exterior environment main1/exterior environment main1_windows1.png"
-dest_files=["res://.godot/imported/exterior environment main1_windows1.png-37ec1d2449249e1cde16d26329e98eab.s3tc.ctex"]
+dest_files=["res://.godot/imported/exterior environment main1_windows1.png-37ec1d2449249e1cde16d26329e98eab.s3tc.ctex", "res://.godot/imported/exterior environment main1_windows1.png-37ec1d2449249e1cde16d26329e98eab.etc2.ctex"]
 
 [params]
 

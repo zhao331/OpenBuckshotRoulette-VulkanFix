@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5n11tqjqrbl8"
 path.s3tc="res://.godot/imported/mp_beer can interaction1_beer can2 no text.png-f1d48f7db94c7ed7e88dd9de19ced4ee.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_beer can interaction1_beer can2 no text.png-f1d48f7db94c7ed7e88dd9de19ced4ee.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_beer can interaction1/mp_beer can interaction1_beer can2 no text.png"
-dest_files=["res://.godot/imported/mp_beer can interaction1_beer can2 no text.png-f1d48f7db94c7ed7e88dd9de19ced4ee.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_beer can interaction1_beer can2 no text.png-f1d48f7db94c7ed7e88dd9de19ced4ee.s3tc.ctex", "res://.godot/imported/mp_beer can interaction1_beer can2 no text.png-f1d48f7db94c7ed7e88dd9de19ced4ee.etc2.ctex"]
 
 [params]
 

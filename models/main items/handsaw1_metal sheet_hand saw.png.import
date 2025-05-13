@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://doxpgxw7b8gag"
 path.s3tc="res://.godot/imported/handsaw1_metal sheet_hand saw.png-1cabd2e43cfc3dc768e8435ccb823d02.s3tc.ctex"
+path.etc2="res://.godot/imported/handsaw1_metal sheet_hand saw.png-1cabd2e43cfc3dc768e8435ccb823d02.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/main items/handsaw1_metal sheet_hand saw.png"
-dest_files=["res://.godot/imported/handsaw1_metal sheet_hand saw.png-1cabd2e43cfc3dc768e8435ccb823d02.s3tc.ctex"]
+dest_files=["res://.godot/imported/handsaw1_metal sheet_hand saw.png-1cabd2e43cfc3dc768e8435ccb823d02.s3tc.ctex", "res://.godot/imported/handsaw1_metal sheet_hand saw.png-1cabd2e43cfc3dc768e8435ccb823d02.etc2.ctex"]
 
 [params]
 

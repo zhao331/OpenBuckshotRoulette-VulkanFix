@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl20sra2mb643"
 path.s3tc="res://.godot/imported/single shell main1_mp_shell blank default.png-5ca38c866e94a9a6cbdcc1ff2c93a4ed.s3tc.ctex"
+path.etc2="res://.godot/imported/single shell main1_mp_shell blank default.png-5ca38c866e94a9a6cbdcc1ff2c93a4ed.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/misc/single shell/single shell main1_mp_shell blank default.png"
-dest_files=["res://.godot/imported/single shell main1_mp_shell blank default.png-5ca38c866e94a9a6cbdcc1ff2c93a4ed.s3tc.ctex"]
+dest_files=["res://.godot/imported/single shell main1_mp_shell blank default.png-5ca38c866e94a9a6cbdcc1ff2c93a4ed.s3tc.ctex", "res://.godot/imported/single shell main1_mp_shell blank default.png-5ca38c866e94a9a6cbdcc1ff2c93a4ed.etc2.ctex"]
 
 [params]
 

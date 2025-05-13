@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bummix2yfrurw"
 path.s3tc="res://.godot/imported/mp_magnifier broken1_TCom_Wood_Worn2_512_normal.png-dc50e5934ad7c522fe7b9ba35f26d7bc.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_magnifier broken1_TCom_Wood_Worn2_512_normal.png-dc50e5934ad7c522fe7b9ba35f26d7bc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/magnifier broken/mp_magnifier broken1_TCom_Wood_Worn2_512_normal.png"
-dest_files=["res://.godot/imported/mp_magnifier broken1_TCom_Wood_Worn2_512_normal.png-dc50e5934ad7c522fe7b9ba35f26d7bc.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_magnifier broken1_TCom_Wood_Worn2_512_normal.png-dc50e5934ad7c522fe7b9ba35f26d7bc.s3tc.ctex", "res://.godot/imported/mp_magnifier broken1_TCom_Wood_Worn2_512_normal.png-dc50e5934ad7c522fe7b9ba35f26d7bc.etc2.ctex"]
 
 [params]
 

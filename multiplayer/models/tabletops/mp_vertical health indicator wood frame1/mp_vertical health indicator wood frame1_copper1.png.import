@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxcdehe130ov6"
 path.s3tc="res://.godot/imported/mp_vertical health indicator wood frame1_copper1.png-d1c0b5dfd67e5d335e3bdcc7678418c5.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_vertical health indicator wood frame1_copper1.png-d1c0b5dfd67e5d335e3bdcc7678418c5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_vertical health indicator wood frame1/mp_vertical health indicator wood frame1_copper1.png"
-dest_files=["res://.godot/imported/mp_vertical health indicator wood frame1_copper1.png-d1c0b5dfd67e5d335e3bdcc7678418c5.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_vertical health indicator wood frame1_copper1.png-d1c0b5dfd67e5d335e3bdcc7678418c5.s3tc.ctex", "res://.godot/imported/mp_vertical health indicator wood frame1_copper1.png-d1c0b5dfd67e5d335e3bdcc7678418c5.etc2.ctex"]
 
 [params]
 

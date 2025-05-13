@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ci2kuhc45b47r"
 path.s3tc="res://.godot/imported/mp_ice machine model1_ice machine base2.jpg-d30108435546ff6ac53523ab6387fada.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_ice machine model1_ice machine base2.jpg-d30108435546ff6ac53523ab6387fada.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://multiplayer/models/misc/mp_ice machine model1/mp_ice machine model1_ice machine base2.jpg"
-dest_files=["res://.godot/imported/mp_ice machine model1_ice machine base2.jpg-d30108435546ff6ac53523ab6387fada.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_ice machine model1_ice machine base2.jpg-d30108435546ff6ac53523ab6387fada.s3tc.ctex", "res://.godot/imported/mp_ice machine model1_ice machine base2.jpg-d30108435546ff6ac53523ab6387fada.etc2.ctex"]
 
 [params]
 

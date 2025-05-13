@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c61mn46wqey4k"
 path.s3tc="res://.godot/imported/tabletop blockout2_tabletop main4.png-48c4e93a6f954d381306599d70af0154.s3tc.ctex"
+path.etc2="res://.godot/imported/tabletop blockout2_tabletop main4.png-48c4e93a6f954d381306599d70af0154.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/tabletop blockout2/tabletop blockout2_tabletop main4.png"
-dest_files=["res://.godot/imported/tabletop blockout2_tabletop main4.png-48c4e93a6f954d381306599d70af0154.s3tc.ctex"]
+dest_files=["res://.godot/imported/tabletop blockout2_tabletop main4.png-48c4e93a6f954d381306599d70af0154.s3tc.ctex", "res://.godot/imported/tabletop blockout2_tabletop main4.png-48c4e93a6f954d381306599d70af0154.etc2.ctex"]
 
 [params]
 

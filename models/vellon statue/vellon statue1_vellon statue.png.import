@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://n3wsc72gb5s0"
 path.s3tc="res://.godot/imported/vellon statue1_vellon statue.png-cb1643aae96dcd7aa2719311aded168e.s3tc.ctex"
+path.etc2="res://.godot/imported/vellon statue1_vellon statue.png-cb1643aae96dcd7aa2719311aded168e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://models/vellon statue/vellon statue1_vellon statue.png"
-dest_files=["res://.godot/imported/vellon statue1_vellon statue.png-cb1643aae96dcd7aa2719311aded168e.s3tc.ctex"]
+dest_files=["res://.godot/imported/vellon statue1_vellon statue.png-cb1643aae96dcd7aa2719311aded168e.s3tc.ctex", "res://.godot/imported/vellon statue1_vellon statue.png-cb1643aae96dcd7aa2719311aded168e.etc2.ctex"]
 
 [params]
 

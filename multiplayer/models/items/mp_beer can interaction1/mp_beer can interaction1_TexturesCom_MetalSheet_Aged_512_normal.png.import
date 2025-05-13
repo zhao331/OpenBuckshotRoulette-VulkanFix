@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dieq8td0odc5m"
 path.s3tc="res://.godot/imported/mp_beer can interaction1_TexturesCom_MetalSheet_Aged_512_normal.png-fdf6f11e2ba5e7e35e7bae4e4985627c.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_beer can interaction1_TexturesCom_MetalSheet_Aged_512_normal.png-fdf6f11e2ba5e7e35e7bae4e4985627c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/items/mp_beer can interaction1/mp_beer can interaction1_TexturesCom_MetalSheet_Aged_512_normal.png"
-dest_files=["res://.godot/imported/mp_beer can interaction1_TexturesCom_MetalSheet_Aged_512_normal.png-fdf6f11e2ba5e7e35e7bae4e4985627c.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_beer can interaction1_TexturesCom_MetalSheet_Aged_512_normal.png-fdf6f11e2ba5e7e35e7bae4e4985627c.s3tc.ctex", "res://.godot/imported/mp_beer can interaction1_TexturesCom_MetalSheet_Aged_512_normal.png-fdf6f11e2ba5e7e35e7bae4e4985627c.etc2.ctex"]
 
 [params]
 

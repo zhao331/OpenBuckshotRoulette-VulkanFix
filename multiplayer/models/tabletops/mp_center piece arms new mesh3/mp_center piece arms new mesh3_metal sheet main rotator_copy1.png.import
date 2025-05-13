@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfrf4swjxrll0"
 path.s3tc="res://.godot/imported/mp_center piece arms new mesh3_metal sheet main rotator_copy1.png-f38ab3ecd5cafb1a2f08aec2ae493c38.s3tc.ctex"
+path.etc2="res://.godot/imported/mp_center piece arms new mesh3_metal sheet main rotator_copy1.png-f38ab3ecd5cafb1a2f08aec2ae493c38.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://multiplayer/models/tabletops/mp_center piece arms new mesh3/mp_center piece arms new mesh3_metal sheet main rotator_copy1.png"
-dest_files=["res://.godot/imported/mp_center piece arms new mesh3_metal sheet main rotator_copy1.png-f38ab3ecd5cafb1a2f08aec2ae493c38.s3tc.ctex"]
+dest_files=["res://.godot/imported/mp_center piece arms new mesh3_metal sheet main rotator_copy1.png-f38ab3ecd5cafb1a2f08aec2ae493c38.s3tc.ctex", "res://.godot/imported/mp_center piece arms new mesh3_metal sheet main rotator_copy1.png-f38ab3ecd5cafb1a2f08aec2ae493c38.etc2.ctex"]
 
 [params]
 
