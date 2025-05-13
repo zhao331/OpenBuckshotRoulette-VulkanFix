@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c0bhrtw1h7xmo"
+path="res://.godot/imported/table mp_shell sequence machine1_Metal023_1K-JPG_Color_edited.png-14c86e235ab6e537d188aea62bd6a6be.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/table mp_shell sequence machine1/table mp_shell sequence machine1_Metal023_1K-JPG_Color_edited.png"
+dest_files=["res://.godot/imported/table mp_shell sequence machine1_Metal023_1K-JPG_Color_edited.png-14c86e235ab6e537d188aea62bd6a6be.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

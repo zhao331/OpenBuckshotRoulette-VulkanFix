@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3 uid="uid://usnf24a4snwg"]
+
+[ext_resource type="Script" uid="uid://bqdg16e7amc44" path="res://multiplayer/scripts/global scripts/MP_Matchmaking_Result.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cylsdupptnccs" path="res://multiplayer/textures/green1.png" id="2"]
+[ext_resource type="FontFile" uid="uid://vhj3kkn6yn8o" path="res://fonts/fake receipt.otf" id="3"]
+[ext_resource type="Theme" uid="uid://byh50rlarrsdb" path="res://misc/button_theme1.tres" id="4"]
+[ext_resource type="Script" uid="uid://dpf4l6f2v8gy3" path="res://multiplayer/scripts/global scripts/MP_ButtonClassMain.gd" id="5"]
+
+[node name="lobby result" type="TextureRect"]
+custom_minimum_size = Vector2(5, 41.34)
+expand_mode = 1
+
+[node name="lobby result branch" type="Node" parent="." node_paths=PackedStringArray("label_number", "label_count", "button_class")]
+script = ExtResource("1")
+label_number = NodePath("../lobby result number")
+label_count = NodePath("../lobby result player count")
+button_class = NodePath("../lobby result join button/button_lobby result join/button class_lobby result join")
+
+[node name="lobby result border" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 373.0
+offset_bottom = 37.0
+texture = ExtResource("2")
+draw_center = false
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="lobby result number" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 25.0
+offset_top = -14.67
+offset_right = 553.0
+offset_bottom = 34.33
+grow_vertical = 2
+scale = Vector2(0.353604, 0.600272)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 33
+text = "#_001"
+
+[node name="lobby result player count" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 117.0
+offset_top = -14.67
+offset_right = 645.0
+offset_bottom = 34.33
+grow_vertical = 2
+scale = Vector2(0.353604, 0.600272)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 33
+text = "1 / 4"
+
+[node name="lobby result join button" type="Label" parent="."]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 275.0
+offset_top = 7.0
+offset_right = 492.0
+offset_bottom = 56.0
+grow_horizontal = 0
+scale = Vector2(0.353604, 0.600272)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 33
+text = "MP_JOIN"
+horizontal_alignment = 2
+
+[node name="button_lobby result join" type="Button" parent="lobby result join button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 8.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4")
+
+[node name="button class_lobby result join" type="Node" parent="lobby result join button/button_lobby result join" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+alias = "lobby result join"
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+separated_from_lobby_scene = true

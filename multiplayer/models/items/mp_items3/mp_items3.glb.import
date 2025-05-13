@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cjqx0aa8ngrdo"
+path="res://.godot/imported/mp_items3.glb-cf290e6d51527d6d2859d0143627c72c.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_items3/mp_items3.glb"
+dest_files=["res://.godot/imported/mp_items3.glb-cf290e6d51527d6d2859d0143627c72c.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c46fegwe52025"
+path="res://.godot/imported/table mp_shell sequence machine blockout1.glb-dcc6d0649516386816836ddb9b209bec.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/table mp_shell sequence machine blockout1/table mp_shell sequence machine blockout1.glb"
+dest_files=["res://.godot/imported/table mp_shell sequence machine blockout1.glb-dcc6d0649516386816836ddb9b209bec.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cfm0dmsaaxisq"
+path="res://.godot/imported/exterior window emission plane segment2.glb-637a1522a40d0d0b17738960a2473b6c.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/exterior environment/exterior window emission plane segment2/exterior window emission plane segment2.glb"
+dest_files=["res://.godot/imported/exterior window emission plane segment2.glb-637a1522a40d0d0b17738960a2473b6c.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

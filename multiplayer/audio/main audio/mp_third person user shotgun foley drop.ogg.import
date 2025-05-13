@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cnxbn2resxp1s"
+path="res://.godot/imported/mp_third person user shotgun foley drop.ogg-aa9575ce3c3f93c806b4e76bd41d6cd7.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_third person user shotgun foley drop.ogg"
+dest_files=["res://.godot/imported/mp_third person user shotgun foley drop.ogg-aa9575ce3c3f93c806b4e76bd41d6cd7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

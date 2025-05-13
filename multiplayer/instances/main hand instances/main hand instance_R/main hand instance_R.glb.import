@@ -1,0 +1,25 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dgd3eke7o7joy"
+path="res://.godot/imported/main hand instance_R.glb-7bc2551ea5d68e86a3735be275842c2f.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/main hand instance_R/main hand instance_R.glb"
+dest_files=["res://.godot/imported/main hand instance_R.glb-7bc2551ea5d68e86a3735be275842c2f.scn"]
+
+[params]
+
+dummy_value_ignore_me=0
+_subresources={
+"animations": {
+"track_R_reset position": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://multiplayer/separate animation files/track_R_reset position.res"
+}
+}
+}

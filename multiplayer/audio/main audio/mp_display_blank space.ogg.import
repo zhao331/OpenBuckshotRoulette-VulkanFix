@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dvdgnw7acxfjr"
+path="res://.godot/imported/mp_display_blank space.ogg-1f2b664071293b4c54651e41a2655f0d.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_display_blank space.ogg"
+dest_files=["res://.godot/imported/mp_display_blank space.ogg-1f2b664071293b4c54651e41a2655f0d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cqn1ris1pino2"
+path="res://.godot/imported/mp_customization hand wire hole1.glb-71af9579355409a78aacb7cf9c84ec7d.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/mp_customization hand wire hole1/mp_customization hand wire hole1.glb"
+dest_files=["res://.godot/imported/mp_customization hand wire hole1.glb-71af9579355409a78aacb7cf9c84ec7d.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

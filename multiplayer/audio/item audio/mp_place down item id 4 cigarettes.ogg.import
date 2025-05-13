@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdgl8ymthvdao"
+path="res://.godot/imported/mp_place down item id 4 cigarettes.ogg-e8709d727fddc8be8deb94b4336101ff.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_place down item id 4 cigarettes.ogg"
+dest_files=["res://.godot/imported/mp_place down item id 4 cigarettes.ogg-e8709d727fddc8be8deb94b4336101ff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

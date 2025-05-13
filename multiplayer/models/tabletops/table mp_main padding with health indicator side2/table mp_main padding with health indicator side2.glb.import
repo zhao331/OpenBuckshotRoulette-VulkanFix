@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://run7gsjotnd1"
+path="res://.godot/imported/table mp_main padding with health indicator side2.glb-b86b59ae51032659e66ab5e77806a9f2.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/table mp_main padding with health indicator side2/table mp_main padding with health indicator side2.glb"
+dest_files=["res://.godot/imported/table mp_main padding with health indicator side2.glb-b86b59ae51032659e66ab5e77806a9f2.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

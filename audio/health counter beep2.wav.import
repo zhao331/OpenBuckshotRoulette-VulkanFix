@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://syxcd56vtgjw"
+path="res://.godot/imported/health counter beep2.wav-5241d040ca7e72f2847a29f2d2060d27.sample"
+
+[deps]
+
+source_file="res://audio/health counter beep2.wav"
+dest_files=["res://.godot/imported/health counter beep2.wav-5241d040ca7e72f2847a29f2d2060d27.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

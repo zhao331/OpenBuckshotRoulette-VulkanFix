@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dorogwilb13cy"]
+
+[ext_resource type="Texture2D" uid="uid://cujv24k3arcgg" path="res://multiplayer/textures/mp_round indicator circle.png" id="1"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1")

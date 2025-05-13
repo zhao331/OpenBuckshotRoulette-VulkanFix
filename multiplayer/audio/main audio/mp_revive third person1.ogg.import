@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwarx1g8e2kjp"
+path="res://.godot/imported/mp_revive third person1.ogg-6459d91eff5a518ae494159220c90b1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_revive third person1.ogg"
+dest_files=["res://.godot/imported/mp_revive third person1.ogg-6459d91eff5a518ae494159220c90b1e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

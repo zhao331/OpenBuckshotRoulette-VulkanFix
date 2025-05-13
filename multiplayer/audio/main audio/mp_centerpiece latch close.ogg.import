@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhejy8k6lf8rq"
+path="res://.godot/imported/mp_centerpiece latch close.ogg-b61a8ef8b7b26c1528864c804f653785.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_centerpiece latch close.ogg"
+dest_files=["res://.godot/imported/mp_centerpiece latch close.ogg-b61a8ef8b7b26c1528864c804f653785.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

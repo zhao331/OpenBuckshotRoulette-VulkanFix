@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ds8aj0qurfhl0"
+path="res://.godot/imported/mp_customization gas mask1.glb-3e49283bc3b2e891286fd40f1386f272.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/mp_customization gas mask1/mp_customization gas mask1.glb"
+dest_files=["res://.godot/imported/mp_customization gas mask1.glb-3e49283bc3b2e891286fd40f1386f272.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

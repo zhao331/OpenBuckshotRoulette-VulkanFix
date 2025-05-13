@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dfhv1d32r7v6l"
+path="res://.godot/imported/dealer flow1.glb-c3d303a54dcfca194bd5520b1a663ac8.scn"
+
+[deps]
+
+source_file="res://models/dealer flow1.glb"
+dest_files=["res://.godot/imported/dealer flow1.glb-c3d303a54dcfca194bd5520b1a663ac8.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

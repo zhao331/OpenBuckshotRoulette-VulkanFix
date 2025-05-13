@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxcqh2q4b8euu"
+path="res://.godot/imported/mp_gun fire2.ogg-be5bb7bf222bbf5e1b27ffcf58bd8073.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_gun fire2.ogg"
+dest_files=["res://.godot/imported/mp_gun fire2.ogg-be5bb7bf222bbf5e1b27ffcf58bd8073.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

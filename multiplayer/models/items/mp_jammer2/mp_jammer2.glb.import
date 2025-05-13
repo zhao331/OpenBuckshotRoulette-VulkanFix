@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dnj21ntvktvdk"
+path="res://.godot/imported/mp_jammer2.glb-29fdcff1c3c7e3e355f72801335a7e7d.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_jammer2/mp_jammer2.glb"
+dest_files=["res://.godot/imported/mp_jammer2.glb-29fdcff1c3c7e3e355f72801335a7e7d.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

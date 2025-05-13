@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djk4d0y86vttq"
+path="res://.godot/imported/mp_use item first person id 8 adrenaline.ogg-9fc06cda974d9bcfe72d3e2e634e5a34.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_use item first person id 8 adrenaline.ogg"
+dest_files=["res://.godot/imported/mp_use item first person id 8 adrenaline.ogg-9fc06cda974d9bcfe72d3e2e634e5a34.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

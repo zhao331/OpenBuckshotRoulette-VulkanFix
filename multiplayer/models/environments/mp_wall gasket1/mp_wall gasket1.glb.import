@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dlhsejw62pg61"
+path="res://.godot/imported/mp_wall gasket1.glb-713bf6ffc5da775d51d26a0e021589b0.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/mp_wall gasket1/mp_wall gasket1.glb"
+dest_files=["res://.godot/imported/mp_wall gasket1.glb-713bf6ffc5da775d51d26a0e021589b0.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

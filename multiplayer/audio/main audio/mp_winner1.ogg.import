@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4sjfvyc2fc5j"
+path="res://.godot/imported/mp_winner1.ogg-4de7f12aad7761f01b737f5fd8b231cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_winner1.ogg"
+dest_files=["res://.godot/imported/mp_winner1.ogg-4de7f12aad7761f01b737f5fd8b231cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dlprcn077yrmu"]
+
+[ext_resource type="Texture2D" uid="uid://dlactfcpn116n" path="res://multiplayer/textures/jammer interface/jammer screen dirt overlay.png" id="1"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0.160784)
+albedo_texture = ExtResource("1")

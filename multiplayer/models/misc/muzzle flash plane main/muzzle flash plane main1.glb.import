@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c2t3jfn8duxn0"
+path="res://.godot/imported/muzzle flash plane main1.glb-25fa023c86a64a30ce827c3415522362.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/misc/muzzle flash plane main/muzzle flash plane main1.glb"
+dest_files=["res://.godot/imported/muzzle flash plane main1.glb-25fa023c86a64a30ce827c3415522362.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

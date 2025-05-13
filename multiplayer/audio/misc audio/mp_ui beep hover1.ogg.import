@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://uh3i4ax6xcm6"
+path="res://.godot/imported/mp_ui beep hover1.ogg-c58acc58a4fbfa3165e1b51bb0500c9a.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/mp_ui beep hover1.ogg"
+dest_files=["res://.godot/imported/mp_ui beep hover1.ogg-c58acc58a4fbfa3165e1b51bb0500c9a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

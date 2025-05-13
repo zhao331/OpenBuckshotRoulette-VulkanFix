@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dq08qyu3f5lam"
+path="res://.godot/imported/mp_use item third person id 3 jammer idle state pressing button loop.ogg-6e84bd17b110fd85928decd17ffd36a0.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_use item third person id 3 jammer idle state pressing button loop.ogg"
+dest_files=["res://.godot/imported/mp_use item third person id 3 jammer idle state pressing button loop.ogg-6e84bd17b110fd85928decd17ffd36a0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

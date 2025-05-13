@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://6me38kyg6pw7"
+path="res://.godot/imported/mp_music jungle loop1.ogg-d1cd4e00a372e55f5e94300ad8dc2f96.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/music/mp_music jungle loop1.ogg"
+dest_files=["res://.godot/imported/mp_music jungle loop1.ogg-d1cd4e00a372e55f5e94300ad8dc2f96.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

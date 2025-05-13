@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://pa6n6s7poquy"
+path="res://.godot/imported/single shell main1.glb-4d235b620f8ed3aa65d88dc764026527.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/misc/single shell/single shell main1.glb"
+dest_files=["res://.godot/imported/single shell main1.glb-4d235b620f8ed3aa65d88dc764026527.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

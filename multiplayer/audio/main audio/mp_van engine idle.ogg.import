@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dny4cpvi6a4sh"
+path="res://.godot/imported/mp_van engine idle.ogg-6e286b534a563504922b51275ef99c9e.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_van engine idle.ogg"
+dest_files=["res://.godot/imported/mp_van engine idle.ogg-6e286b534a563504922b51275ef99c9e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

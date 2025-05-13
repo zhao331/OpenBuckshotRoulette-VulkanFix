@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ffw83t1u8fj7"
+path="res://.godot/imported/mp_health counter error3.ogg-be270c37bc21805496a227f6807c061c.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_health counter error3.ogg"
+dest_files=["res://.godot/imported/mp_health counter error3.ogg-be270c37bc21805496a227f6807c061c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://ljyaq57l5pl3"]
+
+[ext_resource type="StyleBox" uid="uid://qc52xidysnbj" path="res://multiplayer/themes/scroll style1.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://dy0bjqy3hdyo7" path="res://multiplayer/misc/icons/icon_scroll bar tile6.png" id="2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_62ost"]
+texture = ExtResource("2")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(1, 1, 1, 0.596078)
+
+[resource]
+VScrollBar/styles/grabber = ExtResource("1")
+VScrollBar/styles/grabber_highlight = ExtResource("1")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxTexture_62ost")

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://kci5j0ykkwam"
+path="res://.godot/imported/hands1.glb-bd25f6e747c8ead02f100dd39dd1005f.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/hands1/hands1.glb"
+dest_files=["res://.godot/imported/hands1.glb-bd25f6e747c8ead02f100dd39dd1005f.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

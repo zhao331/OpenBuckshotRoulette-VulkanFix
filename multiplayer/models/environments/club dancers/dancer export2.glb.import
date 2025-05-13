@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://diw0x8pnk8d8b"
+path="res://.godot/imported/dancer export2.glb-00b07015626ee384d57a57fbf5c9afb3.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/club dancers/dancer export2.glb"
+dest_files=["res://.godot/imported/dancer export2.glb-00b07015626ee384d57a57fbf5c9afb3.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

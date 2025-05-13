@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://0gxv18ln4one"
+path="res://.godot/imported/mp_center piece arms new mesh3.glb-286a67703a291e15b2134e657ffed01c.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/mp_center piece arms new mesh3/mp_center piece arms new mesh3.glb"
+dest_files=["res://.godot/imported/mp_center piece arms new mesh3.glb-286a67703a291e15b2134e657ffed01c.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

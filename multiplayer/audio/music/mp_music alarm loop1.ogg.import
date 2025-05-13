@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8rrk5a10dvbp"
+path="res://.godot/imported/mp_music alarm loop1.ogg-871332644a0c62ac056b4edde81163d3.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/music/mp_music alarm loop1.ogg"
+dest_files=["res://.godot/imported/mp_music alarm loop1.ogg-871332644a0c62ac056b4edde81163d3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cgdisuvk3y81a"
+path="res://.godot/imported/mp_shell drop3.ogg-88205e753796523269eb49cd76602da4.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_shell drop3.ogg"
+dest_files=["res://.godot/imported/mp_shell drop3.ogg-88205e753796523269eb49cd76602da4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

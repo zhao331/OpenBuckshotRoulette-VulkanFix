@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dehn4iq17qv7c"
+path="res://.godot/imported/mp_player self revive1.ogg-ed0e32810799394f183f81641a51be56.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/mp_player self revive1.ogg"
+dest_files=["res://.godot/imported/mp_player self revive1.ogg-ed0e32810799394f183f81641a51be56.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

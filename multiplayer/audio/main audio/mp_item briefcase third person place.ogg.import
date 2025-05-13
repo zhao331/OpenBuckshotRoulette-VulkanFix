@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crsf31hocw2xv"
+path="res://.godot/imported/mp_item briefcase third person place.ogg-b96a33882af2a9125eb397bd8536ae1f.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_item briefcase third person place.ogg"
+dest_files=["res://.godot/imported/mp_item briefcase third person place.ogg-b96a33882af2a9125eb397bd8536ae1f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

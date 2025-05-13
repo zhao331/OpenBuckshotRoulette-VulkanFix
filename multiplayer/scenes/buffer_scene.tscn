@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://byea4dv0y5hfi"]
+
+[sub_resource type="Environment" id="Environment_7nnwn"]
+background_mode = 1
+
+[node name="buffer_scene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7nnwn")
+
+[node name="Camera3D" type="Camera3D" parent="."]

@@ -1,0 +1,51 @@
+[gd_resource type="AudioBusLayout" load_steps=4 format=3 uid="uid://dw7csbbx06yrf"]
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_gekap"]
+resource_name = "Reverb"
+room_size = 0.16
+damping = 1.0
+spread = 0.0
+hipass = 1.0
+wet = 1.0
+
+[sub_resource type="AudioEffectLimiter" id="AudioEffectLimiter_tlp4f"]
+resource_name = "Limiter"
+soft_clip_db = 6.0
+soft_clip_ratio = 20.0
+
+[sub_resource type="AudioEffectLowPassFilter" id="AudioEffectLowPassFilter_fmq2g"]
+resource_name = "LowPassFilter"
+cutoff_hz = 610.0
+
+[resource]
+bus/0/volume_db = 0.00282288
+bus/0/effect/0/effect = SubResource("AudioEffectReverb_gekap")
+bus/0/effect/0/enabled = false
+bus/0/effect/1/effect = SubResource("AudioEffectLimiter_tlp4f")
+bus/0/effect/1/enabled = false
+bus/1/name = &"music"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/1/effect/0/effect = SubResource("AudioEffectLowPassFilter_fmq2g")
+bus/1/effect/0/enabled = true
+bus/2/name = &"music_secondary"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/3/name = &"interactions"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = &"Master"
+bus/4/name = &"music_resolve"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = 0.0
+bus/4/send = &"Master"

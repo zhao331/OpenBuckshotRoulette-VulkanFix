@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://sjf4nbfu5tn8"
+path="res://.godot/imported/main hand instance separate mesh test1_L.glb-e26023a47ea31c4b90dfcf3c9fb1ba83.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/main hand instance separate mesh test1_L/main hand instance separate mesh test1_L.glb"
+dest_files=["res://.godot/imported/main hand instance separate mesh test1_L.glb-e26023a47ea31c4b90dfcf3c9fb1ba83.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,8 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://qc52xidysnbj"]
+
+[ext_resource type="Texture2D" uid="uid://dy0bjqy3hdyo7" path="res://multiplayer/misc/icons/icon_scroll bar tile6.png" id="1"]
+
+[resource]
+texture = ExtResource("1")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2

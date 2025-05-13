@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://70cgrvoyrmdr"
+path="res://.godot/imported/globe2.glb-71e8b8355d5128afc15c8fc129bf1cd4.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/misc/globe2/globe2.glb"
+dest_files=["res://.godot/imported/globe2.glb-71e8b8355d5128afc15c8fc129bf1cd4.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

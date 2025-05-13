@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cqwfa1flcplvh"]
+
+[ext_resource type="Texture2D" uid="uid://c2c3s1floenbr" path="res://multiplayer/textures/mp_shell live default.png" id="1"]
+
+[resource]
+albedo_texture = ExtResource("1")
+metallic_specular = 0.0

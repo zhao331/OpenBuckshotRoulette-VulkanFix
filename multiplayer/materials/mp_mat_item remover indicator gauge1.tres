@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bin64cx6laxff"]
+
+[ext_resource type="Texture2D" uid="uid://bs66bgft5rvrb" path="res://multiplayer/models/tabletops/item remover main2/item remover main2_gauge indicator2_green.png" id="1"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1")

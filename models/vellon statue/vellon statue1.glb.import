@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dsx1ytg8foj2p"
+path="res://.godot/imported/vellon statue1.glb-50406817c0ba660ca94bf8af8c71f0c3.scn"
+
+[deps]
+
+source_file="res://models/vellon statue/vellon statue1.glb"
+dest_files=["res://.godot/imported/vellon statue1.glb-50406817c0ba660ca94bf8af8c71f0c3.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://qjt88x2abk0e"
+path="res://.godot/imported/mp_customization temp_hand wire2.glb-97237a92607f34b7573b18951f587a76.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/mp_customization temp_hand wire2/mp_customization temp_hand wire2.glb"
+dest_files=["res://.godot/imported/mp_customization temp_hand wire2.glb-97237a92607f34b7573b18951f587a76.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

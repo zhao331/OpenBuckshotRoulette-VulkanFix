@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8c2c18b56yk8"
+path="res://.godot/imported/mp_music desolate loop3.ogg-0bf5e9eb109a4e1865f82b81d37cd670.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/music/mp_music desolate loop3.ogg"
+dest_files=["res://.godot/imported/mp_music desolate loop3.ogg-0bf5e9eb109a4e1865f82b81d37cd670.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

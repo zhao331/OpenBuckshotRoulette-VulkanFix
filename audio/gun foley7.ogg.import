@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dvhh3butj4yff"
+path="res://.godot/imported/gun foley7.ogg-bc7728b24aabbac122c1abb06bd457ae.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/gun foley7.ogg"
+dest_files=["res://.godot/imported/gun foley7.ogg-bc7728b24aabbac122c1abb06bd457ae.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

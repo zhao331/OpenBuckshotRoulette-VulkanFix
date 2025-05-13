@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://oxsuiceob6pw"
+path="res://.godot/imported/interior environment wall separate1.glb-9c44355f396cc3fe2f53c6f8ce611d18.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/interior environment/interior environment wall separate1/interior environment wall separate1.glb"
+dest_files=["res://.godot/imported/interior environment wall separate1.glb-9c44355f396cc3fe2f53c6f8ce611d18.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

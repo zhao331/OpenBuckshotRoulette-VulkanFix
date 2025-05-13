@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c23ai7rkvkiyb"
+path="res://.godot/imported/bird copy1.glb-7e2f0407d49d3dd426df578f74a22a7b.scn"
+
+[deps]
+
+source_file="res://models/bird copy1/bird copy1.glb"
+dest_files=["res://.godot/imported/bird copy1.glb-7e2f0407d49d3dd426df578f74a22a7b.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

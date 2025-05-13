@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d1fir1o0157lf"
+path="res://.godot/imported/mp_player death glimpse1.ogg-a14829ab118b40a7a3860674acd8e7bd.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/mp_player death glimpse1.ogg"
+dest_files=["res://.godot/imported/mp_player death glimpse1.ogg-a14829ab118b40a7a3860674acd8e7bd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

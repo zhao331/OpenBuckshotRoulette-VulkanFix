@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmjugtsahnko8"
+path="res://.godot/imported/mp_fan loop1.ogg-7b49a024b8be41d6dc2d0ab7cae6d23c.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_fan loop1.ogg"
+dest_files=["res://.godot/imported/mp_fan loop1.ogg-7b49a024b8be41d6dc2d0ab7cae6d23c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

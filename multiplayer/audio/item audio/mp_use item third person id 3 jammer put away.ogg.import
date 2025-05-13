@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1isfikmmhlo3"
+path="res://.godot/imported/mp_use item third person id 3 jammer put away.ogg-066c5c5363c6a38722a5d9a6a0866da7.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_use item third person id 3 jammer put away.ogg"
+dest_files=["res://.godot/imported/mp_use item third person id 3 jammer put away.ogg-066c5c5363c6a38722a5d9a6a0866da7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

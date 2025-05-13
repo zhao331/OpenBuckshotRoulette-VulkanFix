@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cykyh4xjrytv2"
+path="res://.godot/imported/hands_briefcase1.glb-fb13d7c208bdc2757e6a4d0704ccd1e8.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/hands_briefcase1/hands_briefcase1.glb"
+dest_files=["res://.godot/imported/hands_briefcase1.glb-fb13d7c208bdc2757e6a4d0704ccd1e8.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

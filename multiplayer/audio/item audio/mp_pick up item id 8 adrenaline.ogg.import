@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8eebe4alfwpv"
+path="res://.godot/imported/mp_pick up item id 8 adrenaline.ogg-ee0dcc3cfbfbb8ea819a72645896bf8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_pick up item id 8 adrenaline.ogg"
+dest_files=["res://.godot/imported/mp_pick up item id 8 adrenaline.ogg-ee0dcc3cfbfbb8ea819a72645896bf8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

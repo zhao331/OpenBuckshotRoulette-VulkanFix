@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://n22uy77lbgje"
+path="res://.godot/imported/mp_ice machine model1.glb-aa83c826bf29b95f773f550e7729a5b7.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/misc/mp_ice machine model1/mp_ice machine model1.glb"
+dest_files=["res://.godot/imported/mp_ice machine model1.glb-aa83c826bf29b95f773f550e7729a5b7.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

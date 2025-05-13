@@ -1,0 +1,124 @@
+[gd_scene load_steps=18 format=3 uid="uid://b7k75i600v4ac"]
+
+[ext_resource type="Script" uid="uid://b4nb40l32d4s1" path="res://multiplayer/scripts/user scripts/MP_UserInstanceProperties.gd" id="1"]
+[ext_resource type="Script" uid="uid://pvoypjxfsycs" path="res://multiplayer/scripts/MP_CursorManager.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dedtwku3flpwn" path="res://misc/cursor xp_point.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c3bbirq6hrrbg" path="res://misc/cursor xp_hover.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b2c5cqp35jayo" path="res://misc/cursor xp_invalid bigger.png" id="5"]
+[ext_resource type="Script" uid="uid://bp3sw7i0p00bo" path="res://multiplayer/scripts/user scripts/MP_CameraManager.gd" id="6"]
+[ext_resource type="Script" uid="uid://b2ufjqaw3aosr" path="res://multiplayer/scripts/user scripts/MP_CameraSocket.gd" id="7"]
+[ext_resource type="AudioStream" uid="uid://c4wea7spoym1a" path="res://audio/camera pan test.ogg" id="8"]
+[ext_resource type="AudioStream" uid="uid://bjdi7iwcps58" path="res://audio/show cursor.ogg" id="9"]
+[ext_resource type="Script" uid="uid://cp2p1ceu8xu88" path="res://multiplayer/scripts/user scripts/MP_MouseRaycast.gd" id="10"]
+[ext_resource type="Shader" uid="uid://ci2t4jjagxk81" path="res://main player/posterization test.gdshader" id="11"]
+
+[sub_resource type="Resource" id="Resource_qf0ir"]
+script = ExtResource("7")
+socketName = "home"
+pos = Vector3(0, 0, 0)
+rot = Vector3(-43.1, 90, 0)
+fov = 58.5
+
+[sub_resource type="Resource" id="Resource_ucsyr"]
+script = ExtResource("7")
+socketName = "enemy left"
+pos = Vector3(0, 0, 0)
+rot = Vector3(-17.6, 131.3, -3.3)
+fov = 48.0
+
+[sub_resource type="Resource" id="Resource_521dq"]
+script = ExtResource("7")
+socketName = "enemy forward"
+pos = Vector3(0, 0, 0)
+rot = Vector3(-12, 91, -3)
+fov = 48.0
+
+[sub_resource type="Resource" id="Resource_lpwps"]
+script = ExtResource("7")
+socketName = "enemy right"
+pos = Vector3(0, 0, 0)
+rot = Vector3(-17.6, 52.9, 3.3)
+fov = 48.0
+
+[sub_resource type="Resource" id="Resource_8n62p"]
+script = ExtResource("7")
+socketName = "health counter"
+pos = Vector3(-4.568, -5.199, -0.057)
+rot = Vector3(-51.2, 95, -4.2)
+fov = 53.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h63kb"]
+shader = ExtResource("11")
+shader_parameter/SCREEN_WIDTH = 1920.0
+shader_parameter/RED_COMPONENT = 8.0
+shader_parameter/GREEN_COMPONENT = 8.0
+shader_parameter/BLUE_COMPONENT = 8.0
+
+[node name="user instance_main" type="Node3D"]
+
+[node name="user managers" type="Node" parent="."]
+
+[node name="user_properties" type="Node" parent="user managers"]
+script = ExtResource("1")
+
+[node name="user_cursor manager" type="Node" parent="user managers" node_paths=PackedStringArray("speaker")]
+script = ExtResource("2")
+speaker = NodePath("../../user speakers/speaker_show cursor")
+cursor_point = ExtResource("3")
+cursor_hover = ExtResource("4")
+cursor_invalid = ExtResource("5")
+
+[node name="user_camera manager" type="Node" parent="user managers" node_paths=PackedStringArray("cam", "speaker_pan")]
+script = ExtResource("6")
+cam = NodePath("../../camera main parent/camera secondary parent/camera sub parent/user camera")
+speaker_pan = NodePath("../../user speakers/user speaker_camera pan")
+socketArray = [SubResource("Resource_qf0ir"), SubResource("Resource_ucsyr"), SubResource("Resource_521dq"), SubResource("Resource_lpwps"), SubResource("Resource_8n62p")]
+dur = 0.6
+isPlayingSound = true
+
+[node name="user speakers" type="Node3D" parent="."]
+
+[node name="user speaker_camera pan" type="AudioStreamPlayer2D" parent="user speakers"]
+stream = ExtResource("8")
+volume_db = 3.0
+
+[node name="speaker_show cursor" type="AudioStreamPlayer2D" parent="user speakers"]
+stream = ExtResource("9")
+volume_db = 1.5
+max_polyphony = 60
+panning_strength = 0.0
+
+[node name="camera main parent" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.194, 8.568, 0)
+
+[node name="camera secondary parent" type="Node3D" parent="camera main parent"]
+
+[node name="camera sub parent" type="Node3D" parent="camera main parent/camera secondary parent"]
+
+[node name="user camera" type="Camera3D" parent="camera main parent/camera secondary parent/camera sub parent"]
+transform = Transform3D(-4.37114e-08, -0.683274, 0.730162, 0, 0.730162, 0.683274, -1, 2.98668e-08, -3.19164e-08, 0, 0, 0)
+current = true
+fov = 58.5
+script = ExtResource("10")
+
+[node name="user UI" type="Node" parent="camera main parent/camera secondary parent/camera sub parent/user camera"]
+
+[node name="posterization test" type="Control" parent="camera main parent/camera secondary parent/camera sub parent/user camera/user UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="camera main parent/camera secondary parent/camera sub parent/user camera/user UI/posterization test"]
+position = Vector2(482, 270)
+scale = Vector2(4.87, 2.75)
+copy_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="camera main parent/camera secondary parent/camera sub parent/user camera/user UI/posterization test/BackBufferCopy"]
+material = SubResource("ShaderMaterial_h63kb")
+offset_left = -99.0
+offset_top = -98.0
+offset_right = 140.0
+offset_bottom = 139.0
+mouse_filter = 2

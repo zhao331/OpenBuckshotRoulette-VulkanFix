@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ggl5dgok2oxa"
+path="res://.godot/imported/mp_use item first person id 2 magnifier.ogg-0f01ab520a987cb4b797d26528ddd4b4.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_use item first person id 2 magnifier.ogg"
+dest_files=["res://.godot/imported/mp_use item first person id 2 magnifier.ogg-0f01ab520a987cb4b797d26528ddd4b4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

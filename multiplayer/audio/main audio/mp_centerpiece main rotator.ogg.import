@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjs3hj0wueflj"
+path="res://.godot/imported/mp_centerpiece main rotator.ogg-df261dde1462de6963039b293ee20a99.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_centerpiece main rotator.ogg"
+dest_files=["res://.godot/imported/mp_centerpiece main rotator.ogg-df261dde1462de6963039b293ee20a99.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

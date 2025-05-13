@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7n8vhak6f785"
+path="res://.godot/imported/mp_place down item id 6 burner phone.ogg-ccd333c6314240d2b3ed14ac30daa257.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_place down item id 6 burner phone.ogg"
+dest_files=["res://.godot/imported/mp_place down item id 6 burner phone.ogg-ccd333c6314240d2b3ed14ac30daa257.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

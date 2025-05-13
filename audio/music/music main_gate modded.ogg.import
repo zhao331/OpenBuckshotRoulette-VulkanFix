@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxxvvffvov2w"
+path="res://.godot/imported/music main_gate modded.ogg-090b0385d0d49603356ff7ba36d0575f.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/music/music main_gate modded.ogg"
+dest_files=["res://.godot/imported/music main_gate modded.ogg-090b0385d0d49603356ff7ba36d0575f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c6deh6tpjgr8d"
+path="res://.godot/imported/mp_beer can interaction1.glb-2d21b0ad01aa307ea4551b8e81779d24.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_beer can interaction1/mp_beer can interaction1.glb"
+dest_files=["res://.godot/imported/mp_beer can interaction1.glb-2d21b0ad01aa307ea4551b8e81779d24.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

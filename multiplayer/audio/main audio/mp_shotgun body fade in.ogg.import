@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbkboyk5nmgua"
+path="res://.godot/imported/mp_shotgun body fade in.ogg-586c47f748cef05dea4b1bc2476d92a8.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_shotgun body fade in.ogg"
+dest_files=["res://.godot/imported/mp_shotgun body fade in.ogg-586c47f748cef05dea4b1bc2476d92a8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

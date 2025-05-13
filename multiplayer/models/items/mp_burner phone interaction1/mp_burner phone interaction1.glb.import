@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cow3x0icirdpj"
+path="res://.godot/imported/mp_burner phone interaction1.glb-c51cda9fa3b93596c9ddb3136da16246.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_burner phone interaction1/mp_burner phone interaction1.glb"
+dest_files=["res://.godot/imported/mp_burner phone interaction1.glb-c51cda9fa3b93596c9ddb3136da16246.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

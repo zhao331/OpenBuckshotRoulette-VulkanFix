@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://h1l2xhpf20l7"
+path="res://.godot/imported/mp_gunshot_blank.wav-14fe852e28d5c28151c9bacbe98608be.sample"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/mp_gunshot_blank.wav"
+dest_files=["res://.godot/imported/mp_gunshot_blank.wav-14fe852e28d5c28151c9bacbe98608be.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

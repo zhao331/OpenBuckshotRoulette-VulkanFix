@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dulvtjf15gu6i"
+path="res://.godot/imported/mp_customization welding mask1.glb-74c96fd7111a95ccd680d84d43214812.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/mp_customization welding mask1/mp_customization welding mask1.glb"
+dest_files=["res://.godot/imported/mp_customization welding mask1.glb-74c96fd7111a95ccd680d84d43214812.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

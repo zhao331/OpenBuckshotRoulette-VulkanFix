@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dpp0ll4fuajyb"
+path="res://.godot/imported/placeholder instance1.glb-efee6afcc8d71c0a3d3f9ee0ea6a4402.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/placeholder instance1/placeholder instance1.glb"
+dest_files=["res://.godot/imported/placeholder instance1.glb-efee6afcc8d71c0a3d3f9ee0ea6a4402.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

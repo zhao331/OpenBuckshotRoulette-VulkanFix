@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dw6upakhs7dte"
+path="res://.godot/imported/mp_jammer bootup idle2.ogg-e9ca6823e0fb4d074f3a3fd2a15bd702.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_jammer bootup idle2.ogg"
+dest_files=["res://.godot/imported/mp_jammer bootup idle2.ogg-e9ca6823e0fb4d074f3a3fd2a15bd702.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

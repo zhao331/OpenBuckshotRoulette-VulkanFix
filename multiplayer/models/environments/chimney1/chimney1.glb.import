@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dilkhabh3ybtk"
+path="res://.godot/imported/chimney1.glb-b99c309969209cbeee1b7deb6a7b83c8.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/chimney1/chimney1.glb"
+dest_files=["res://.godot/imported/chimney1.glb-b99c309969209cbeee1b7deb6a7b83c8.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

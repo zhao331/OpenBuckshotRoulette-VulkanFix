@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://rp78nd0nsdda"
+path="res://.godot/imported/turn order indicator1.glb-ec2d7cae05d6536a23dea26ba0cbe511.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/turn order indicator1/turn order indicator1.glb"
+dest_files=["res://.godot/imported/turn order indicator1.glb-ec2d7cae05d6536a23dea26ba0cbe511.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

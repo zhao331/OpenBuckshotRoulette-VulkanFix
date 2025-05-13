@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bxo6jp1c4reqw"
+path="res://.godot/imported/fan blade reimport1.glb-ef44eebcfab2304e5f15f7e53cc9bbed.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/interior environment/fan blade reimport1/fan blade reimport1.glb"
+dest_files=["res://.godot/imported/fan blade reimport1.glb-ef44eebcfab2304e5f15f7e53cc9bbed.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

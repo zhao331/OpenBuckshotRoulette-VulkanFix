@@ -1,0 +1,192 @@
+[gd_scene load_steps=9 format=3 uid="uid://domnxegwr6444"]
+
+[ext_resource type="Script" uid="uid://cuv3km8l0agmf" path="res://multiplayer/scripts/global scripts/MP_MatchCustomization_ItemProperties.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cylsdupptnccs" path="res://multiplayer/textures/green1.png" id="2"]
+[ext_resource type="Theme" uid="uid://byh50rlarrsdb" path="res://misc/button_theme1.tres" id="3"]
+[ext_resource type="Script" uid="uid://dpf4l6f2v8gy3" path="res://multiplayer/scripts/global scripts/MP_ButtonClassMain.gd" id="4"]
+[ext_resource type="Script" uid="uid://eihvbvuf26ef" path="res://multiplayer/scripts/global scripts/MP_MatchCustomization_Branch.gd" id="5"]
+[ext_resource type="FontFile" uid="uid://b0df1ns6fwvs4" path="res://fonts/fonts language/RobotoSlab-Medium_cyrillic.ttf" id="6"]
+[ext_resource type="Texture2D" uid="uid://c0p4n4w7j4du" path="res://multiplayer/misc/mp_icon checkmark.png" id="7"]
+[ext_resource type="FontFile" uid="uid://vhj3kkn6yn8o" path="res://fonts/fake receipt.otf" id="8"]
+
+[node name="custom item variable properties" type="Control" node_paths=PackedStringArray("label_item_name", "label_max_per_player", "label_max_on_table", "checkmark_ingame")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 21.0
+offset_bottom = 22.0
+script = ExtResource("1")
+label_item_name = NodePath("item name label")
+label_max_per_player = NodePath("var per player/var label visible per player")
+label_max_on_table = NodePath("var max on table/var label visible max on table")
+checkmark_ingame = NodePath("var ingame/var checkbox in game")
+
+[node name="var per player" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 18.0
+offset_bottom = 17.0
+texture = ExtResource("2")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_var per player" type="Button" parent="var per player"]
+layout_mode = 0
+offset_right = 474.0
+offset_bottom = 37.0
+scale = Vector2(0.0316404, 0.436859)
+theme = ExtResource("3")
+
+[node name="button class_var per player" type="Node" parent="var per player/button_var per player" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("4")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+right_click_enabled = true
+mouse_wheel_enabled = true
+
+[node name="match customization branch_var per player" type="Node" parent="var per player/button_var per player/button class_var per player" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("5")
+alias = "item per player plus"
+alias_right_click = "item per player minus"
+alias_scroll_up = "item per player plus"
+alias_scroll_down = "item per player minus"
+item_properties = NodePath("../../../..")
+
+[node name="var label visible per player" type="Label" parent="var per player"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 222.0
+offset_bottom = 237.0
+scale = Vector2(0.0582335, 0.0692465)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 171
+text = "1"
+horizontal_alignment = 1
+
+[node name="var max on table" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 1.0
+offset_right = 36.0
+offset_bottom = 17.0
+texture = ExtResource("2")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_var max on table" type="Button" parent="var max on table"]
+layout_mode = 0
+offset_right = 474.0
+offset_bottom = 37.0
+scale = Vector2(0.0316404, 0.436859)
+theme = ExtResource("3")
+
+[node name="button class_var max on table" type="Node" parent="var max on table/button_var max on table" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("4")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+right_click_enabled = true
+mouse_wheel_enabled = true
+
+[node name="match customization branch_var max on table" type="Node" parent="var max on table/button_var max on table/button class_var max on table" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("5")
+alias = "item max on table plus"
+alias_right_click = "item max on table minus"
+alias_scroll_up = "item max on table plus"
+alias_scroll_down = "item max on table minus"
+item_properties = NodePath("../../../..")
+
+[node name="var label visible max on table" type="Label" parent="var max on table"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 222.0
+offset_bottom = 237.0
+scale = Vector2(0.0582335, 0.0692465)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 171
+text = "3"
+horizontal_alignment = 1
+
+[node name="var ingame" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 1.0
+offset_right = 54.0
+offset_bottom = 17.0
+texture = ExtResource("2")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_var ingame" type="Button" parent="var ingame"]
+layout_mode = 0
+offset_right = 474.0
+offset_bottom = 37.0
+scale = Vector2(0.0316404, 0.436859)
+theme = ExtResource("3")
+
+[node name="button class_var ingame" type="Node" parent="var ingame/button_var ingame" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("4")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="match customization branch_var ingame" type="Node" parent="var ingame/button_var ingame/button class_var ingame" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("5")
+alias = "is ingame"
+item_properties = NodePath("../../../..")
+
+[node name="var checkbox in game" type="TextureRect" parent="var ingame"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 49.0
+offset_bottom = 49.0
+scale = Vector2(0.249802, 0.263945)
+mouse_filter = 2
+texture = ExtResource("7")
+
+[node name="item name label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 58.8686
+offset_top = -2.10643
+offset_right = 789.869
+offset_bottom = 252.894
+scale = Vector2(0.362693, 0.544136)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("8")
+theme_override_font_sizes/font_size = 33
+text = "item name here"
+autowrap_mode = 2

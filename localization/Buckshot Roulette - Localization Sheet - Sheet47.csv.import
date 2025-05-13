@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cfs0xq106emg8"
+
+[deps]
+
+files=["res://localization/Buckshot Roulette - Localization Sheet - Sheet47.BR.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.DE.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.EE.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.EN.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ES LATAM.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ES.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.FR.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.IT.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.JA.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.KO.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.PL.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.PT.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.RU.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.TR.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.UA.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ZHS.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ZHT.translation"]
+
+source_file="res://localization/Buckshot Roulette - Localization Sheet - Sheet47.csv"
+dest_files=["res://localization/Buckshot Roulette - Localization Sheet - Sheet47.BR.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.DE.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.EE.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.EN.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ES LATAM.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ES.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.FR.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.IT.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.JA.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.KO.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.PL.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.PT.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.RU.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.TR.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.UA.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ZHS.translation", "res://localization/Buckshot Roulette - Localization Sheet - Sheet47.ZHT.translation"]
+
+[params]
+
+compress=true
+delimiter=0

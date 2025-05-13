@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cthyf4upvpxc7"
+path="res://.godot/imported/temp mesh_pinch1.glb-3fce1cb5b5412318ddbda43124b0f072.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/temp mesh_pinch1/temp mesh_pinch1.glb"
+dest_files=["res://.godot/imported/temp mesh_pinch1.glb-3fce1cb5b5412318ddbda43124b0f072.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

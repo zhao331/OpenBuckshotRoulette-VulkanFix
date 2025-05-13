@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5n7netm3atxr"
+path="res://.godot/imported/mp_item remover main start from latch opening1.ogg-7402b6dcca83b8013dc518dfc6bd7e9a.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_item remover main start from latch opening1.ogg"
+dest_files=["res://.godot/imported/mp_item remover main start from latch opening1.ogg-7402b6dcca83b8013dc518dfc6bd7e9a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

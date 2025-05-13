@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://grolr7i604wq"
+path="res://.godot/imported/mp_beep exit.ogg-702c2a8284abb9eadfa721a21584258d.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/mp_beep exit.ogg"
+dest_files=["res://.godot/imported/mp_beep exit.ogg-702c2a8284abb9eadfa721a21584258d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

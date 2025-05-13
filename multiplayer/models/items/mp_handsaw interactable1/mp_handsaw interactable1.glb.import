@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bfqf5h8hukgpd"
+path="res://.godot/imported/mp_handsaw interactable1.glb-290f5f7942650954cbd51a462899b342.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_handsaw interactable1/mp_handsaw interactable1.glb"
+dest_files=["res://.godot/imported/mp_handsaw interactable1.glb-290f5f7942650954cbd51a462899b342.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

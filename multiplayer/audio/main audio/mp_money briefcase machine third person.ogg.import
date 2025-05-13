@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dm6m7v6wprwu3"
+path="res://.godot/imported/mp_money briefcase machine third person.ogg-d9998a3e433a30ac8082081cff8068ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_money briefcase machine third person.ogg"
+dest_files=["res://.godot/imported/mp_money briefcase machine third person.ogg-d9998a3e433a30ac8082081cff8068ba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

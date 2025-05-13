@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djaeoign3t2ud"
+path="res://.godot/imported/mp_lobby intro1.ogg-a2009652f9a2b3cacf6fffe6b098fb77.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/mp_lobby intro1.ogg"
+dest_files=["res://.godot/imported/mp_lobby intro1.ogg-a2009652f9a2b3cacf6fffe6b098fb77.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

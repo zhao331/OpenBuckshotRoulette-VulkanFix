@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cjd2hmnaqlh5k"
+path="res://.godot/imported/table mp_new frame1.glb-00bee1dd21bef9b389d8a9312afe92a3.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/table mp_new frame1/table mp_new frame1.glb"
+dest_files=["res://.godot/imported/table mp_new frame1.glb-00bee1dd21bef9b389d8a9312afe92a3.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

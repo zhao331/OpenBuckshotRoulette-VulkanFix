@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ca5ku2sawj4pu"
+path="res://.godot/imported/mp_exterior ambience1.ogg-33f36dc514ec5fefa5ad507f837496fa.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/music/mp_exterior ambience1.ogg"
+dest_files=["res://.godot/imported/mp_exterior ambience1.ogg-33f36dc514ec5fefa5ad507f837496fa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dellwdlqogjg0"
+path="res://.godot/imported/place down magnifier.ogg-974f497a26b5d7e1f949205480ada40c.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/place down magnifier.ogg"
+dest_files=["res://.godot/imported/place down magnifier.ogg-974f497a26b5d7e1f949205480ada40c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

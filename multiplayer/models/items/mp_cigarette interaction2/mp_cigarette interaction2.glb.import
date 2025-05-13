@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c1u0ulp00bobv"
+path="res://.godot/imported/mp_cigarette interaction2.glb-947afa181d9fa75627ca1b8d817e136c.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_cigarette interaction2/mp_cigarette interaction2.glb"
+dest_files=["res://.godot/imported/mp_cigarette interaction2.glb-947afa181d9fa75627ca1b8d817e136c.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://d55j85xsx8e6"
+path="res://.godot/imported/exterior window environment new2.glb-58624c78ed9fb25c27cd6ecb6bcb3f7a.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/interior club environment/exterior window environment new2.glb"
+dest_files=["res://.godot/imported/exterior window environment new2.glb-58624c78ed9fb25c27cd6ecb6bcb3f7a.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://oqkr2hpsf88p"
+path="res://.godot/imported/airplane1.glb-e656683ed16513ae3d3cccf7715ea5f2.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/airplane1/airplane1.glb"
+dest_files=["res://.godot/imported/airplane1.glb-e656683ed16513ae3d3cccf7715ea5f2.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

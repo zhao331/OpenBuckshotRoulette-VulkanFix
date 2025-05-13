@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://mhxf6o8kuyh6"
+path="res://.godot/imported/table mp_shell sequence machine hinge1.glb-99222ac14a2e29a2a701b8566d3d8617.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/table mp_shell sequence machine hinge1/table mp_shell sequence machine hinge1.glb"
+dest_files=["res://.godot/imported/table mp_shell sequence machine hinge1.glb-99222ac14a2e29a2a701b8566d3d8617.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

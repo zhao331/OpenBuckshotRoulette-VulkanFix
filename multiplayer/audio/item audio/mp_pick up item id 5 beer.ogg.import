@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bna8ir2w3xc6n"
+path="res://.godot/imported/mp_pick up item id 5 beer.ogg-cd2b2fdb5361d28b08a6e1b95868c59a.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_pick up item id 5 beer.ogg"
+dest_files=["res://.godot/imported/mp_pick up item id 5 beer.ogg-cd2b2fdb5361d28b08a6e1b95868c59a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

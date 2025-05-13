@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bj3qlutnym325"
+path="res://.godot/imported/mp_pick up item id 1 handsaw.ogg-26dc1bd8efc301e42414bf1bc987b903.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_pick up item id 1 handsaw.ogg"
+dest_files=["res://.godot/imported/mp_pick up item id 1 handsaw.ogg-26dc1bd8efc301e42414bf1bc987b903.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cwo3bj8myqsoe"
+path="res://.godot/imported/mp_shell sequence hide2.ogg-30c5697af8f4a8952bcba0be6e77edaa.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_shell sequence hide2.ogg"
+dest_files=["res://.godot/imported/mp_shell sequence hide2.ogg-30c5697af8f4a8952bcba0be6e77edaa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

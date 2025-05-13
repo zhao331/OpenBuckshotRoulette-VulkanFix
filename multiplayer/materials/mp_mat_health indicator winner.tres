@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://epwgo8yhq2a2"]
+
+[ext_resource type="Texture2D" uid="uid://dnnbfv0lcrymu" path="res://multiplayer/textures/health counter winner state temp1.png" id="1"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1")

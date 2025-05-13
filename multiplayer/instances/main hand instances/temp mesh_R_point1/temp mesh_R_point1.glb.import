@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dhrsx7nf0yj2d"
+path="res://.godot/imported/temp mesh_R_point1.glb-d3354b204e8fdbf760f34c8c32417250.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/temp mesh_R_point1/temp mesh_R_point1.glb"
+dest_files=["res://.godot/imported/temp mesh_R_point1.glb-d3354b204e8fdbf760f34c8c32417250.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

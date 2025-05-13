@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bbana0uquwt6e"
+path="res://.godot/imported/tabletop blockout2.glb-1f992214f5ee6244d6f9c70d385a7a38.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/tabletop blockout2/tabletop blockout2.glb"
+dest_files=["res://.godot/imported/tabletop blockout2.glb-1f992214f5ee6244d6f9c70d385a7a38.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

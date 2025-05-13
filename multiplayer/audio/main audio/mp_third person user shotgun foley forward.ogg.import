@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dnbagtcifsx12"
+path="res://.godot/imported/mp_third person user shotgun foley forward.ogg-566ec7731d7588262111277ef39b1357.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_third person user shotgun foley forward.ogg"
+dest_files=["res://.godot/imported/mp_third person user shotgun foley forward.ogg-566ec7731d7588262111277ef39b1357.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cog45v1jbxl8b"
+path="res://.godot/imported/mp_jammer proportions test1.glb-601b52d26378cab915d9bd070242c26e.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_jammer proportions test1/mp_jammer proportions test1.glb"
+dest_files=["res://.godot/imported/mp_jammer proportions test1.glb-601b52d26378cab915d9bd070242c26e.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b5chedildcwjt"
+path="res://.godot/imported/lobby search relay loop1.ogg-6f36d6dbcdb73f4d3ccf8b7660f18202.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/misc audio/lobby search relay loop1.ogg"
+dest_files=["res://.godot/imported/lobby search relay loop1.ogg-6f36d6dbcdb73f4d3ccf8b7660f18202.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

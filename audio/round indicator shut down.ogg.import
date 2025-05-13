@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbo8i47vxomie"
+path="res://.godot/imported/round indicator shut down.ogg-5ae3fe836072c2be25f5098c4e191e4b.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/round indicator shut down.ogg"
+dest_files=["res://.godot/imported/round indicator shut down.ogg-5ae3fe836072c2be25f5098c4e191e4b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

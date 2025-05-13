@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://canv2ajo06eo"
+path="res://.godot/imported/table mp_winner lightshow1.glb-2aef22ebd9d0e65c23c101af6424d278.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/table mp_winner lightshow1/table mp_winner lightshow1.glb"
+dest_files=["res://.godot/imported/table mp_winner lightshow1.glb-2aef22ebd9d0e65c23c101af6424d278.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

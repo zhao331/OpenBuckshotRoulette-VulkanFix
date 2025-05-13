@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tigv7k6j3ke"
+path="res://.godot/imported/mp_use item third person id 3 jammer.ogg-00997a98ebae6b780f5e974781fda5fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_use item third person id 3 jammer.ogg"
+dest_files=["res://.godot/imported/mp_use item third person id 3 jammer.ogg-00997a98ebae6b780f5e974781fda5fb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

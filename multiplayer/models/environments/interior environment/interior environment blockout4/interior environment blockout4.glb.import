@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://3vtn61vsmjrq"
+path="res://.godot/imported/interior environment blockout4.glb-e5c6beda45fd4d16e00dc9a47ca17c14.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/environments/interior environment/interior environment blockout4/interior environment blockout4.glb"
+dest_files=["res://.godot/imported/interior environment blockout4.glb-e5c6beda45fd4d16e00dc9a47ca17c14.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

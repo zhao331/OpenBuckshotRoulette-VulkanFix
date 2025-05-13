@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvvo7mfx3kgnv"]
+
+[ext_resource type="Script" uid="uid://dla6y7dmc7do8" path="res://multiplayer/scripts/global scripts/MP_UserInfoSegment.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dqanxe6dahcg7" path="res://multiplayer/misc/default pfp.png" id="2"]
+[ext_resource type="FontFile" uid="uid://vhj3kkn6yn8o" path="res://fonts/fake receipt.otf" id="3"]
+[ext_resource type="Theme" uid="uid://byh50rlarrsdb" path="res://misc/button_theme1.tres" id="4"]
+[ext_resource type="Script" uid="uid://dpf4l6f2v8gy3" path="res://multiplayer/scripts/global scripts/MP_ButtonClassMain.gd" id="5"]
+
+[node name="user info segment" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 69.0
+offset_top = 106.0
+offset_right = 109.0
+offset_bottom = 146.0
+mouse_filter = 2
+
+[node name="user info segment manager" type="Node" parent="." node_paths=PackedStringArray("ui_profile_picture", "ui_user_name", "ui_user_type", "ui_kick")]
+script = ExtResource("1")
+ui_profile_picture = NodePath("../profile picture")
+ui_user_name = NodePath("../user name")
+ui_user_type = NodePath("../user type")
+ui_kick = NodePath("../button_kick")
+
+[node name="profile picture" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.31659, 1.31659)
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="user name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = -5.0
+offset_right = 1686.0
+offset_bottom = 199.0
+scale = Vector2(0.127137, 0.176226)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 166
+text = "player name"
+
+[node name="user type" type="Label" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 28.0
+offset_right = 1514.0
+offset_bottom = 232.0
+scale = Vector2(0.0805448, 0.112397)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 166
+text = "player type"
+
+[node name="button_kick" type="Button" parent="."]
+layout_mode = 0
+offset_left = 299.0
+offset_top = -6.0
+offset_right = 381.0
+offset_bottom = 76.0
+scale = Vector2(0.351824, 0.457198)
+theme = ExtResource("4")
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 61
+text = "MP_UI KICK"
+alignment = 0
+
+[node name="button class main_kick" type="Node" parent="button_kick" node_paths=PackedStringArray("segment")]
+script = ExtResource("5")
+alias = "kick button"
+segment = NodePath("../../user info segment manager")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xfu7586fad7y"
+path="res://.godot/imported/mp_display_indicator horizontal lines bootup1.ogg-7584ee67411f3f8e1c0bfd39f9e99ee1.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_display_indicator horizontal lines bootup1.ogg"
+dest_files=["res://.godot/imported/mp_display_indicator horizontal lines bootup1.ogg-7584ee67411f3f8e1c0bfd39f9e99ee1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

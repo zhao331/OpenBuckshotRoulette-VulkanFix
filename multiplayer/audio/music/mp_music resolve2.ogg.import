@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://beiiy8nuy6v5m"
+path="res://.godot/imported/mp_music resolve2.ogg-4b61d7950c0bd10890346e60e5b133ec.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/music/mp_music resolve2.ogg"
+dest_files=["res://.godot/imported/mp_music resolve2.ogg-4b61d7950c0bd10890346e60e5b133ec.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

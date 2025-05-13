@@ -1,0 +1,18 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=3 format=3 uid="uid://do05mlg3gwtjo"]
+
+[sub_resource type="Curve" id="Curve_s7p0d"]
+_data = [Vector2(0.00366748, 0), 0.0, 0.0, 0, 0, Vector2(0.0378973, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_wqa6q"]
+curve = SubResource("Curve_s7p0d")
+
+[resource]
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 2.0
+scale_max = 20.0
+scale_curve = SubResource("CurveTexture_wqa6q")
+turbulence_noise_strength = 18.969999313354492
+turbulence_noise_speed = Vector3(0, 0, 10.79)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxpkwae5cwrsw"
+path="res://.godot/imported/mp_grow barrel.ogg-dcf0222b1ee6031a437a6fb3851656a3.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_grow barrel.ogg"
+dest_files=["res://.godot/imported/mp_grow barrel.ogg-dcf0222b1ee6031a437a6fb3851656a3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

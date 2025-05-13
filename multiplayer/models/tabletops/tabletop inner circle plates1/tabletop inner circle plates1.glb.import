@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dwmbwtdrwyoch"
+path="res://.godot/imported/tabletop inner circle plates1.glb-b10df5e3b15e0e5229cb86bd1a874535.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/tabletop inner circle plates1/tabletop inner circle plates1.glb"
+dest_files=["res://.godot/imported/tabletop inner circle plates1.glb-b10df5e3b15e0e5229cb86bd1a874535.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c6ahq5x1db7gk"
+path="res://.godot/imported/mp_inverter interaction1.glb-6c6efae88301c32fa21b3784e262be7a.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/mp_inverter interaction1/mp_inverter interaction1.glb"
+dest_files=["res://.godot/imported/mp_inverter interaction1.glb-6c6efae88301c32fa21b3784e262be7a.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bi6n4m0a47wmp"
+path="res://.godot/imported/mp_place down item id 10 remote.ogg-1bed20801a369bb10f54111bdab0e0cc.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_place down item id 10 remote.ogg"
+dest_files=["res://.godot/imported/mp_place down item id 10 remote.ogg-1bed20801a369bb10f54111bdab0e0cc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

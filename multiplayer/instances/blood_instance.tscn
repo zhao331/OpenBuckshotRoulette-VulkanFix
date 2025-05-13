@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://32wnafhiwnld"]
+
+[ext_resource type="Texture2D" uid="uid://c3qqx6se1pdki" path="res://multiplayer/textures/mp_blood splatter1.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bin4sd3hfi1fu" path="res://multiplayer/textures/mp_blood splatter2.png" id="2"]
+
+[sub_resource type="Curve" id="Curve_57j0k"]
+_limits = [0.0, 10.0, 0.0, 1.0]
+_data = [Vector2(0, 0.747332), 0.0, 0.0, 0, 0, Vector2(0.0623472, 1.03203), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_gtltl"]
+curve = SubResource("Curve_57j0k")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_quqmr"]
+emission_shape = 1
+emission_sphere_radius = 0.15
+angle_min = -588.2
+angle_max = 1.0
+spread = 12.7
+initial_velocity_min = 10.0
+initial_velocity_max = 56.1
+angular_velocity_min = -493.81
+gravity = Vector3(0, -9.61, 0)
+scale_min = 0.0
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_gtltl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftxbi"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.219608)
+albedo_texture = ExtResource("1")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_m5mrl"]
+material = SubResource("StandardMaterial3D_ftxbi")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wnrx8"]
+transparency = 1
+albedo_texture = ExtResource("2")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_ye21s"]
+material = SubResource("StandardMaterial3D_wnrx8")
+
+[node name="particle_blood splatter_parent" type="Node3D"]
+transform = Transform3D(-0.504388, 0.00859318, -0.706844, 0.0348441, 0.867577, -0.0143167, 0.706037, -0.0366775, -0.504258, 13.9596, 5.06673, 0.966845)
+
+[node name="particle_blood splatter" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 1.19209e-07, 0, 1, -1.86265e-09, -2.98023e-08, 0, 1, 0, 0, 0)
+emitting = false
+amount = 16
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_quqmr")
+draw_passes = 2
+draw_pass_1 = SubResource("QuadMesh_m5mrl")
+draw_pass_2 = SubResource("QuadMesh_ye21s")

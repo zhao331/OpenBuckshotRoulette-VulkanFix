@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://diy0okc84tvwa"
+path="res://.godot/imported/shell indicator_live.ogg-6cf3bacddf4b6279dc05f0a0b6ed75f2.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/shell indicator_live.ogg"
+dest_files=["res://.godot/imported/shell indicator_live.ogg-6cf3bacddf4b6279dc05f0a0b6ed75f2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

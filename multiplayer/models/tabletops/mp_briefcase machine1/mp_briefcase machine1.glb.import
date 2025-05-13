@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bksvkcap3jveo"
+path="res://.godot/imported/mp_briefcase machine1.glb-45eea12823729f5a79e25c07e42b4ac7.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/mp_briefcase machine1/mp_briefcase machine1.glb"
+dest_files=["res://.godot/imported/mp_briefcase machine1.glb-45eea12823729f5a79e25c07e42b4ac7.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

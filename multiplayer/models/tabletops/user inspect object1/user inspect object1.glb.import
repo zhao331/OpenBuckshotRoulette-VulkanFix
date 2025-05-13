@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://408sly7jvynm"
+path="res://.godot/imported/user inspect object1.glb-dee6dfa4e8bfd2b37f00a0a79822320b.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/user inspect object1/user inspect object1.glb"
+dest_files=["res://.godot/imported/user inspect object1.glb-dee6dfa4e8bfd2b37f00a0a79822320b.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

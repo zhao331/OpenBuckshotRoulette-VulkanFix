@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://drasm12v6jpqt"
+path="res://.godot/imported/muzzle flash cone1.glb-2e0b204304a11edb4869bf40f97a67ac.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/misc/muzzle flash cone/muzzle flash cone1.glb"
+dest_files=["res://.godot/imported/muzzle flash cone1.glb-2e0b204304a11edb4869bf40f97a67ac.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

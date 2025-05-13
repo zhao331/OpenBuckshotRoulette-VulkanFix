@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c88gcnlldq28f"
+path="res://.godot/imported/mouthwash bottle1.glb-2365aeb6ec5cbddeb8701846f6b048eb.scn"
+
+[deps]
+
+source_file="res://models/mouthwash bottle/mouthwash bottle1.glb"
+dest_files=["res://.godot/imported/mouthwash bottle1.glb-2365aeb6ec5cbddeb8701846f6b048eb.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

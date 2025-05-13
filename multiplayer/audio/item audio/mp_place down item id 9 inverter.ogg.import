@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://6aivmcsluva4"
+path="res://.godot/imported/mp_place down item id 9 inverter.ogg-8643afbba174fc64567407b22e57e62c.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_place down item id 9 inverter.ogg"
+dest_files=["res://.godot/imported/mp_place down item id 9 inverter.ogg-8643afbba174fc64567407b22e57e62c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

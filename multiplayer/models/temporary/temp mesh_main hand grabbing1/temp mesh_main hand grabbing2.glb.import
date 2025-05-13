@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://65lj0hobis7b"
+path="res://.godot/imported/temp mesh_main hand grabbing2.glb-5c59be41ec85f6f8ed22058a977f957b.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/temporary/temp mesh_main hand grabbing1/temp mesh_main hand grabbing2.glb"
+dest_files=["res://.godot/imported/temp mesh_main hand grabbing2.glb-5c59be41ec85f6f8ed22058a977f957b.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

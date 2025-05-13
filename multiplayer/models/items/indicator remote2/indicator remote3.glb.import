@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dlw576qpuj6s8"
+path="res://.godot/imported/indicator remote3.glb-640131386a6734ad3cb22b0f65cf5e3e.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/indicator remote2/indicator remote3.glb"
+dest_files=["res://.godot/imported/indicator remote3.glb-640131386a6734ad3cb22b0f65cf5e3e.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

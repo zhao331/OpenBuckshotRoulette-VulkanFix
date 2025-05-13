@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cgk85mbw4edvn"
+path="res://.godot/imported/mp_magnifier broken1.glb-b3ccaaefb880f4aea90d31e9d451d15e.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/magnifier broken/mp_magnifier broken1.glb"
+dest_files=["res://.godot/imported/mp_magnifier broken1.glb-b3ccaaefb880f4aea90d31e9d451d15e.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

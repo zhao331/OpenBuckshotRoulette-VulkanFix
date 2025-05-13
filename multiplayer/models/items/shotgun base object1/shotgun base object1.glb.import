@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c2tyvpcsbh02k"
+path="res://.godot/imported/shotgun base object1.glb-b2c9fff2d88e1dd30e807b06ac54c797.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/items/shotgun base object1/shotgun base object1.glb"
+dest_files=["res://.godot/imported/shotgun base object1.glb-b2c9fff2d88e1dd30e807b06ac54c797.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

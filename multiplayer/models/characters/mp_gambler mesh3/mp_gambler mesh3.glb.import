@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bkirnndlypjth"
+path="res://.godot/imported/mp_gambler mesh3.glb-1f47716e3293763cf0dfbc5e5fd88066.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/characters/mp_gambler mesh3/mp_gambler mesh3.glb"
+dest_files=["res://.godot/imported/mp_gambler mesh3.glb-1f47716e3293763cf0dfbc5e5fd88066.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

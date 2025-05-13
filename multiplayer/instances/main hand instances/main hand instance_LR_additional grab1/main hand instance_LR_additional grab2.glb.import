@@ -1,0 +1,40 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://btka2w1ww6thu"
+path="res://.godot/imported/main hand instance_LR_additional grab2.glb-9b6747c42bab4b682439e3896a94c63b.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/main hand instance_LR_additional grab1/main hand instance_LR_additional grab2.glb"
+dest_files=["res://.godot/imported/main hand instance_LR_additional grab2.glb-9b6747c42bab4b682439e3896a94c63b.scn"]
+
+[params]
+
+dummy_value_ignore_me=0
+_subresources={
+"animations": {
+"track_L_item grab generic main": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://multiplayer/separate animation files/track_L_item grab generic main.res"
+},
+"track_L_item grab generic main_beer": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://multiplayer/separate animation files/track_L_item grab generic main_beer.res"
+},
+"track_R_item grab generic main": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://multiplayer/separate animation files/track_R_item grab generic main.res"
+},
+"track_R_item grab generic main_beer": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://multiplayer/separate animation files/track_R_item grab generic main_beer.res"
+}
+}
+}

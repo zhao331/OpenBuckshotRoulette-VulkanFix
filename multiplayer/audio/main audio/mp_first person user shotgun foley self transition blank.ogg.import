@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbr3ira56ygl1"
+path="res://.godot/imported/mp_first person user shotgun foley self transition blank.ogg-22cc7ed81f9620a334d5271a393ed621.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_first person user shotgun foley self transition blank.ogg"
+dest_files=["res://.godot/imported/mp_first person user shotgun foley self transition blank.ogg-22cc7ed81f9620a334d5271a393ed621.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

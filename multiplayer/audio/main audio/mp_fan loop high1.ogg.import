@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bchq6pm1lw1vn"
+path="res://.godot/imported/mp_fan loop high1.ogg-43745580d28c7471315d617f80469efa.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_fan loop high1.ogg"
+dest_files=["res://.godot/imported/mp_fan loop high1.ogg-43745580d28c7471315d617f80469efa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

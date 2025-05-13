@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxn0hwhdoqe5y"
+path="res://.godot/imported/mp_display_round indicator hum.ogg-de4517074b852bbe4aed9c3489f9102a.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/main audio/mp_display_round indicator hum.ogg"
+dest_files=["res://.godot/imported/mp_display_round indicator hum.ogg-de4517074b852bbe4aed9c3489f9102a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

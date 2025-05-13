@@ -1,0 +1,507 @@
+[gd_scene load_steps=8 format=3 uid="uid://b3e0s5kklcrou"]
+
+[ext_resource type="Script" uid="uid://cuv3km8l0agmf" path="res://multiplayer/scripts/global scripts/MP_MatchCustomization_ItemProperties.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://vhj3kkn6yn8o" path="res://fonts/fake receipt.otf" id="2"]
+[ext_resource type="Texture2D" uid="uid://cylsdupptnccs" path="res://multiplayer/textures/green1.png" id="3"]
+[ext_resource type="Theme" uid="uid://byh50rlarrsdb" path="res://misc/button_theme1.tres" id="4"]
+[ext_resource type="Script" uid="uid://dpf4l6f2v8gy3" path="res://multiplayer/scripts/global scripts/MP_ButtonClassMain.gd" id="5"]
+[ext_resource type="Script" uid="uid://eihvbvuf26ef" path="res://multiplayer/scripts/global scripts/MP_MatchCustomization_Branch.gd" id="6"]
+[ext_resource type="FontFile" uid="uid://b0df1ns6fwvs4" path="res://fonts/fonts language/RobotoSlab-Medium_cyrillic.ttf" id="7"]
+
+[node name="custom sequence properties" type="Control" node_paths=PackedStringArray("label_sequence_number", "label_number_of_blanks", "label_number_of_lives", "label_number_of_items")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1")
+label_sequence_number = NodePath("shell load number")
+label_number_of_blanks = NodePath("number of blanks")
+label_number_of_lives = NodePath("number of lives")
+label_number_of_items = NodePath("number of items")
+
+[node name="shell load number" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = -20.0
+offset_right = 779.0
+offset_bottom = 29.0
+grow_vertical = 2
+scale = Vector2(0.34777, 0.590586)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 33
+text = "sequence #"
+horizontal_alignment = 2
+
+[node name="number of blanks" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = 6.0
+offset_right = 744.0
+offset_bottom = 55.0
+grow_vertical = 2
+scale = Vector2(0.357919, 0.600111)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 33
+text = "number of blanks: -1"
+horizontal_alignment = 2
+
+[node name="number of lives" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = 30.0
+offset_right = 744.0
+offset_bottom = 79.0
+grow_vertical = 2
+scale = Vector2(0.357919, 0.600111)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 33
+text = "number of lives: -1"
+horizontal_alignment = 2
+
+[node name="number of items" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = 53.0
+offset_right = 744.0
+offset_bottom = 102.0
+grow_vertical = 2
+scale = Vector2(0.357919, 0.600111)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 33
+text = "number of items: -1"
+horizontal_alignment = 2
+
+[node name="box_number of blanks minus" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 28.0
+offset_right = 178.0
+offset_bottom = 42.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of blanks minus" type="Button" parent="box_number of blanks minus"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of blanks minus" type="Node" parent="box_number of blanks minus/button_number of blanks minus" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of blanks minus" type="Node" parent="box_number of blanks minus/button_number of blanks minus/button class_number of blanks minus" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of blanks minus"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of blanks minus"]
+layout_mode = 0
+offset_top = -4.0
+offset_right = 127.0
+offset_bottom = 226.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 171
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_number of blanks plus" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 28.0
+offset_right = 200.0
+offset_bottom = 42.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of blanks plus" type="Button" parent="box_number of blanks plus"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of blanks plus" type="Node" parent="box_number of blanks plus/button_number of blanks plus" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of blanks plus" type="Node" parent="box_number of blanks plus/button_number of blanks plus/button class_number of blanks plus" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of blanks plus"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of blanks plus"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 127.0
+offset_bottom = 170.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 121
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_number of lives minus" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 51.0
+offset_right = 178.0
+offset_bottom = 65.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of lives minus" type="Button" parent="box_number of lives minus"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of lives minus" type="Node" parent="box_number of lives minus/button_number of lives minus" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of lives minus" type="Node" parent="box_number of lives minus/button_number of lives minus/button class_number of lives minus" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of lives minus"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of lives minus"]
+layout_mode = 0
+offset_top = -4.0
+offset_right = 127.0
+offset_bottom = 226.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 171
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_number of lives plus" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 51.0
+offset_right = 200.0
+offset_bottom = 65.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of lives plus" type="Button" parent="box_number of lives plus"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of lives plus" type="Node" parent="box_number of lives plus/button_number of lives plus" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of lives plus" type="Node" parent="box_number of lives plus/button_number of lives plus/button class_number of lives plus" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of lives plus"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of lives plus"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 127.0
+offset_bottom = 170.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 121
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_shell sequence random" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 28.0
+offset_right = 222.0
+offset_bottom = 59.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_shell sequence random" type="Button" parent="box_shell sequence random"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 72.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_shell sequence random" type="Node" parent="box_shell sequence random/button_shell sequence random" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_shell sequence random" type="Node" parent="box_shell sequence random/button_shell sequence random/button class_shell sequence random" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "shell sequence random"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_shell sequence random"]
+layout_mode = 0
+offset_right = 127.0
+offset_bottom = 347.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 119
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_number of items minus" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 74.0
+offset_right = 178.0
+offset_bottom = 88.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of items minus" type="Button" parent="box_number of items minus"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of items minus" type="Node" parent="box_number of items minus/button_number of items minus" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of items minus" type="Node" parent="box_number of items minus/button_number of items minus/button class_number of items minus" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of items minus"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of items minus"]
+layout_mode = 0
+offset_top = -4.0
+offset_right = 127.0
+offset_bottom = 226.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 171
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_number of items plus" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 74.0
+offset_right = 200.0
+offset_bottom = 88.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of items plus" type="Button" parent="box_number of items plus"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of items plus" type="Node" parent="box_number of items plus/button_number of items plus" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+checking_held_input = true
+playing_sound_elsewhere = true
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of items plus" type="Node" parent="box_number of items plus/button_number of items plus/button class_number of items plus" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of items plus"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of items plus"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 127.0
+offset_bottom = 170.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 121
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box_number of items random" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 74.0
+offset_right = 222.0
+offset_bottom = 88.0
+scale = Vector2(1.32893, 1.32893)
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="button_number of items random" type="Button" parent="box_number of items random"]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 33.0
+scale = Vector2(0.0314672, 0.425573)
+theme = ExtResource("4")
+
+[node name="button class_number of items random" type="Node" parent="box_number of items random/button_number of items random" node_paths=PackedStringArray("ui_element_to_affect")]
+script = ExtResource("5")
+is_lobby_scene = true
+ui_element_to_affect = NodePath("../..")
+ui_element_to_affect_hover_transparency = 0.5
+set_opacity_to_default_on_press = false
+dont_set_cursor_to_point_after_press = true
+separated_from_lobby_scene = true
+is_related_to_customization = true
+
+[node name="customization branch_number of items random" type="Node" parent="box_number of items random/button_number of items random/button class_number of items random" node_paths=PackedStringArray("item_properties")]
+script = ExtResource("6")
+alias = "number of items random"
+item_properties = NodePath("../../../..")
+is_sequence = true
+
+[node name="symbol" type="Label" parent="box_number of items random"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 127.0
+offset_bottom = 178.0
+scale = Vector2(0.100964, 0.0889685)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 111
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1

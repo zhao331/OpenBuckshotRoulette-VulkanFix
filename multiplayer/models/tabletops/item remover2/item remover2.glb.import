@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://b5xc60nqu6yur"
+path="res://.godot/imported/item remover2.glb-64fecdc6a045295a3c3fb0a280c58a4c.scn"
+
+[deps]
+
+source_file="res://multiplayer/models/tabletops/item remover2/item remover2.glb"
+dest_files=["res://.godot/imported/item remover2.glb-64fecdc6a045295a3c3fb0a280c58a4c.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

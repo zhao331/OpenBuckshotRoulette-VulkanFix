@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d3xg1440v4vtr"
+path="res://.godot/imported/mp_pick up item id 3 jammer.ogg-fe4609f6a8a5bf35b7288f19a306468c.oggvorbisstr"
+
+[deps]
+
+source_file="res://multiplayer/audio/item audio/mp_pick up item id 3 jammer.ogg"
+dest_files=["res://.godot/imported/mp_pick up item id 3 jammer.ogg-fe4609f6a8a5bf35b7288f19a306468c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

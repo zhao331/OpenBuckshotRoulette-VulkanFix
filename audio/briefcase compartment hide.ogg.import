@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdcpsb58rnoio"
+path="res://.godot/imported/briefcase compartment hide.ogg-07abc67711d83f6b96150bdad9e20a6d.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/briefcase compartment hide.ogg"
+dest_files=["res://.godot/imported/briefcase compartment hide.ogg-07abc67711d83f6b96150bdad9e20a6d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

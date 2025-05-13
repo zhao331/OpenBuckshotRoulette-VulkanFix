@@ -1,0 +1,25 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bh57ym0ckmf46"
+path="res://.godot/imported/main hand instance_R_pinch5.glb-7620e514ab2a651428f3b3f7dc50b165.scn"
+
+[deps]
+
+source_file="res://multiplayer/instances/main hand instances/main hand instance_R_pinch5/main hand instance_R_pinch5.glb"
+dest_files=["res://.godot/imported/main hand instance_R_pinch5.glb-7620e514ab2a651428f3b3f7dc50b165.scn"]
+
+[params]
+
+dummy_value_ignore_me=0
+_subresources={
+"animations": {
+"track_R_item grab pinch_1": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://multiplayer/separate animation files/track_R_item grab pinch_1.res"
+}
+}
+}
