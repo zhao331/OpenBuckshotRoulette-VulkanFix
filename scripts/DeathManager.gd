@@ -142,7 +142,7 @@ func MainDeathRoutine():
 		if (rm.endscore != null):
 			if (rm.endscore > 1000000): ach.UnlockAchievement("ach10")
 		await get_tree().create_timer(.5, false).timeout
-		print("changing scene to: death")
+		print("changing scene to: death / 1")
 		get_tree().change_scene_to_file("res://scenes/death.tscn")
 		return
 	if (shotgunShooting.roundManager.wireIsCut_player): 
@@ -152,8 +152,8 @@ func MainDeathRoutine():
 	await(savefile.SaveGame())
 	await get_tree().create_timer(.5, false).timeout
 	if (!loadingHeaven): 
-		print("changing scene to: death")
-		get_tree().change_scene_to_file("res://scenes/death.tscn")
+		print("changing scene to: death / 2")
+		get_tree().change_scene_to_file("res://scenes/main.tscn")
 	else: 
 		print("changing scene to: heaven")
 		get_tree().change_scene_to_file("res://scenes/heaven.tscn")

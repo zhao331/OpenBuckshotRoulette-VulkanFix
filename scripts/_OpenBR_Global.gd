@@ -1,8 +1,11 @@
-extends Node
+extends Control
+@onready var label_fps: Label = $Label_FPS
 
 var options_manager: OptionsManager
+var round_manager: RoundManager
 
 var is_fullscreen:= true
+var frames:= 0
 
 var _is_mobile_renderer:= false
 
@@ -18,8 +21,22 @@ func _input(event: InputEvent) -> void:
 			is_fullscreen = !is_fullscreen
 			if is_fullscreen: DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 			else: DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-	elif Input.is_action_just_pressed('OpenBR_test'):
+	if Input.is_action_just_pressed('OpenBR_test'):
 		get_window()
+	
+	if round_manager != null:
+		if Input.is_action_just_pressed('OpenBR_add_health'):
+			round_manager.health_player += 1
+			print('My health: ', round_manager.health_player)
+		if Input.is_action_just_pressed('OpenBR_subtract_health'):
+			round_manager.health_player -= 1
+			print('My health: ', round_manager.health_player)
+		if Input.is_action_just_pressed('OpenBR_add_dealer_health'):
+			round_manager.health_opponent += 1
+			print('Opponent health: ', round_manager.health_opponent)
+		if Input.is_action_just_pressed('OpenBR_substract_dealer_health'):
+			round_manager.health_opponent -= 1
+			print('Opponent health: ', round_manager.health_opponent)
 
 func is_android() -> bool:
 	#return true
@@ -31,3 +48,13 @@ func fetch_tree() -> SceneTree:
 
 func is_mobile_renderer() -> bool:
 	return _is_mobile_renderer
+
+func uri(uri:String):
+	OS.shell_open(uri)
+func _process(delta: float) -> void:
+	frames += 1
+
+func _on_timer_fps_timeout() -> void:
+	label_fps.text = 'FPS: ' + str(frames)
+	frames = 0
+	pass # Replace with function body.

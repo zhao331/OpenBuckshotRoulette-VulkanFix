@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhmvstxrq3731"]
+
+[ext_resource type="Script" uid="uid://clhqicpp7x6g8" path="res://scripts/_OpenBR_Global.gd" id="1_7ti8k"]
+[ext_resource type="FontVariation" uid="uid://cb5nxwm0sb4pu" path="res://resources/font_variation_global.tres" id="2_nxn64"]
+
+[node name="DebugScreen" type="Control"]
+process_mode = 3
+top_level = true
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ti8k")
+
+[node name="Label_FPS" type="Label" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 8.0
+offset_right = 118.0
+offset_bottom = 31.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("2_nxn64")
+text = "FPS: 0"
+
+[node name="Timer_FPS" type="Timer" parent="."]
+process_callback = 0
+autostart = true
+
+[connection signal="timeout" from="Timer_FPS" to="." method="_on_timer_fps_timeout"]

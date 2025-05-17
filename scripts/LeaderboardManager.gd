@@ -19,7 +19,7 @@ var active_entry_count = 0
 func _ready():
 	display_instances_act = display_instances
 	ClearDisplay()
-	if !GlobalVariables.using_steam: return
+	# if !GlobalVariables.using_steam: return
 	#Steam.leaderboard_find_result.connect(_on_leaderboard_find_result)
 	#Steam.leaderboard_score_uploaded.connect(_on_leaderboard_score_uploaded)
 	#Steam.leaderboard_scores_downloaded.connect(_on_leaderboard_scores_downloaded)
@@ -197,7 +197,7 @@ func _on_leaderboard_find_result(handle: int, found: int) -> void:
 var checking_friends = false
 var checking_overview = false
 func DownloadEntries(range1 : int, range2 : int, alias : String):
-	if !GlobalVariables.using_steam: return
+	# if !GlobalVariables.using_steam: return
 	match alias:
 		"top":
 			checking_friends = false

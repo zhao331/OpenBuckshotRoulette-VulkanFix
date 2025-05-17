@@ -16,3 +16,8 @@ func _ready() -> void:
 		option_monitor_windowed.hide()
 		true_button_controller.hide()
 		button_controller.label_settings.font_color = Color.from_string('#5d5d5d', Color.WHITE)
+
+
+func _on_true_button_github_pressed() -> void:
+	OpenBrGlobal.uri(GlobalVariables.github_link)
+	pass # Replace with function body.

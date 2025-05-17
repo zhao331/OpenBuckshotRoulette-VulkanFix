@@ -55,7 +55,7 @@ func DisableCRT():
 	SetCRT(false)
 	
 func SetCRT(state : bool):
-	if (state && GlobalVariables.using_steam):
+	if (state):
 		bathroom_normal.set_layer_mask_value(1, false)
 		bathroom_broken.visible = true
 		for obj in objarray_normal: obj.visible = false

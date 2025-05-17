@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" load_steps=3 format=3 uid="uid://d2heggjc8lef5"]
+
+[ext_resource type="FontFile" uid="uid://builq3tr6w060" path="res://fonts/DOTMATRI.TTF" id="1_dqok7"]
+[ext_resource type="FontFile" uid="uid://bfyqbkp2vc3si" path="res://fonts/unifont.otf" id="2_vux40"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_vux40")])
+base_font = ExtResource("1_dqok7")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=4 uid="uid://bvumuv2g7ohx3"]
+[gd_scene load_steps=111 format=4 uid="uid://bvumuv2g7ohx3"]
 
 [ext_resource type="Script" uid="uid://d3sfai5sy66k3" path="res://scripts/OptionsManager.gd" id="1"]
 [ext_resource type="Script" uid="uid://igqvnhk2egvv" path="res://scripts/menu.gd" id="1_lqq6t"]
@@ -29,6 +29,8 @@
 [ext_resource type="Texture2D" uid="uid://cbcd1l3ubcfji" path="res://misc/discord icon5.png" id="26"]
 [ext_resource type="FontFile" uid="uid://vhj3kkn6yn8o" path="res://fonts/fake receipt.otf" id="27"]
 [ext_resource type="Script" uid="uid://bcil5orxnqjlb" path="res://scripts/ButtonClass.gd" id="28"]
+[ext_resource type="Texture2D" uid="uid://dnoo667xkrydu" path="res://misc/github icon.png" id="28_46y0v"]
+[ext_resource type="FontVariation" uid="uid://cb5nxwm0sb4pu" path="res://resources/font_variation_global.tres" id="28_ur5vm"]
 [ext_resource type="Texture2D" uid="uid://dfjx01c5mpkbn" path="res://misc/options_vinyl disk2.png" id="29"]
 [ext_resource type="Texture2D" uid="uid://d0bbexsobmy8k" path="res://misc/monitor_windowed.png" id="30"]
 [ext_resource type="Texture2D" uid="uid://bmfpqyheaxjq2" path="res://misc/monitor_fullscreen.png" id="31"]
@@ -74,12 +76,12 @@ background_mode = 1
 background_energy_multiplier = 14.1
 ambient_light_source = 2
 ambient_light_color = Color(0.321569, 0.329412, 0.156863, 1)
-ambient_light_energy = 1.29
+ambient_light_energy = 0.0
 tonemap_mode = 3
 glow_intensity = 0.0
 fog_enabled = true
 fog_light_color = Color(0.0352941, 0.0352941, 0.0352941, 1)
-fog_light_energy = 4.22
+fog_light_energy = 0.0
 fog_density = 0.6255
 volumetric_fog_density = 0.1298
 volumetric_fog_albedo = Color(0, 0, 0, 1)
@@ -289,7 +291,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_0sunk"]
 resource_name = "show credits"
-length = 129.7
+length = 135.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -297,10 +299,10 @@ tracks/0/path = NodePath("menu ui/credits/credits move parent:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 129.3),
+"times": PackedFloat32Array(0, 135),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 631), Vector2(0, -2477)]
+"values": [Vector2(0, -191.415), Vector2(0, -3900)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -309,7 +311,7 @@ tracks/1/path = NodePath("menu ui/credits/credits backdrop:color")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.7, 124.9, 129.3),
+"times": PackedFloat32Array(0, 1.7, 130, 135),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
@@ -846,6 +848,12 @@ text = "BY
 font = ExtResource("60_ebw2t")
 horizontal_alignment = 0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46y0v"]
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jxp4i"]
+material = SubResource("StandardMaterial3D_46y0v")
+
 [node name="menu" type="Node3D"]
 script = ExtResource("1_lqq6t")
 metadata/_edit_vertical_guides_ = [480.0]
@@ -1156,6 +1164,22 @@ grow_vertical = 0
 scale = Vector2(0.0631802, 0.0631802)
 texture = ExtResource("26")
 
+[node name="github icon" type="TextureRect" parent="Camera/dialogue UI/menu ui/main screen"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -145.0
+offset_top = -83.0
+offset_right = 843.0
+offset_bottom = 1073.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.0631802, 0.0631802)
+texture = ExtResource("28_46y0v")
+
 [node name="button_start" type="Label" parent="Camera/dialogue UI/menu ui/main screen"]
 layout_mode = 1
 anchors_preset = 7
@@ -1172,7 +1196,7 @@ grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "START"
 horizontal_alignment = 1
@@ -1195,7 +1219,7 @@ scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_color = Color(0.363582, 0.363582, 0.363582, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "MP_UI MULTIPLAYER"
 horizontal_alignment = 1
@@ -1217,7 +1241,7 @@ grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "OPTIONS"
 horizontal_alignment = 1
@@ -1239,7 +1263,7 @@ grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "CREDITS"
 horizontal_alignment = 1
@@ -1262,7 +1286,7 @@ scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 focus_neighbor_top = NodePath("../button_credits")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "EXIT"
 horizontal_alignment = 1
@@ -1462,6 +1486,43 @@ ui_opacity_inactive = 0.0
 ui_opacity_active = 1.0
 resetting = true
 
+[node name="true button_github" type="Button" parent="Camera/dialogue UI/menu ui/main screen"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.926042
+anchor_top = 1.0
+anchor_right = 0.926042
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -84.0
+offset_right = -65.0
+offset_bottom = -76.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(7.63651, 9.17861)
+focus_neighbor_left = NodePath("../true button_exit")
+focus_neighbor_top = NodePath("../true button_exit")
+focus_neighbor_right = NodePath("../true button_exit")
+focus_neighbor_bottom = NodePath("../true button_start")
+metadata/_edit_use_anchors_ = true
+
+[node name="button class_discord" type="Node" parent="Camera/dialogue UI/menu ui/main screen/true button_github" node_paths=PackedStringArray("cursor", "ui", "speaker_press", "speaker_hover")]
+script = ExtResource("28")
+cursor = NodePath("../../../../../../standalone managers/cursor manager")
+alias = "discord"
+isActive = true
+isDynamic = true
+ui = NodePath("../../bracket selection_discord")
+speaker_press = NodePath("../../../../../../speaker_press")
+speaker_hover = NodePath("../../../../../../speaker_hover")
+playing = true
+altsound = true
+ui_opacity_inactive = 0.0
+ui_opacity_active = 1.0
+resetting = true
+
 [node name="version" type="Label" parent="Camera/dialogue UI/menu ui/main screen"]
 modulate = Color(1, 1, 1, 0.560784)
 layout_mode = 1
@@ -1505,7 +1566,7 @@ grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "AUDIO/VIDEO"
 horizontal_alignment = 1
@@ -1526,7 +1587,7 @@ grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "OPTIONS LANGUAGE"
 horizontal_alignment = 1
@@ -1547,7 +1608,7 @@ grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "CONTROLLER"
 label_settings = SubResource("LabelSettings_lqq6t")
@@ -1570,7 +1631,7 @@ scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 focus_neighbor_top = NodePath("../button_controller")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "RETURN"
 horizontal_alignment = 1
@@ -1861,7 +1922,7 @@ offset_bottom = 237.0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(650, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "RETURN"
 horizontal_alignment = 1
@@ -1875,7 +1936,7 @@ offset_bottom = -158.0
 scale = Vector2(0.574333, 0.755696)
 pivot_offset = Vector2(650, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "COLORBLIND_MODE"
 horizontal_alignment = 2
@@ -1889,7 +1950,7 @@ offset_bottom = -133.0
 scale = Vector2(0.574333, 0.755696)
 pivot_offset = Vector2(650, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "MP_TOGGLE BW"
 horizontal_alignment = 2
@@ -2218,7 +2279,7 @@ offset_bottom = 158.0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(650, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "RETURN"
 horizontal_alignment = 1
@@ -2232,7 +2293,7 @@ offset_bottom = 126.0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(650, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "REBINDING"
 horizontal_alignment = 1
@@ -2246,7 +2307,7 @@ offset_bottom = -104.0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(650, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "SELECT DEVICE"
 horizontal_alignment = 1
@@ -2365,23 +2426,38 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -9.0
+offset_top = -2.0
+offset_right = -9.0
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(24.8091, 14.3936)
 color = Color(0, 0, 0, 0)
 
 [node name="credits move parent" type="Control" parent="Camera/dialogue UI/menu ui/credits"]
-anchors_preset = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_top = 538.0
-offset_right = 40.0
-offset_bottom = 578.009
+offset_bottom = 538.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="credits_main OpenBR" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -476.0
-offset_top = -195.0
-offset_right = 1444.0
-offset_bottom = 570.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = 513.5
+offset_right = 960.0
+offset_bottom = 1278.5
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.497474, 0.506221)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -2397,17 +2473,24 @@ GPL-3.0 License"
 horizontal_alignment = 1
 
 [node name="credits_main credits" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -476.0
-offset_top = -51.0
-offset_right = 1444.0
-offset_bottom = 1080.61
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = 690.195
+offset_right = 960.0
+offset_bottom = 1821.81
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.497474, 0.506221)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -2
 theme_override_constants/shadow_offset_y = 3
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "MAIN CREDITS"
 horizontal_alignment = 1
@@ -2430,27 +2513,41 @@ text = "- - -"
 horizontal_alignment = 1
 
 [node name="critical reflex_logo" type="TextureRect" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = 2.0
-offset_top = -169.543
-offset_right = 1026.0
-offset_bottom = 854.457
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -487.0
+offset_top = 821.415
+offset_right = 537.0
+offset_bottom = 1845.42
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.188452, 0.188452)
 pivot_offset = Vector2(480, 480)
 texture = ExtResource("41")
 
 [node name="critical reflex middle" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -481.0
-offset_top = 340.0
-offset_right = 1439.0
-offset_bottom = 1010.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = 1403.42
+offset_right = 960.0
+offset_bottom = 2205.42
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "
 
@@ -2478,11 +2575,18 @@ Valentin Moldovanov
 horizontal_alignment = 1
 
 [node name="critical reflex left" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -1121.0
-offset_top = 340.211
-offset_right = 799.0
-offset_bottom = 1471.82
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1582.0
+offset_top = 1368.42
+offset_right = 338.0
+offset_bottom = 2500.02
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -2516,11 +2620,18 @@ Fedor Solovyov
 horizontal_alignment = 2
 
 [node name="critical reflex right" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = 169.0
-offset_top = 340.211
-offset_right = 2089.0
-offset_bottom = 1471.82
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -339.0
+offset_top = 1368.42
+offset_right = 1581.0
+offset_bottom = 2500.02
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -2550,11 +2661,12 @@ Vladislava Balashova
 "
 
 [node name="- - -2" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
+visible = false
 layout_mode = 0
 offset_left = -480.818
-offset_top = 725.0
+offset_top = 2016.0
 offset_right = 1439.18
-offset_bottom = 825.0
+offset_bottom = 2116.0
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -2566,43 +2678,62 @@ text = "- - -"
 horizontal_alignment = 1
 
 [node name="special thanks" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -480.818
-offset_top = 765.0
-offset_right = 1439.18
-offset_bottom = 1500.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -959.0
+offset_top = 1784.42
+offset_right = 960.998
+offset_bottom = 2519.42
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "ATTRIBUTION SPECIAL THANKS"
 horizontal_alignment = 1
 
 [node name="logo_sandbox strategies" type="TextureRect" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -242.818
-offset_top = 492.996
-offset_right = 1197.18
-offset_bottom = 1933.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.851
+anchor_right = 0.5
+anchor_bottom = 0.851
+offset_left = -722.819
+offset_top = 1324.46
+offset_right = 717.181
+offset_bottom = 2764.46
+grow_horizontal = 2
+grow_vertical = 0
 scale = Vector2(0.213883, 0.213883)
 pivot_offset = Vector2(720, 720)
 texture = ExtResource("42")
 
 [node name="sandbox strategies" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -480.818
-offset_top = 1282.99
-offset_right = 1439.18
-offset_bottom = 1581.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.866
+anchor_right = 0.5
+anchor_bottom = 0.866
+offset_left = -960.818
+offset_top = 2106.35
+offset_right = 959.18
+offset_bottom = 2418.35
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "Tony Rivera
 Tyler Gardner
@@ -2616,27 +2747,37 @@ John Mak
 horizontal_alignment = 1
 
 [node name="logo_arcus key" type="TextureRect" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = 2.1824
-offset_top = 999.996
-offset_right = 1026.18
-offset_bottom = 2024.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.844
+anchor_right = 0.5
+anchor_bottom = 0.844
+offset_left = -477.818
+offset_top = 1835.24
+offset_right = 546.18
+offset_bottom = 2859.24
 scale = Vector2(0.278035, 0.278035)
 pivot_offset = Vector2(480, 480)
 texture = ExtResource("43")
 
 [node name="arcus key" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -480.818
-offset_top = 1545.0
-offset_right = 1439.18
-offset_bottom = 1720.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.833
+anchor_right = 0.5
+anchor_bottom = 0.833
+offset_left = -960.818
+offset_top = 2386.18
+offset_right = 959.18
+offset_bottom = 2593.18
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "Logan Liu
 David Clark
@@ -2647,27 +2788,37 @@ Cindy Cai
 horizontal_alignment = 1
 
 [node name="logo_freesound" type="TextureRect" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = 2.1824
-offset_top = 1241.0
-offset_right = 1026.18
-offset_bottom = 2265.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.833
+anchor_right = 0.5
+anchor_bottom = 0.833
+offset_left = -477.818
+offset_top = 2082.18
+offset_right = 546.182
+offset_bottom = 3106.18
 scale = Vector2(0.278035, 0.278035)
 pivot_offset = Vector2(480, 480)
 texture = ExtResource("44")
 
 [node name="credits_sound attribution" type="Label" parent="Camera/dialogue UI/menu ui/credits/credits move parent"]
-layout_mode = 0
-offset_left = -480.818
-offset_top = 1775.0
-offset_right = 1439.18
-offset_bottom = 3105.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.844
+anchor_right = 0.5
+anchor_bottom = 0.844
+offset_left = -960.818
+offset_top = 2610.24
+offset_right = 959.18
+offset_bottom = 3940.24
 scale = Vector2(0.49394, 0.502625)
 pivot_offset = Vector2(960, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "\"Cyber Tickle 4.wav\" - DiscordantScraps
 \"snapping-chain\" - CosmicEmbers
@@ -2710,29 +2861,41 @@ text = "\"Cyber Tickle 4.wav\" - DiscordantScraps
 horizontal_alignment = 1
 
 [node name="button_exit credits" type="Label" parent="Camera/dialogue UI/menu ui/credits"]
-visible = false
-layout_mode = 0
-offset_left = 266.0
-offset_top = 519.0
-offset_right = 1226.0
-offset_bottom = 558.0
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -739.0
+offset_top = -25.0
+offset_right = 221.0
+offset_bottom = 14.0
+grow_horizontal = 0
+grow_vertical = 0
 scale = Vector2(0.436839, 0.574784)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "RETURN"
 horizontal_alignment = 2
 
 [node name="true button_return credits" type="Button" parent="Camera/dialogue UI/menu ui/credits"]
-visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = 829.0
-offset_top = 509.0
-offset_right = 837.0
-offset_bottom = 517.0
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -181.0
+offset_top = -36.0
+offset_right = -169.0
+offset_bottom = -23.0
+grow_horizontal = 0
+grow_vertical = 0
 scale = Vector2(15.8343, 3.05779)
 
 [node name="button class_return" type="Node" parent="Camera/dialogue UI/menu ui/credits/true button_return credits" node_paths=PackedStringArray("cursor", "ui", "speaker_press", "speaker_hover")]
@@ -2900,7 +3063,7 @@ offset_bottom = 44.0
 scale = Vector2(0.701995, 0.923672)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "CHINESE_SIMPLIFIED"
 horizontal_alignment = 1
@@ -2914,7 +3077,7 @@ offset_bottom = 71.0
 scale = Vector2(0.701995, 0.923672)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "CHINESE_TRADITIONAL"
 horizontal_alignment = 1
@@ -2928,7 +3091,7 @@ offset_bottom = 98.0
 scale = Vector2(0.701995, 0.923672)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "JAPANESE"
 horizontal_alignment = 1
@@ -2942,7 +3105,7 @@ offset_bottom = 126.0
 scale = Vector2(0.701995, 0.923672)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "KOREAN"
 horizontal_alignment = 1
@@ -2956,7 +3119,7 @@ offset_bottom = 153.0
 scale = Vector2(0.701995, 0.923672)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "RUSSIAN"
 horizontal_alignment = 1
@@ -2970,7 +3133,7 @@ offset_bottom = 181.0
 scale = Vector2(0.701995, 0.923672)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "UKRANIAN"
 horizontal_alignment = 1
@@ -3012,7 +3175,7 @@ offset_bottom = 279.0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("27")
+theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "RETURN"
 horizontal_alignment = 1
@@ -4099,6 +4262,7 @@ playing = true
 ui_opacity_active = 0.5
 
 [node name="mouse blocker" type="Control" parent="Camera/dialogue UI/menu ui"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4116,6 +4280,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(25.0344, 15.242)
+metadata/_edit_lock_ = true
 
 [node name="viewblocker parent" type="Control" parent="Camera/dialogue UI"]
 visible = false
@@ -4182,6 +4347,7 @@ stream = ExtResource("47")
 volume_db = 5.0
 panning_strength = 0.0
 bus = &"music_secondary"
+parameters/looping = true
 
 [node name="speaker_show cursor" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("48")
@@ -4303,3 +4469,9 @@ mesh = SubResource("TextMesh_ebw2t")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="title"]
 transform = Transform3D(0.54287, 3.37508e-14, 7.10543e-15, -1.13687e-13, -8.34465e-07, 0.520051, 3.19744e-14, -0.67617, -1.39698e-08, 0.0965862, 0.071548, -1.0781)
 mesh = SubResource("TextMesh_46y0v")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="title"]
+transform = Transform3D(0.890749, 1.77636e-15, 0, -2.27374e-13, 0.551399, 2.23517e-08, 6.39488e-14, 3.72529e-09, 0.0260959, -0.1279, -0.0520298, 0.731439)
+mesh = SubResource("BoxMesh_jxp4i")
+
+[connection signal="pressed" from="Camera/dialogue UI/menu ui/main screen/true button_github" to="." method="_on_true_button_github_pressed"]

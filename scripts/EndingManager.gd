@@ -36,6 +36,12 @@ var waitingForInput = false
 #			ExitGame()
 #			waitingForInput = false
 
+func _input(event: InputEvent) -> void:
+	if Input.is_action_pressed("OpenBR_exit_game"):
+		if (waitingForInput): 
+			ExitGame()
+			waitingForInput = false
+
 func _unhandled_input(event):
 	if (event.is_pressed()):
 		if (waitingForInput): 

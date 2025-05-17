@@ -429,3 +429,4 @@ func CoinFlip():
 		if (c_live > c_blank): result = 1
 		if (c_live < c_blank): result = 0
 	return result
+

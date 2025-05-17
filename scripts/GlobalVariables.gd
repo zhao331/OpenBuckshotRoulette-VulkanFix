@@ -1,6 +1,6 @@
 extends Node
 
-var currentVersion_nr = "v0.1.0 / v2.2.0 Modified"
+var currentVersion_nr = "v0.1.1 / v2.2.0 Modified"
 var currentVersion_hotfix = 6
 var using_steam = false
 
@@ -10,6 +10,7 @@ var versuffix_itch = " (ITCH.IO)"
 var versuffix_community = ' (COMMUNITY)'
 
 var discord_link = "https://discord.gg/UdjMNaKkQe"
+var github_link = "https://github.com/1503Dev/OpenBuckshotRoulette"
 
 var using_gl = false
 var controllerEnabled = false

@@ -1489,7 +1489,7 @@ environment = SubResource("Environment_fmxu8")
 
 [node name="animator_pp" type="AnimationPlayer" parent="WorldEnvironment"]
 libraries = {
-"": SubResource("AnimationLibrary_hryg6")
+&"": SubResource("AnimationLibrary_hryg6")
 }
 
 [node name="speaker_music" type="AudioStreamPlayer2D" parent="."]
@@ -1520,14 +1520,14 @@ panning_strength = 0.0
 
 [node name="animator_camera" type="AnimationPlayer" parent="animation parent"]
 libraries = {
-"": SubResource("AnimationLibrary_xfjgt")
+&"": SubResource("AnimationLibrary_xfjgt")
 }
 
 [node name="animator_birds" type="AnimationPlayer" parent="animation parent"]
-autoplay = "bird fly"
 libraries = {
-"": SubResource("AnimationLibrary_vvkk5")
+&"": SubResource("AnimationLibrary_vvkk5")
 }
+autoplay = "bird fly"
 
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(0.0391181, 0.931403, 0.361884, -0.169161, 0.363107, -0.916263, -0.984812, -0.0253742, 0.171761, 3.47932, 1.009, 2.00394)
@@ -2281,7 +2281,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -2298,10 +2298,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent2" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, -1.46655, -0.209452, 1.07595)
@@ -2413,7 +2413,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent2/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -2430,10 +2430,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent2/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent3" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 0.0772179, -0.209452, -0.633705)
@@ -2545,7 +2545,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent3/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -2562,10 +2562,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent3/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent4" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 3.61852, -0.209452, -0.633705)
@@ -2677,7 +2677,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent4/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -2694,10 +2694,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent4/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent5" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 4.5993, -0.209452, 1.03384)
@@ -2809,7 +2809,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent5/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -2826,10 +2826,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent5/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent6" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 8.6039, -0.209457, 2.17329)
@@ -2941,7 +2941,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent6/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -2958,10 +2958,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent6/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent7" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 9.7472, -0.209457, 3.39486)
@@ -3073,7 +3073,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent7/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -3090,10 +3090,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent7/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent8" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 13.3615, -0.209457, 3.39486)
@@ -3205,7 +3205,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent8/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -3222,10 +3222,10 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent8/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
 
 [node name="bird parent9" type="Node3D" parent="main bird parent"]
 transform = Transform3D(0.235825, 0, 0, 0, 0.235825, 0, 0, 0, 0.235825, 12.4687, -0.209457, 0.528809)
@@ -3337,7 +3337,7 @@ bones/13/rotation = Quaternion(0.160836, -0.975207, -0.151228, 0.0152678)
 bones/13/scale = Vector3(1, 1, 1)
 
 [node name="Cube_002" type="BoneAttachment3D" parent="main bird parent/bird parent9/bird copy1/bird parent/Skeleton3D"]
-transform = Transform3D(1.02678, 7.49424e-10, -6.93126e-09, 7.24697e-09, -0.0894899, 1.02287, -1.88447e-09, -1.02287, -0.0894899, 6.51376e-08, -0.642313, -0.0940026)
+transform = Transform3D(1.02678, -3.63361e-08, -3.20779e-09, 7.90783e-09, -0.0894897, 1.02287, -3.8126e-08, -1.02287, -0.0894897, -9.87748e-08, -0.642315, -0.0940026)
 bone_name = "Cube.002"
 bone_idx = 8
 
@@ -3354,7 +3354,7 @@ mesh = SubResource("ArrayMesh_o14kk")
 skin = SubResource("Skin_5cn8b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="main bird parent/bird parent9/bird copy1"]
-autoplay = "flying loop"
 libraries = {
-"": SubResource("AnimationLibrary_k0np4")
+&"": SubResource("AnimationLibrary_k0np4")
 }
+autoplay = "flying loop"
