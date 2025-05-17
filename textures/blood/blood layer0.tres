@@ -6,4 +6,3 @@
 blend_mode = 1
 shading_mode = 0
 albedo_texture = ExtResource("1")
-use_point_size = true

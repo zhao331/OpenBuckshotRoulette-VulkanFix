@@ -574,16 +574,3 @@ func LerpItem():
 		var rot = lerp(rot_current, rot_next, c)
 		activeItem.transform.origin = pos
 		activeItem.rotation_degrees = rot
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,7 +4,11 @@ var options_manager: OptionsManager
 
 var is_fullscreen:= true
 
+var _is_mobile_renderer:= false
+
 func _ready() -> void:
+	print('User data dir: ' + OS.get_user_data_dir())
+	if ProjectSettings.get_setting("rendering/renderer/rendering_method") == 'mobile': _is_mobile_renderer = true
 	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func _input(event: InputEvent) -> void:
@@ -21,3 +25,9 @@ func is_android() -> bool:
 	#return true
 	if OS.get_name() == 'Android': return true
 	return false
+
+func fetch_tree() -> SceneTree:
+	return get_tree()
+
+func is_mobile_renderer() -> bool:
+	return _is_mobile_renderer

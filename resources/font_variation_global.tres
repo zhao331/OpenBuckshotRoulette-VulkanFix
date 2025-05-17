@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" load_steps=3 format=3 uid="uid://cb5nxwm0sb4pu"]
+
+[ext_resource type="FontFile" uid="uid://vhj3kkn6yn8o" path="res://fonts/fake receipt.otf" id="1_lm3xq"]
+[ext_resource type="FontFile" uid="uid://bfyqbkp2vc3si" path="res://fonts/unifont.otf" id="2_lm3xq"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_lm3xq")])
+base_font = ExtResource("1_lm3xq")

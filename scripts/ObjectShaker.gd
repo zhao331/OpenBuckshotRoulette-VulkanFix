@@ -18,11 +18,13 @@ func StopShaking():
 	obj.transform.origin = originalPos
 
 func ShakeRoutine():
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
 	while(shaking):
 		var val = randf_range(offset_1, offset_2)
 		var pos = Vector3(obj.transform.origin.x + val, obj.transform.origin.y + val, obj.transform.origin.z + val)
 		obj.transform.origin = pos
-		await get_tree().create_timer(delay, false).timeout
+		await tree.create_timer(delay, false).timeout
 		obj.transform.origin = originalPos
-		await get_tree().create_timer(delay, false).timeout
+		await tree.create_timer(delay, false).timeout
 	pass

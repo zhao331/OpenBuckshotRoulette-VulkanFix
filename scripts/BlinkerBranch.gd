@@ -14,10 +14,12 @@ func _ready():
 	pass
 
 func Loop():
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
 	while (looping):
 		var delay = randf_range(delay_range1, delay_range2)
 		parent.set_surface_override_material(0, mat_1)
-		await get_tree().create_timer(delay, false).timeout
+		await tree.create_timer(delay, false).timeout
 		parent.set_surface_override_material(0, mat_2)
-		await get_tree().create_timer(delay, false).timeout
+		await tree.create_timer(delay, false).timeout
 	pass

@@ -31,18 +31,22 @@ var markerIndex = 0
 var blinking = false
 
 func _ready():
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
 	for l in letterArray_signature_joined: l.text = ""
 	for l in letterArray_signature_separate: l.text = ""
 	parent_signatureMachineMainParent.visible = false
-	await get_tree().create_timer(2, false).timeout
+	await tree.create_timer(2, false).timeout
 	if (roundManager.playerData.hasSignedWaiver == false): SetupWaiver()
 
 func BlinkMarker():
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
 	while(blinking):
 		marker.modulate.a = 0
-		await get_tree().create_timer(.3, false).timeout
+		await tree.create_timer(.3, false).timeout
 		marker.modulate.a = 1
-		await get_tree().create_timer(.3, false).timeout
+		await tree.create_timer(.3, false).timeout
 		pass
 	pass
 
@@ -52,7 +56,9 @@ func SetupWaiver():
 	parent_waiver.transform.origin = Vector3(-29.613, -35.341, -6.696)
 
 func AwaitPickup():
-	await get_tree().create_timer(.6, false).timeout
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	await tree.create_timer(.6, false).timeout
 	cursor.SetCursor(true, true)
 	intrbranch_waiver.interactionAllowed = true
 	btn_waiver.visible = true
@@ -60,6 +66,8 @@ func AwaitPickup():
 	controller.previousFocus = btn_waiver
 
 func PickUpWaiver():
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
 	speaker_bootup.play()
 	parent_signatureMachineMainParent.visible = true
 	intrbranch_waiver.interactionAllowed = false
@@ -71,7 +79,7 @@ func PickUpWaiver():
 	UpdateLEDArray()
 	blinking = true
 	BlinkMarker()
-	await get_tree().create_timer(2.77, false).timeout #.9 anim speed
+	await tree.create_timer(2.77, false).timeout #.9 anim speed
 	for intbr in intbranches : intbr.interactionAllowed = true
 	cursor.SetCursor(true, true)
 	btnParent_signature.visible = true
@@ -101,6 +109,8 @@ func Input_Letter(alias : String):
 
 @export var ach : Achievement
 func Input_Enter():
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
 	var chararray = []
 	fullstring = ""
 	for letter in letterArray:
@@ -121,16 +131,16 @@ func Input_Enter():
 			el.set_collision_mask_value(1, false)
 	cursor.SetCursor(false, false)
 	btnParent_signature.visible = false
-	await get_tree().create_timer(.25, false).timeout
+	await tree.create_timer(.25, false).timeout
 	for i in range(lettercount):
 		letterArray_signature_joined[i].text = chararray[i].to_upper()
 		letterArray_signature_separate[i].text = chararray[i].to_upper()
 		ledArray[i].visible = false
-		await get_tree().create_timer(.17, false).timeout
+		await tree.create_timer(.17, false).timeout
 		speaker_punch.pitch_scale = randf_range(.95, 1)
 		speaker_punch.play()
 	roundManager.counting = true
-	await get_tree().create_timer(.17, false).timeout
+	await tree.create_timer(.17, false).timeout
 	parent_shotgun.transform.origin = origpos_shotgun
 	anim_waiver.play("put away waiver")
 	speaker_bootup.stop()
@@ -138,14 +148,16 @@ func Input_Enter():
 	roundManager.playerData.playername = " " + fullstring
 	roundManager.playerData.hasSignedWaiver = true
 	ReturnToMainBatch()
-	await get_tree().create_timer(1.72, false).timeout
+	await tree.create_timer(1.72, false).timeout
 	parent_signatureMachineMainParent.visible = false
 	parent_separateWaiver.visible = false
-	await get_tree().create_timer(.4, false).timeout
+	await tree.create_timer(.4, false).timeout
 	parent_waiver.queue_free()
 
 func ReturnToMainBatch():
-	await get_tree().create_timer(1.27, false).timeout
+	var tree:= get_tree()
+	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	await tree.create_timer(1.27, false).timeout
 	roundManager.enteringFromWaiver = true
 	roundManager.MainBatchSetup(false)
 
@@ -169,23 +181,3 @@ func UpdateLEDArray():
 			ledArray[i].transparency = 0
 		else:
 			ledArray[i].transparency = 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
