@@ -43,6 +43,7 @@ func CheckIfHovering():
 
 var fs_dec = false
 func InteractWith(alias : String):
+	print("interact with: " + alias)
 	match(alias):
 		"shotgun":
 			shotgun.GrabShotgun()

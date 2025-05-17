@@ -36,18 +36,21 @@ func SetUI(state : bool):
 		else: ui_3D.visible = false
 
 func OnHover():
+	print('On button hover')
 	if (isActive && mainActive):
 		if (isDynamic):
 			SetUI(true)
 			if (overridingMouseRaycast): mouseRaycast.GetRaycastOverride(mouseRaycastVector)
 
 func OnExit():
+	print('On button exit')
 	if (isActive && mainActive):
 		if (isDynamic):
 			SetUI(false)
 
 signal is_pressed
 func OnPress():
+	print('On button press')
 	if (isActive && mainActive):
 		emit_signal("is_pressed")
 		if (usingInteractionPipe): interaction.InteractWith(alias)

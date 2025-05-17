@@ -92,7 +92,8 @@ func Interaction(alias : String):
 				if (window_index == 0): board.DownloadEntries(selection_range1, selection_range2, "top")
 		"window":
 			branch_window.get_parent().get_child(1).Press()
-			CycleWindow()
+			# CycleWindow()
+			pass
 		"exit":
 			has_exited = true
 			branch_exit.get_parent().get_child(1).Press()
@@ -119,11 +120,11 @@ func CycleWindow():
 		screenparent_leaderboard.visible = true
 		screenparent_stats.visible = false
 		board.nocon.visible = true
-	if (window_index == 0): board.PassLeaderboard(selection_range1, selection_range2, "top")
-	if (window_index == 1): 
-		board.lock.visible = true
-		board.PassLeaderboard(selection_range1, selection_range2, "overview")
-	if (window_index == 2): board.PassLeaderboard(1, 49, "friends") #range ignored
+	# if (window_index == 0): board.PassLeaderboard(selection_range1, selection_range2, "top")
+	# if (window_index == 1): 
+	# 	board.lock.visible = true
+	# 	board.PassLeaderboard(selection_range1, selection_range2, "overview")
+	# if (window_index == 2): board.PassLeaderboard(1, 49, "friends") #range ignored
 
 func Bootup():
 	has_exited = false

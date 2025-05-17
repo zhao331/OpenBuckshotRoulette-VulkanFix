@@ -20,7 +20,10 @@ extends Node3D
 	signature_machine_main_parent,
 	health_ui_dealer_side,
 	health_ui_player_side,
-	$"light parent/lights_low_power"
+	$"light parent/lights_low_power",
+	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_top leaderboard",
+	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_global overview",
+	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_friends"
 ]
 @onready var invisible_nodes_android:= [
 	paperwork_4_001,
@@ -29,17 +32,19 @@ extends Node3D
 	paperwork_4_009,
 	light_main_door_2_club_ls,
 	$"backroom upper cables1",
-	$"backroom visual parent/Cube_073"
-	#$"backroom visual parent/circuitboards_017",
-	#$"backroom visual parent/circuitboards_007",
-	#$"light parent/OmniLight3D LS",
-	#$"light parent/OmniLight3D2 LS",
-	#$"light parent/OmniLight3D6 LS",
-	#$"light parent/OmniLight3D3 LS",
-	#$"light parent/light_barrel mask LS",
-	#$"light parent/light_tabletop interior LS",
-	#$"light parent/OmniLight3D5 LS",
-	#$"light parent/lght_backroom main LS"
+	$"backroom visual parent/Cube_073",
+	
+	$"backroom visual parent/circuitboards_017",
+	$"backroom visual parent/circuitboards_007",
+	$"light parent/OmniLight3D LS",
+	$"light parent/OmniLight3D2 LS",
+	$"light parent/OmniLight3D6 LS",
+	$"light parent/OmniLight3D3 LS",
+	$"light parent/light_barrel mask LS",
+	$"light parent/light_tabletop interior LS",
+	$"light parent/OmniLight3D5 LS",
+	$"light parent/lght_backroom main LS",
+	$"light parent/OmniLight3D4 LS"
 ]
 
 func _ready() -> void:
@@ -56,7 +61,7 @@ func init_invisible_nodes():
 		club_light_underside_club_us.shadow_enabled = false
 		lght_backroom_main_ls.shadow_enabled = false
 		omni_light_3d_4_ls.shadow_enabled = false
-		#$"light parent/lights_low_power".show()
+		$"light parent/lights_low_power".show()
 		for node in invisible_nodes_android:
 			node.hide()
 		cube_120_club.mesh.surface_get_material(3).shading_mode = StandardMaterial3D.SHADING_MODE_PER_VERTEX
