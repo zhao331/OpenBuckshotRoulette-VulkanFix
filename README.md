@@ -1,5 +1,5 @@
 # Open Buckshot Roulette
-这是一个把 Buckshot Roulette (恶魔罗盘) 开源的项目  
+这是一个把 Buckshot Roulette (恶魔轮盘) 开源的项目  
 
 你需要使用 Godot Engine 4.4.1 运行它  
 
