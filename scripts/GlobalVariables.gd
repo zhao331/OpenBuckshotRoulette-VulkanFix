@@ -29,7 +29,7 @@ var default_color_blank = Color(0.29, 0.5, 1)
 var colorblind_color_live = Color(1, 1, 1)
 var colorblind_color_blank = Color(0.34, 0.34, 0.34)
 
-var mp_debugging = false #mp debugging with temporary bots
+var mp_debugging = true #mp debugging with temporary bots
 var mp_printing_to_console = true #whether or not disconnect messages, etc are printed to console
 var mp_debug_keys_enabled = false #whether or not the debug keys are enabled
 var printing_packets = true #whether or not packets get logged
@@ -52,6 +52,7 @@ var returning_to_main_menu_on_popup_close : bool #whether or not closing the pop
 var active_match_customization_dictionary : Dictionary #match customization dictionary that will be used in the game. gets cleared on game end etc
 var stashed_match_customization_dictionary : Dictionary #match customization dictionary that will be stored in the current game session
 var previous_match_customization_differences : Dictionary #previously active match customization differences that were received by the host
+var steam_id_version_checked_ayeahrray:Node
 
 var debug_match_customization = {
 	"number_of_rounds": 3,
@@ -273,6 +274,7 @@ var debug_match_customization = {
 }
 
 func _ready():
+	steam_id_version_checked_ayeahrray = Node.new()
 	if using_steam: currentVersion = currentVersion_nr + versuffix_steam
 	else: currentVersion = currentVersion_nr + versuffix_community
 	debug_round_index_to_end_game_at = 2

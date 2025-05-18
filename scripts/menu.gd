@@ -7,6 +7,8 @@ extends Node3D
 @onready var button_controller: Label = $"Camera/dialogue UI/menu ui/sub options select/button_controller"
 @onready var viewblocker_parent: Control = $"Camera/dialogue UI/viewblocker parent"
 
+@onready var checkbox_env_filter: Checkbox = $"Camera/dialogue UI/menu ui/options_audio video/Checkbox_EnvFilter"
+
 func _ready() -> void:
 	viewblocker_parent.show()
 	if OpenBRGlobal.is_android():
@@ -16,7 +18,7 @@ func _ready() -> void:
 		option_monitor_windowed.hide()
 		true_button_controller.hide()
 		button_controller.label_settings.font_color = Color.from_string('#5d5d5d', Color.WHITE)
-
+	if OpenBRConfig.fetch('visual', 'env_filter', true) == false: checkbox_env_filter.set_checked(false)
 
 func _on_true_button_github_pressed() -> void:
 	OpenBRGlobal.uri(GlobalVariables.github_link)

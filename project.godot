@@ -26,6 +26,7 @@ config/icon="uid://daxtm8kkxiw4q"
 OpenBRConfig="*res://scripts/_OpenBR_Config.gd"
 GlobalVariables="*res://scripts/GlobalVariables.gd"
 GlobalSteam="*res://scripts/Steam.gd"
+OpenMP="*res://scripts/_OpenBR_MP.gd"
 OpenBRGlobal="*res://scenes/debug_screen.tscn"
 
 [debug]
@@ -38,7 +39,7 @@ window/size/viewport_width=960
 window/size/viewport_height=540
 window/size/window_width_override=1280
 window/size/window_height_override=675
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://misc/cursor xp_point.png"
 mouse_cursor/custom_image_hotspot=Vector2(9, 0)

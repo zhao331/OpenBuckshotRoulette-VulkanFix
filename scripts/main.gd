@@ -16,6 +16,7 @@ extends Node3D
 @onready var press_any_key_to_exit: Label = $"Camera/dialogue UI/press any key to exit"
 
 @onready var light_main_door_2_club_ls: OmniLight3D = $"backroom main parent/light main door2_CLUB LS"
+@onready var env_filter: Control = $"Camera/post processing/posterization test"
 
 @onready var invisible_nodes:= [
 	signature_machine_main_parent,
@@ -82,3 +83,5 @@ func init_invisible_nodes():
 			node.hide()
 		cube_120_club.mesh.surface_get_material(3).shading_mode = StandardMaterial3D.SHADING_MODE_PER_VERTEX
 		cube_120_club.mesh.surface_get_material(3).specular_mode = StandardMaterial3D.SPECULAR_DISABLED
+	
+	if OpenBRConfig.fetch('visual', 'env_filter', true) == false: env_filter.hide()

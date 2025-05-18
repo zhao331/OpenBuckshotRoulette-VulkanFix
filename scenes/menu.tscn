@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=4 uid="uid://bvumuv2g7ohx3"]
+[gd_scene load_steps=114 format=4 uid="uid://bvumuv2g7ohx3"]
 
 [ext_resource type="Script" uid="uid://d3sfai5sy66k3" path="res://scripts/OptionsManager.gd" id="1"]
 [ext_resource type="Script" uid="uid://igqvnhk2egvv" path="res://scripts/menu.gd" id="1_lqq6t"]
@@ -49,6 +49,7 @@
 [ext_resource type="Texture2D" uid="uid://bh3llh7fl3xyl" path="res://misc/logo_arcus key3.png" id="43"]
 [ext_resource type="PackedScene" uid="uid://bev1816xdksr3" path="res://widgets/clickable.tscn" id="43_850ru"]
 [ext_resource type="Texture2D" uid="uid://bsp46d6bpimfp" path="res://misc/logo_freesound.png" id="44"]
+[ext_resource type="PackedScene" uid="uid://befi2dok57wfs" path="res://widgets/checkbox.tscn" id="44_6vnu0"]
 [ext_resource type="Script" uid="uid://w61pqondauv5" path="res://scripts/KeyRebindBranch.gd" id="45"]
 [ext_resource type="Texture2D" uid="uid://dg6q5em3kldh7" path="res://misc/ratchet 1080 posterized.png" id="46"]
 [ext_resource type="AudioStream" uid="uid://cxxvvffvov2w" path="res://audio/music/music main_gate modded.ogg" id="47"]
@@ -885,11 +886,18 @@ script = ExtResource("2")
 [node name="mp_lobby manager" type="Node" parent="standalone managers" node_paths=PackedStringArray("menu_manager", "command_line")]
 script = ExtResource("3")
 is_menu = true
+is_lobby = null
+connecting_join_requested = null
 connecting_lobby_chat_update = false
 connecting_lobby_created = false
+connecting_lobby_joined = null
 connecting_persona_state_change = false
 menu_manager = NodePath("../menu manager")
 command_line = NodePath("../mp_command line checker")
+using_console = null
+updating_list = null
+get_lobby_members_on_ready = null
+checking_clipboard_ui = null
 
 [node name="menu manager" type="Node" parent="standalone managers" node_paths=PackedStringArray("savefile", "cursor", "animator_intro", "speaker_music", "speaker_start", "buttons", "buttons_options", "screens", "parent_main", "parent_creds", "parent_suboptions", "parent_audiovideo", "parent_language", "parent_controller", "parent_rebinding", "title", "waterfalls", "optionmanager", "controller", "mouseblocker", "anim_creds", "version", "firstFocus_main", "firstFocus_subOptions", "firstFocus_credits", "firstFocus_audioVideo", "firstFocus_language", "firstFocus_controller", "firstFocus_rebinding")]
 script = ExtResource("4")
@@ -1129,6 +1137,7 @@ grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="main screen" type="Control" parent="Camera/dialogue UI/menu ui"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1222,7 +1231,6 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
-theme_override_colors/font_color = Color(0.363582, 0.363582, 0.363582, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
@@ -1327,7 +1335,6 @@ speaker_hover = NodePath("../../../../../../speaker_hover")
 ui_opacity_active = 0.5
 
 [node name="true button_multiplayer" type="Button" parent="Camera/dialogue UI/menu ui/main screen"]
-visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -1762,7 +1769,6 @@ playing = true
 ui_opacity_active = 0.5
 
 [node name="options_audio video" type="Control" parent="Camera/dialogue UI/menu ui"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -1770,9 +1776,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -20.0
-offset_top = -20.0
+offset_top = 4.0
 offset_right = 20.0
-offset_bottom = 20.0
+offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -1837,14 +1843,14 @@ texture = ExtResource("31")
 texture_filter = 3
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.493
-anchor_top = 0.759
-anchor_right = 0.493
-anchor_bottom = 0.759
-offset_left = -156.717
-offset_top = -162.36
-offset_right = 1040.28
-offset_bottom = 457.64
+anchor_left = 0.5
+anchor_top = -0.102
+anchor_right = 0.5
+anchor_bottom = -0.102
+offset_left = -156.997
+offset_top = -127.92
+offset_right = 1040.0
+offset_bottom = 492.08
 scale = Vector2(0.261866, 0.261866)
 mouse_filter = 2
 texture = ExtResource("32")
@@ -1895,9 +1901,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 121.003
-offset_top = -232.0
+offset_top = -234.0
 offset_right = 283.003
-offset_bottom = -89.0
+offset_bottom = -91.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.311253, 0.235922)
@@ -1912,9 +1918,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 121.003
-offset_top = -205.0
+offset_top = -208.0
 offset_right = 283.003
-offset_bottom = -62.0
+offset_bottom = -65.0
 scale = Vector2(0.311253, 0.235922)
 mouse_filter = 2
 texture = ExtResource("34")
@@ -2014,9 +2020,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -527.292
-offset_top = -229.0
+offset_top = -231.0
 offset_right = 122.708
-offset_bottom = -190.0
+offset_bottom = -192.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.574333, 0.755696)
@@ -2035,9 +2041,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -527.292
-offset_top = -204.0
+offset_top = -206.0
 offset_right = 122.708
-offset_bottom = -165.0
+offset_bottom = -167.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.574333, 0.755696)
@@ -2048,6 +2054,27 @@ theme_override_font_sizes/font_size = 26
 text = "MP_TOGGLE BW"
 horizontal_alignment = 2
 
+[node name="text_env_filter" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -527.292
+offset_top = -181.0
+offset_right = 122.708
+offset_bottom = -142.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.574333, 0.755696)
+pivot_offset = Vector2(650, 0)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("28_ur5vm")
+theme_override_font_sizes/font_size = 26
+text = "ENV_FILTER"
+horizontal_alignment = 2
+
 [node name="checkmark_colorblind" type="TextureRect" parent="Camera/dialogue UI/menu ui/options_audio video"]
 layout_mode = 1
 anchors_preset = 8
@@ -2056,9 +2083,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 131.003
-offset_top = -229.0
+offset_top = -231.0
 offset_right = 197.003
-offset_bottom = -165.0
+offset_bottom = -167.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.372295, 0.372295)
@@ -2078,9 +2105,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 131.003
-offset_top = -202.0
+offset_top = -205.0
 offset_right = 197.003
-offset_bottom = -138.0
+offset_bottom = -141.0
 scale = Vector2(0.372295, 0.372295)
 texture = ExtResource("36")
 
@@ -2135,9 +2162,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 132.003
-offset_top = -228.0
+offset_top = -230.0
 offset_right = 140.003
-offset_bottom = -220.0
+offset_bottom = -222.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.80992, 2.8106)
@@ -2168,9 +2195,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 132.003
-offset_top = -202.0
+offset_top = -205.0
 offset_right = 140.003
-offset_bottom = -194.0
+offset_bottom = -197.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.80992, 2.8106)
@@ -2358,9 +2385,9 @@ ui_opacity_active = 1.0
 [node name="Control_MaxFPS" type="Control" parent="Camera/dialogue UI/menu ui/options_audio video"]
 anchors_preset = 0
 offset_left = -137.0
-offset_top = -208.0
+offset_top = -222.0
 offset_right = -20.0
-offset_bottom = -155.0
+offset_bottom = -169.0
 
 [node name="Label" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video/Control_MaxFPS"]
 layout_mode = 1
@@ -2383,9 +2410,9 @@ metadata/_edit_lock_ = true
 
 [node name="Label_30" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video/Control_MaxFPS/Items"]
 layout_mode = 0
-offset_top = 4.0
+offset_top = 14.0
 offset_right = 40.0
-offset_bottom = 34.0
+offset_bottom = 44.0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("42_jxp4i")
 theme_override_font_sizes/font_size = 24
@@ -2400,9 +2427,9 @@ metadata/_edit_lock_ = true
 [node name="Label_60" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video/Control_MaxFPS/Items"]
 layout_mode = 0
 offset_left = 27.0
-offset_top = 4.0
+offset_top = 14.0
 offset_right = 67.0
-offset_bottom = 36.0
+offset_bottom = 46.0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("42_jxp4i")
 theme_override_font_sizes/font_size = 24
@@ -2417,9 +2444,9 @@ metadata/_edit_lock_ = true
 [node name="Label_90" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video/Control_MaxFPS/Items"]
 layout_mode = 0
 offset_left = 54.0
-offset_top = 4.0
+offset_top = 14.0
 offset_right = 94.0
-offset_bottom = 36.0
+offset_bottom = 46.0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("42_jxp4i")
 theme_override_font_sizes/font_size = 24
@@ -2434,9 +2461,9 @@ metadata/_edit_lock_ = true
 [node name="Label_120" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video/Control_MaxFPS/Items"]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 4.0
+offset_top = 14.0
 offset_right = 137.0
-offset_bottom = 36.0
+offset_bottom = 46.0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("42_jxp4i")
 theme_override_font_sizes/font_size = 24
@@ -2450,9 +2477,9 @@ metadata/_edit_lock_ = true
 
 [node name="Label_UNLIMITED" type="Label" parent="Camera/dialogue UI/menu ui/options_audio video/Control_MaxFPS/Items"]
 layout_mode = 0
-offset_top = 25.0
+offset_top = 35.0
 offset_right = 158.0
-offset_bottom = 57.0
+offset_bottom = 67.0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("42_jxp4i")
 theme_override_font_sizes/font_size = 24
@@ -2463,6 +2490,16 @@ layout_mode = 1
 action = "max_fps_0"
 cursor = NodePath("../../../../../../../../standalone managers/cursor manager")
 metadata/_edit_lock_ = true
+
+[node name="Checkbox_EnvFilter" parent="Camera/dialogue UI/menu ui/options_audio video" node_paths=PackedStringArray("cursor") instance=ExtResource("44_6vnu0")]
+offset_left = 151.0
+offset_top = -160.0
+offset_right = 175.0
+offset_bottom = -136.0
+checked = true
+check_action = "env_filter_on"
+uncheck_action = "env_filter_off"
+cursor = NodePath("../../../../../standalone managers/cursor manager")
 
 [node name="options_controller" type="Control" parent="Camera/dialogue UI/menu ui"]
 visible = false
@@ -4641,7 +4678,7 @@ panning_strength = 0.0
 
 [node name="speaker_hover" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("51")
-volume_db = 3.0
+volume_db = 4.0
 max_polyphony = 60
 panning_strength = 0.0
 

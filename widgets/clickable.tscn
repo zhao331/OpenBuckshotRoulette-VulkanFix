@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bev1816xdksr3"]
+[gd_scene load_steps=6 format=3 uid="uid://bev1816xdksr3"]
 
 [ext_resource type="Script" uid="uid://cjo4guxd5xitg" path="res://widgets/clickable.gd" id="1_sn066"]
 [ext_resource type="Texture2D" uid="uid://dhovaahad40xo" path="res://misc/bracket selection_square1.png" id="1_yrge2"]
+[ext_resource type="AudioStream" uid="uid://dxjs3wreesre7" path="res://audio/button press3.ogg" id="3_lqu7f"]
+[ext_resource type="AudioStream" uid="uid://dvggwk7aie8v" path="res://audio/button_hover.ogg" id="4_b5gkh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ri552"]
 
@@ -42,6 +44,18 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_yrge2")
 expand_mode = 1
+
+[node name="AudioStreamPlayer2D_Press" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_lqu7f")
+volume_db = 0.07
+max_polyphony = 60
+panning_strength = 0.0
+
+[node name="AudioStreamPlayer2D_Hover" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_b5gkh")
+volume_db = 4.0
+max_polyphony = 60
+panning_strength = 0.0
 
 [connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]

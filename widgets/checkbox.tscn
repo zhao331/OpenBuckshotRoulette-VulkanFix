@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://befi2dok57wfs"]
+
+[ext_resource type="PackedScene" uid="uid://bev1816xdksr3" path="res://widgets/clickable.tscn" id="1_opv1c"]
+[ext_resource type="Script" uid="uid://deg30xku34w4i" path="res://widgets/checkbox.gd" id="2_dmmni"]
+[ext_resource type="Texture2D" uid="uid://clxueubnv8pdf" path="res://misc/checkmark_inactive.png" id="2_nv137"]
+
+[node name="Checkbox" instance=ExtResource("1_opv1c")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 24.0
+offset_bottom = 24.0
+grow_horizontal = 1
+grow_vertical = 1
+script = ExtResource("2_dmmni")
+checked = false
+check_action = ""
+uncheck_action = ""
+
+[node name="TextureRect_Icon" type="TextureRect" parent="." index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nv137")
+expand_mode = 1
+stretch_mode = 5

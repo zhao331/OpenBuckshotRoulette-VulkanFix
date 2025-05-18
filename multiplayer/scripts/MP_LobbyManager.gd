@@ -166,7 +166,7 @@ func CreateLobby():
 	if (GlobalSteam.LOBBY_ID == 0):
 		GlobalSteam.is_lobby_friends_only = true
 		GlobalSteam.lobby_player_limit = 4
-		#Steam.createLobby(Steam.LOBBY_TYPE_FRIENDS_ONLY, GlobalSteam.lobby_player_limit)
+		OpenMP.create_lobby(OpenMP.LOBBY_TYPE_FRIENDS_ONLY, GlobalSteam.lobby_player_limit)
 		#Steam.setLobbyData(GlobalSteam.LOBBY_ID, "player_limit", str(GlobalSteam.lobby_player_limit))
 
 func _on_lobby_created(connect: int, this_lobby_id: int) -> void:
@@ -379,7 +379,8 @@ func get_lobby_members() -> void:
 	if GlobalSteam.STEAM_ID == GlobalSteam.HOST_ID:
 		#Steam.setLobbyData(GlobalSteam.LOBBY_ID, "member_count", str(GlobalSteam.LOBBY_MEMBERS.size()))
 		if !(GlobalSteam.HOST_ID in GlobalVariables.steam_id_version_checked_array):
-			GlobalVariables.steam_id_version_checked_ayeahrray.append(GlobalSteam.HOST_ID)
+			pass
+			#GlobalVariables.steam_id_version_checked_ayeahrray.append(GlobalSteam.HOST_ID)
 
 	if (previous_host != GlobalSteam.HOST_ID) && (GlobalSteam.STEAM_ID == GlobalSteam.HOST_ID):
 		if match_customization != null:

@@ -83,6 +83,10 @@ func action(act:String):
 			set_max_fps(120)
 		'max_fps_0':
 			set_max_fps(0)
+		'env_filter_on':
+			OpenBRConfig.put('visual', 'env_filter', true)
+		'env_filter_off':
+			OpenBRConfig.put('visual', 'env_filter', false)
 
 func interact_with(alias:String):
 	if alias == 'ending_finish':
@@ -90,3 +94,11 @@ func interact_with(alias:String):
 			if (ending_manager.waitingForInput): 
 				ending_manager.ExitGame()
 				ending_manager.waitingForInput = false
+
+func get_formatted_time() -> String:
+	var time_dict = Time.get_time_dict_from_system()
+	return "%02d:%02d:%02d" % [
+		time_dict["hour"], 
+		time_dict["minute"], 
+		time_dict["second"]
+	]
