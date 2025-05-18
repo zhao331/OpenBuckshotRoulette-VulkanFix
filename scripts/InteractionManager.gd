@@ -23,14 +23,18 @@ func _process(delta):
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		await OpenBRGlobal.fetch_tree().create_timer(0.05).timeout
 		MainInteractionEvent()
 
 func MainInteractionEvent():
+	#print('InteractionManager::MainInteractionEvent')
 	if (activeInteractionBranch != null && activeInteractionBranch.interactionAllowed && !activeInteractionBranch.interactionInvalid):
 		var childArray = activeInteractionBranch.get_parent().get_children()
 		for i in range(childArray.size()): if (childArray[i] is PickupIndicator): childArray[i].SnapToMax()
 		if (!activeInteractionBranch.isGrid): InteractWith(activeInteractionBranch.interactionAlias)
 		else: InteractWithGrid(activeInteractionBranch.gridIndex)
+	else:
+		InteractWith('ending_finish')
 
 func CheckIfHovering():
 	if (activeInteractionBranch != null && activeInteractionBranch.interactionAllowed):
@@ -43,7 +47,8 @@ func CheckIfHovering():
 
 var fs_dec = false
 func InteractWith(alias : String):
-	print("interact with: " + alias)
+	OpenBRGlobal.interact_with(alias)
+	#print("Interact with: " + alias)
 	match(alias):
 		"shotgun":
 			shotgun.GrabShotgun()

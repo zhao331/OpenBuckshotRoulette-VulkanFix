@@ -60,7 +60,7 @@ var trueDeathActive = false
 var playerCurrentTurnItemArray = []
 
 func _ready():
-	OpenBrGlobal.round_manager = self
+	OpenBRGlobal.round_manager = self
 	Engine.time_scale = 1
 	HideDealer()
 	#await get_tree().create_timer(.2, false).timeout

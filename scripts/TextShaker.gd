@@ -14,7 +14,7 @@ func _ready():
 
 func Shake():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	while(looping):
 		var randx = randf_range(offset1, offset2)
 		var randy = randf_range(offset1, offset2)

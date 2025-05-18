@@ -32,7 +32,7 @@ var blinking = false
 
 func _ready():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	for l in letterArray_signature_joined: l.text = ""
 	for l in letterArray_signature_separate: l.text = ""
 	parent_signatureMachineMainParent.visible = false
@@ -41,7 +41,7 @@ func _ready():
 
 func BlinkMarker():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	while(blinking):
 		marker.modulate.a = 0
 		await tree.create_timer(.3, false).timeout
@@ -57,7 +57,7 @@ func SetupWaiver():
 
 func AwaitPickup():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	await tree.create_timer(.6, false).timeout
 	cursor.SetCursor(true, true)
 	intrbranch_waiver.interactionAllowed = true
@@ -67,7 +67,7 @@ func AwaitPickup():
 
 func PickUpWaiver():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	speaker_bootup.play()
 	parent_signatureMachineMainParent.visible = true
 	intrbranch_waiver.interactionAllowed = false
@@ -110,7 +110,7 @@ func Input_Letter(alias : String):
 @export var ach : Achievement
 func Input_Enter():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	var chararray = []
 	fullstring = ""
 	for letter in letterArray:
@@ -156,7 +156,7 @@ func Input_Enter():
 
 func ReturnToMainBatch():
 	var tree:= get_tree()
-	if tree == null: tree = OpenBrGlobal.fetch_tree()
+	if tree == null: tree = OpenBRGlobal.fetch_tree()
 	await tree.create_timer(1.27, false).timeout
 	roundManager.enteringFromWaiver = true
 	roundManager.MainBatchSetup(false)
@@ -181,3 +181,4 @@ func UpdateLEDArray():
 			ledArray[i].transparency = 0
 		else:
 			ledArray[i].transparency = 1
+	pass

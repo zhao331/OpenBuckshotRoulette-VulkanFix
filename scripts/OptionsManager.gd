@@ -53,7 +53,7 @@ var setting_greyscale_death = true
 var setting_music_enabled = true
 
 func _ready():
-	OpenBrGlobal.options_manager = self
+	OpenBRGlobal.options_manager = self
 	LoadSettings()
 	if (!receivedFile):
 		setting_windowed = defaultOption_windowed
@@ -140,8 +140,8 @@ func UpdateDisplay():
 	ui_volume.text = str(snapped(setting_volume * 100, .01)) + "%"
 
 func ApplySettings_window(is_windowed = setting_windowed):
-	if OpenBrGlobal.is_android(): return
-	OpenBrGlobal.is_fullscreen = !is_windowed
+	if OpenBRGlobal.is_android(): return
+	OpenBRGlobal.is_fullscreen = !is_windowed
 	if (!is_windowed): 
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 		ui_fullscreen.modulate.a = 1

@@ -9,7 +9,7 @@ extends Node3D
 
 func _ready() -> void:
 	viewblocker_parent.show()
-	if OpenBrGlobal.is_android():
+	if OpenBRGlobal.is_android():
 		bracket_selection_fullscreen.hide()
 		bracket_selection_windowed.hide()
 		option_monitor_fullscreen.hide()
@@ -19,5 +19,5 @@ func _ready() -> void:
 
 
 func _on_true_button_github_pressed() -> void:
-	OpenBrGlobal.uri(GlobalVariables.github_link)
+	OpenBRGlobal.uri(GlobalVariables.github_link)
 	pass # Replace with function body.

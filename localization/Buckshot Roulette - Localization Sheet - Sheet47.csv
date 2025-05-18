@@ -351,8 +351,8 @@ PRZED KAŻDYM ŁADOWANIEM.","MAIS ITENS ANTES
 CADA RECARGA.","БОЛЬШЕ ПРЕДМЕТОВ 
 ПЕРЕД КАЖДЫМ РАУНДОМ.",HER DOLUM ÖNCESİNDE DAHA FAZLA ÖĞE.,"ДОДАТКОВІ ПРЕДМЕТИ ПЕРЕД 
 КОЖНИМ ЗАРЯДЖАННЯМ.","每次装弹之前都可
-获得更多物品","每次裝彈之前都可
-獲得更多物品"
+获得更多道具","每次裝彈之前都可
+獲得更多道具"
 ATTRIBUTION SPECIAL THANKS,"AGRADECIMENTOS ESPECIAIS
 
 Hürcan ‘horrorvisuals’ Köse
@@ -509,7 +509,7 @@ THE NIGHT,A NOITE É UMA CRIANÇA.,DIE NACHT IST NOCH JUNG.,ÖÖ ON NOOR.,THE NI
 NO SPACE,SEM ESPAÇO.,KEIN PLATZ MEHR.,RUUMI POLE.,OUT OF SPACE.,NO TE QUEDA ESPACIO.,NO TE QUEDA ESPACIO.,PLUS DE PLACE.,SPAZIO INSUFFICIENTE.,空いてないぞ,공간이 없군.,BRAK MIEJSCA.,SEM ESPAÇO.,НЕТ МЕСТА.,YERİN KALMAMIŞ,НЕМАЄ МІСЦЯ.,空间不足,空間不足
 LIVEROUNDS,%s MUNIÇÕES REAIS.,%s SCHARFE MUNITION.,%s TERAVAT.,%s LIVE ROUNDS.,%s BALAS CARGADAS.,%s BALAS CARGADAS.,%s CARTOUCHES RÉELLES.,%s PROIETTILI VERI.,実包 %s 発,%s 실탄이야.,%s OSTRE NABOJE.,%s MUNIÇÕES REAIS.,%s БОЕВЫХ.,%s GERÇEK FİŞEK,%s БОЙОВИХ.,%s 实弹,%s 實彈
 PLAYERWIN,%s GANHOU!,%s GEWINNT!,%s VÕITIS!,%s WINS!,¡%s GANA!,¡%s GANA!,%s GAGNE !,VINCE %s!,%s勝利！,%s 승리!,%s WYGRYWA!,%s GANHOU!,%s ПОБЕЖДАЕТ!,%s GALİBİYET!,%s ПЕРЕМАГАЄ!,%s 获胜！,%s 獲勝！
-ITEMS EACH,%s ITENS CADA.,%s GEGENSTÄNDE JEWEILS.,%s ASJA MÕLEMALE.,%s ITEMS EACH.,%s OBJETOS PARA LOS DOS.,%s OBJETOS CADA UNO.,%s OBJETS CHACUN.,%s UNITÀ DI OGGETTI CIASCUNO.,互いに道具 %s つ,%s 개씩 아이템을 받는 거야.,%s PRZEDMIOTY(ÓW) KAŻDY.,%s ITENS CADA.,%s ПРЕДМ. КАЖДОМУ.,%s HER BİRİNE VERİLEN ÖĞE.,%s ПРЕДМЕТИ КОЖНОМУ.,%s 件物品/人,%s 件物品/人
+ITEMS EACH,%s ITENS CADA.,%s GEGENSTÄNDE JEWEILS.,%s ASJA MÕLEMALE.,%s ITEMS EACH.,%s OBJETOS PARA LOS DOS.,%s OBJETOS CADA UNO.,%s OBJETS CHACUN.,%s UNITÀ DI OGGETTI CIASCUNO.,互いに道具 %s つ,%s 개씩 아이템을 받는 거야.,%s PRZEDMIOTY(ÓW) KAŻDY.,%s ITENS CADA.,%s ПРЕДМ. КАЖДОМУ.,%s HER BİRİNE VERİLEN ÖĞE.,%s ПРЕДМЕТИ КОЖНОМУ.,每人 %s 件道具,每人 %s 件道具
 CHINESE_SIMPLIFIED,简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED),简体中文 (SIMPLIFIED)
 DEALER,DEALER,GEBER,DIILER,DEALER,DEALER,REPARTIDOR,DONNEUR,BANCO,ディーラー,딜러,KRUPIER,DEALER,ДИЛЕР,KURPİYER,КРУПʼЄ,庄家,莊家
 KOREAN,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어,한국어
@@ -661,3 +661,6 @@ KAZANAMAZSA, 1 DOLUM KAYBEDER.","ПОВЕРНІТЬ 2 ЗАРЯДИ З ЙМОВІ
  否则将损失 1 点生命值","有 50% 的機率恢復 2 點生命值
  否則將損失 1 點生命值"
 INVERTER,INVERSOR,UMKEHRER,INVERTER,INVERTER,INVERSOR,INVERSOR,ONDULEUR,INVERTITORE,インバータ,인버터,INWERTER,INVERSOR,ИНВЕРТОР,İNVERTÖR,ІНВЕРТОР,逆转器,逆轉器
+MAX_FPS,MAX FPS,MAX FPS,MAX FPS,MAX FPS,MAX FPS,MAX FPS,MAX FPS,MAX FPS,最大FPS,최대 FPS,MAKSYMALNE FPS,MAX FPS,МАКСИМАЛЬНЫЙ FPS,MAKSİMUM FPS,МАКСИМАЛЬНИЙ FPS,最大FPS,最大FPS
+UNLIMITED,ILIMITADO,UNBEGRENZT,PIIRANGUTA,UNLIMITED,ILIMITADO,ILIMITADO,ILLIMITÉ,ILLIMITATO,無制限,무제한,BEZ LIMITU,ILIMITADO,БЕЗЛИМИТНЫЙ,SIN SINIRLAR,БЕЗЛІМІТНИЙ,无限制,無限制
+TOUCH_SCREEN_EXIT,Toque na tela para sair,Zum Beenden Bildschirm berühren,Väljumiseks puudutage ekraani,Touch screen to exit,Toca la pantalla para salir,Toca la pantalla para salir,Touchez l'écran pour quitter,Tocca lo schermo per uscire,画面をタッチして終了, 화면을 터치하여 종료,Dotknij ekranu, aby wyjść,Toque na tela para sair,Коснитесь экрана, чтобы выйти,Ekrana dokunarak çıkış yapın,ДОТОЧИТИ ДО ЕКРАНУ,触摸屏幕退出,觸摸螢幕退出

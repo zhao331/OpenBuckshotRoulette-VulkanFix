@@ -13,6 +13,7 @@ extends Node3D
 @onready var club_light_underside_club_us: OmniLight3D = $"backroom main parent/club light underside_CLUB US"
 @onready var lght_backroom_main_ls: OmniLight3D = $"light parent/lght_backroom main LS"
 @onready var omni_light_3d_4_ls: OmniLight3D = $"light parent/OmniLight3D4 LS"
+@onready var press_any_key_to_exit: Label = $"Camera/dialogue UI/press any key to exit"
 
 @onready var light_main_door_2_club_ls: OmniLight3D = $"backroom main parent/light main door2_CLUB LS"
 
@@ -23,7 +24,8 @@ extends Node3D
 	$"light parent/lights_low_power",
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_top leaderboard",
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_global overview",
-	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_friends"
+	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_friends",
+	$"player vehicle parent/vehicle/car door1/MeshInstance3D_EndingFinish"
 ]
 @onready var invisible_nodes_android:= [
 	paperwork_4_001,
@@ -33,7 +35,7 @@ extends Node3D
 	light_main_door_2_club_ls,
 	$"backroom upper cables1",
 	$"backroom visual parent/Cube_073",
-	
+	$"backroom visual parent/Plane_023",
 	$"backroom visual parent/circuitboards_017",
 	$"backroom visual parent/circuitboards_007",
 	$"light parent/OmniLight3D LS",
@@ -44,19 +46,33 @@ extends Node3D
 	$"light parent/light_tabletop interior LS",
 	$"light parent/OmniLight3D5 LS",
 	$"light parent/lght_backroom main LS",
-	$"light parent/OmniLight3D4 LS"
+	$"light parent/OmniLight3D4 LS",
+	$"backroom visual parent/Cube_006",
+	$restroom_CLUB/Cube_116,
+	$"backroom main parent/Cube_120_CLUB/Cube_107",
+	$"backroom visual parent/Cube_001/Cylinder_002",
+	$"backroom visual parent/Cube_043/Cylinder_001",
+	$"backroom visual parent/Plane_024",
+	$"backroom visual parent/Cylinder_032",
+	$"backroom visual parent/Cylinder_003",
+	$"backroom visual parent/Cube_072",
+	$"backroom visual parent/ash tray",
+	$"backroom visual parent/magazine2",
+	$"backroom visual parent/magazine1"
 ]
 
 func _ready() -> void:
-	print('main')
-	TranslationServer.set_locale('ZHS')
+	#if OpenBRGlobal.is_android():
+		#press_any_key_to_exit.text = tr('TOUCH_SCREEN_EXIT')
+	#print('main')
+	#TranslationServer.set_locale('ZHS')
 	init_invisible_nodes()
 	viewblocker_parent.show()
 
 func init_invisible_nodes():
 	for node:Node3D in invisible_nodes:
 		node.hide()
-	if OpenBrGlobal.is_android():
+	if OpenBRGlobal.is_android():
 		light_main_door_3_ls.shadow_enabled = false
 		club_light_underside_club_us.shadow_enabled = false
 		lght_backroom_main_ls.shadow_enabled = false

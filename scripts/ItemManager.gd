@@ -152,7 +152,7 @@ func BeginItemGrabbing():
 		var stringIndex = roundManager.roundArray[roundManager.currentRound].numberOfItemsToGrab
 		var string = stringNumberArray[stringIndex]
 		string = str(stringIndex)
-		dialogue.ShowText_Forever(tr("ITEMS EACH") % string)
+		if tr("ITEMS EACH").contains('%s'): dialogue.ShowText_Forever(tr("ITEMS EACH") % string)
 		await get_tree().create_timer(2.5, false).timeout
 		dialogue.ShowText_Forever(tr("MORE ITEMS"))
 		await get_tree().create_timer(2.5, false).timeout
@@ -163,7 +163,7 @@ func BeginItemGrabbing():
 		var stringIndex = roundManager.roundArray[roundManager.currentRound].numberOfItemsToGrab
 		var string = stringNumberArray[stringIndex]
 		string = str(stringIndex)
-		dialogue.ShowText_Forever(tr("ITEMS EACH") % string)
+		if tr("ITEMS EACH").contains('%s'): dialogue.ShowText_Forever(tr("ITEMS EACH") % string)
 		await get_tree().create_timer(2.5, false).timeout
 		dialogue.HideText()
 		roundManager.playerData.hasReadItemDistributionIntro2 = true

@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bev1816xdksr3"]
+
+[ext_resource type="Script" uid="uid://cjo4guxd5xitg" path="res://widgets/clickable.gd" id="1_sn066"]
+[ext_resource type="Texture2D" uid="uid://dhovaahad40xo" path="res://misc/bracket selection_square1.png" id="1_yrge2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ri552"]
+
+[node name="Clickable" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sn066")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ri552")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ri552")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yrge2")
+expand_mode = 1
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
