@@ -59,7 +59,10 @@ extends Node3D
 	$"backroom visual parent/Cube_072",
 	$"backroom visual parent/ash tray",
 	$"backroom visual parent/magazine2",
-	$"backroom visual parent/magazine1"
+	$"backroom visual parent/magazine1",
+	$"backroom visual parent/Cube_046",
+	$"backroom visual parent/cup",
+	$"backroom visual parent/Cylinder_006"
 ]
 
 func _ready() -> void:
@@ -85,3 +88,13 @@ func init_invisible_nodes():
 		cube_120_club.mesh.surface_get_material(3).specular_mode = StandardMaterial3D.SPECULAR_DISABLED
 	
 	if OpenBRConfig.fetch('visual', 'env_filter', true) == false: env_filter.hide()
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion or event is InputEventMouseButton:
+		var viewport = get_viewport()
+		var mouse_pos = viewport.get_mouse_position()
+		
+		# 获取鼠标下的Control节点
+		var control_under_mouse = viewport.gui_get_focus_owner()
+		if control_under_mouse:
+			print("鼠标在UI节点上:", control_under_mouse.name)

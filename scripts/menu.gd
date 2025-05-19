@@ -9,6 +9,10 @@ extends Node3D
 
 @onready var checkbox_env_filter: Checkbox = $"Camera/dialogue UI/menu ui/options_audio video/Checkbox_EnvFilter"
 
+@onready var invisible_nodes_android:= [
+	
+]
+
 func _ready() -> void:
 	viewblocker_parent.show()
 	if OpenBRGlobal.is_android():
@@ -23,3 +27,8 @@ func _ready() -> void:
 func _on_true_button_github_pressed() -> void:
 	OpenBRGlobal.uri(GlobalVariables.github_link)
 	pass # Replace with function body.
+
+func init_invisible_nodes():
+	if OpenBRGlobal.is_android():
+		for node in invisible_nodes_android:
+			node.hide()

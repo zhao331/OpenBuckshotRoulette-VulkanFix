@@ -998,6 +998,7 @@ libraries = {
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(0.0211867, 0.156399, 0.987467, 4.65251e-10, 0.987688, -0.156434, -0.999776, 0.00331432, 0.0209258, 2.30247, -0.618707, 12.1781)
 fov = 54.0
+far = 16.0
 script = ExtResource("18")
 
 [node name="post processing" type="Node" parent="Camera"]
@@ -1137,7 +1138,6 @@ grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="main screen" type="Control" parent="Camera/dialogue UI/menu ui"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1231,6 +1231,7 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
+theme_override_colors/font_color = Color(0.360784, 0.360784, 0.360784, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
@@ -1353,6 +1354,7 @@ scale = Vector2(8.18198, 3.01166)
 focus_neighbor_top = NodePath("../true button_start")
 focus_neighbor_right = NodePath("../true button_discord")
 focus_neighbor_bottom = NodePath("../true button_options")
+disabled = true
 
 [node name="button class_multiplayer" type="Node" parent="Camera/dialogue UI/menu ui/main screen/true button_multiplayer" node_paths=PackedStringArray("cursor", "ui", "speaker_press", "speaker_hover")]
 script = ExtResource("28")
@@ -1769,6 +1771,7 @@ playing = true
 ui_opacity_active = 0.5
 
 [node name="options_audio video" type="Control" parent="Camera/dialogue UI/menu ui"]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

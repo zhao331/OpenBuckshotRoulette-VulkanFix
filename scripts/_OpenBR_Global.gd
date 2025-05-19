@@ -24,10 +24,9 @@ func _input(event: InputEvent) -> void:
 			if is_fullscreen: DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 			else: DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	if Input.is_action_just_pressed('OpenBR_test'):
-		if round_manager != null:
-			print(round_manager.currentRound)
-			round_manager.currentRound = 2
-		#ProjectSettings.set_setting('display/window/stretch/mode', 0)
+		#if round_manager != null:
+			#print(round_manager.currentRound)
+			#round_manager.currentRound = 2
 		pass
 	
 	if round_manager != null:
@@ -45,7 +44,7 @@ func _input(event: InputEvent) -> void:
 			print('Opponent health: ', round_manager.health_opponent)
 
 func is_android() -> bool:
-	#return true
+	return true
 	if OS.get_name() == 'Android': return true
 	return false
 

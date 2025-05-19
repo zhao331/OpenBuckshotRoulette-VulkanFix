@@ -1,11 +1,12 @@
 # Open Buckshot Roulette
-这是一个把 Buckshot Roulette (恶魔轮盘) 开源的项目  
+这是一个把 Buckshot Roulette (恶魔轮盘) 开源并扩展的项目  
 
-你需要使用 Godot Engine 4.4.1 运行它  
+你需要使用 Godot Engine 4.4.1 编辑它  
 
-我们正在寻找让 Open Buckshot Roulette 安卓设备上流畅运行的方法(尽管可以运行，但是非常卡)  
+Open Buckshot Roulette 可以较流畅地运行在安卓设备上  
 
-我们把渲染引擎改成了`兼容`，如有需要，你可以随时更改为`Forward+`
+我们正在寻找在常规游戏下自定义回合参数和修复多人游戏的方法
 
 ## 许可证
-根据 GPL-v3.0  
+- 自由软件许可证: [GNU General Public License v3 (GPL v3)](LICENSE)
+- 最终用户许可协议 (EULA): [EULA.md](EULA.md)
