@@ -46,7 +46,7 @@ func Button_Main(tag : String):
 	match tag:
 		"retry":
 			print("changing scene to: death / 3")
-			get_tree().change_scene_to_file("res://scenes/menu.tscn")
+			SceneChanger.change("res://scenes/menu.tscn")
 		"exit":
 			get_tree().quit()
 

@@ -18,7 +18,7 @@ func UnlockRoutine():
 	anim.play("fade")
 	await get_tree().create_timer(1, false).timeout
 	print("changing scene to: menu")
-	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	SceneChanger.change("res://scenes/menu.tscn")
 
 func UnlockMode():
 	var data = {

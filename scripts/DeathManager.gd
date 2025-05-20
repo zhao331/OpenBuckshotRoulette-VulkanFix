@@ -143,7 +143,7 @@ func MainDeathRoutine():
 			if (rm.endscore > 1000000): ach.UnlockAchievement("ach10")
 		await get_tree().create_timer(.5, false).timeout
 		print("changing scene to: death / 1")
-		get_tree().change_scene_to_file("res://scenes/death.tscn")
+		SceneChanger.change("res://scenes/death.tscn")
 		return
 	if (shotgunShooting.roundManager.wireIsCut_player): 
 		shotgunShooting.roundManager.playerData.enteringFromTrueDeath = true
@@ -153,10 +153,10 @@ func MainDeathRoutine():
 	await get_tree().create_timer(.5, false).timeout
 	if (!loadingHeaven): 
 		print("changing scene to: death / 2")
-		get_tree().change_scene_to_file("res://scenes/main.tscn")
+		SceneChanger.change("res://scenes/main.tscn")
 	else: 
 		print("changing scene to: heaven")
-		get_tree().change_scene_to_file("res://scenes/heaven.tscn")
+		SceneChanger.change("res://scenes/heaven.tscn")
 	pass
 
 func DisableSpeakers():

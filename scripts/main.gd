@@ -11,22 +11,20 @@ extends Node3D
 @onready var paperwork_4_009: MeshInstance3D = $"backroom visual parent/paperwork4_009"
 @onready var light_main_door_3_ls: OmniLight3D = $"backroom main parent/light main door3 LS"
 @onready var club_light_underside_club_us: OmniLight3D = $"backroom main parent/club light underside_CLUB US"
-@onready var lght_backroom_main_ls: OmniLight3D = $"light parent/lght_backroom main LS"
 @onready var omni_light_3d_4_ls: OmniLight3D = $"light parent/OmniLight3D4 LS"
 @onready var press_any_key_to_exit: Label = $"Camera/dialogue UI/press any key to exit"
-
-@onready var light_main_door_2_club_ls: OmniLight3D = $"backroom main parent/light main door2_CLUB LS"
-@onready var env_filter: Control = $"Camera/post processing/posterization test"
+@onready var mesh_instance_3d_bridge: MeshInstance3D = $"backroom main parent/Cube_120_CLUB/MeshInstance3D_Bridge"
 
 @onready var invisible_nodes:= [
 	signature_machine_main_parent,
 	health_ui_dealer_side,
 	health_ui_player_side,
-	$"light parent/lights_low_power",
+	$"light parent/LightsAndroid",
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_top leaderboard",
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_global overview",
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_friends",
-	$"player vehicle parent/vehicle/car door1/MeshInstance3D_EndingFinish"
+	$"player vehicle parent/vehicle/car door1/MeshInstance3D_EndingFinish",
+	mesh_instance_3d_bridge
 ]
 @onready var invisible_nodes_android:= [
 	paperwork_4_001,
@@ -62,16 +60,76 @@ extends Node3D
 	$"backroom visual parent/magazine1",
 	$"backroom visual parent/Cube_046",
 	$"backroom visual parent/cup",
-	$"backroom visual parent/Cylinder_006"
+	$"backroom visual parent/Cylinder_006",
+	$"backroom visual parent/circuitboards_001",
+	$"backroom visual parent/cigarette butts"
+]
+@onready var invisible_nodes_low_perf:= [
+	$"restroom_CLUB/faucet parent_normal",
+	$restroom_CLUB/Cube_111/Cube_122,
+	$"restroom_CLUB/Cube_111/faucet tap_normal2",
+	$"restroom_CLUB/Cube_111/faucet tap_normal3",
+	$"restroom_CLUB/Cube_111/faucet tap_normal",
+	$restroom_CLUB/Cube_112,
+	$"light parent/LightsAndroid/OmniLight3D_Android_Backroom1",
+	$"light parent/LightsAndroid/OmniLight3D_Android_Backroom2",
+	$"backroom visual parent/TCom_AudioEquipment0039_1_M_002",
+	$"backroom visual parent/Cylinder_005",
+	$"backroom visual parent/Cylinder_004",
+	$"backroom visual parent/Cube_003",
+	$"backroom visual parent/Cube_005",
+	$"backroom visual parent/boombox",
+	$"backroom visual parent/TCom_AudioEquipment0039_1_M_001",
+	$"backroom main parent/Cube_120_CLUB/Cube_106",
+	$"backroom main parent/Cube_120_CLUB/Cube_093",
+	$"backroom main parent/club light underside_CLUB US",
+	$restroom_CLUB/Cube_117,
+	$"restroom_CLUB/bathroom wall main_crt hole/faucets_crt hole",
+	$"backroom visual parent/Cube_047",
+	$"backroom visual parent/Cube_001",
+	$"backroom visual parent/Cube_043"
+]
+@onready var invisible_nodes_very_low_perf:= [
+	$"backroom visual parent/TCom_AudioEquipment0064_S",
+	$"backroom visual parent/TCom_AudioEquipment0039_1_M_004",
+	$"backroom visual parent/TCom_AudioEquipment0039_1_M",
+	$"backroom visual parent/TCom_AudioEquipment0068_S",
+	$"backroom visual parent/BezierCurve_004",
+	$"backroom visual parent/BezierCurve_001",
+	$"backroom visual parent/BezierCurve_005",
+	$"backroom visual parent/Cube_039",
+	$"backroom visual parent/Cube_039",
+	$"backroom visual parent/BezierCurve_001",
+	$"backroom visual parent/Plane_024",
+	$"restroom_CLUB/mirror normal",
+	$"restroom_CLUB/bathroom wall main_crt hole/mirror broken",
+	$"backroom visual parent/BezierCurve_002",
+	$"backroom visual parent/Cube",
+	$"backroom visual parent/Cube_002",
+	$"backroom visual parent/BezierCurve_006",
+	$"backroom visual parent/BezierCurve_003",
+	$"backroom main parent/Cube_120_CLUB/Empty_002",
+	$"restroom_CLUB/trig_pill bottle/OmniLight3D_Pill"
 ]
 
+@onready var light_main_door_2_club_ls: OmniLight3D = $"backroom main parent/light main door2_CLUB LS"
+@onready var env_filter: Control = $"Camera/post processing/posterization test"
+@onready var camera: MouseRaycast = $Camera
+@onready var timer_refresh_fov: Timer = $Camera/Timer_RefreshFov
+@onready var collision_shape_3d: CollisionShape3D = $"intro parent/backroom door/StaticBody3D/CollisionShape3D"
+@onready var collision_shape_3d_backroom_door: CollisionShape3D = $"intro parent/backroom door/StaticBody3D/CollisionShape3D"
+@onready var omni_light_3d_bathroom: OmniLight3D = $"backroom main parent/light main door3 LS"
+@onready var omni_light_3d_active: OmniLight3D = $"light parent/lght_backroom main2"
+
 func _ready() -> void:
+	OpenBRGlobal.main = self
 	#if OpenBRGlobal.is_android():
 		#press_any_key_to_exit.text = tr('TOUCH_SCREEN_EXIT')
 	#print('main')
 	#TranslationServer.set_locale('ZHS')
 	init_invisible_nodes()
 	viewblocker_parent.show()
+	refresh_collision_shape()
 
 func init_invisible_nodes():
 	for node:Node3D in invisible_nodes:
@@ -79,15 +137,25 @@ func init_invisible_nodes():
 	if OpenBRGlobal.is_android():
 		light_main_door_3_ls.shadow_enabled = false
 		club_light_underside_club_us.shadow_enabled = false
-		lght_backroom_main_ls.shadow_enabled = false
 		omni_light_3d_4_ls.shadow_enabled = false
-		$"light parent/lights_low_power".show()
+		$"backroom main parent/OmniLight3D_ClubTop".shadow_enabled = false
+		omni_light_3d_active.shadow_enabled = false
+		
+		$"light parent/LightsAndroid".show()
+		
 		for node in invisible_nodes_android:
-			node.hide()
+			if node != null: node.hide()
 		cube_120_club.mesh.surface_get_material(3).shading_mode = StandardMaterial3D.SHADING_MODE_PER_VERTEX
 		cube_120_club.mesh.surface_get_material(3).specular_mode = StandardMaterial3D.SPECULAR_DISABLED
 	
 	if OpenBRConfig.fetch('visual', 'env_filter', true) == false: env_filter.hide()
+	if OpenBRConfig.fetch('visual', 'low_perf_mode', false) and OpenBRGlobal.is_android():
+		for node in invisible_nodes_low_perf:
+			node.hide()
+		if OpenBRConfig.fetch('visual', 'very_low_perf_mode', false):
+			for node in invisible_nodes_very_low_perf:
+				node.hide()
+			mesh_instance_3d_bridge.show()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion or event is InputEventMouseButton:
@@ -98,3 +166,8 @@ func _input(event: InputEvent) -> void:
 		var control_under_mouse = viewport.gui_get_focus_owner()
 		if control_under_mouse:
 			print("鼠标在UI节点上:", control_under_mouse.name)
+
+func refresh_collision_shape():
+	var vec:= get_window().size
+	if (float(vec.x) / vec.y) < 1.32:
+		collision_shape_3d_backroom_door.scale.z = 2.5

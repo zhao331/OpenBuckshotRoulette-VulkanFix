@@ -10,7 +10,7 @@ var fs = false
 func _ready():
 	# if (isDeathScreen):
 	# 	print("changing scene to: main")
-	# 	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	# 	SceneChanger.change("res://scenes/main.tscn")
 	pass
 
 #func _unhandled_input(event):
@@ -20,5 +20,5 @@ func _ready():
 #		await get_tree().create_timer(.5, false).timeout
 #		if (!isDeathScreen):
 #			savefile.ClearSave()
-#		get_tree().change_scene_to_file("res://scenes/main.tscn")
+#		SceneChanger.change("res://scenes/main.tscn")
 #		allowed = false

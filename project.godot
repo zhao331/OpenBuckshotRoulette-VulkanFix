@@ -28,6 +28,7 @@ GlobalVariables="*res://scripts/GlobalVariables.gd"
 GlobalSteam="*res://scripts/Steam.gd"
 OpenMP="*res://scripts/_OpenBR_MP.gd"
 OpenBRGlobal="*res://scenes/debug_screen.tscn"
+SceneChanger="*res://scenes/SceneChanger.tscn"
 
 [debug]
 
@@ -35,8 +36,8 @@ file_logging/enable_file_logging=true
 
 [display]
 
-window/size/viewport_width=960
-window/size/viewport_height=540
+window/size/viewport_width=427
+window/size/viewport_height=240
 window/size/window_width_override=1280
 window/size/window_height_override=675
 window/stretch/mode="viewport"

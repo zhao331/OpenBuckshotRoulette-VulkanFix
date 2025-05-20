@@ -45,4 +45,4 @@ func StartGameRoutine_Main():
 	lobby_ui.SetupMainSceneLoad()
 
 func StartGameRoutine_LoadScene():
-	get_tree().change_scene_to_file("res://multiplayer/scenes/mp_main.tscn")
+	SceneChanger.change("res://multiplayer/scenes/mp_main.tscn")

@@ -346,7 +346,7 @@ func ExitToMainMenu():
 	await get_tree().create_timer(.60, false).timeout
 	viewblocker_main.visible = true
 	await get_tree().create_timer(.2, false).timeout
-	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	SceneChanger.change("res://scenes/menu.tscn")
 
 func CheckLobbyCopyPaste():
 	if GlobalSteam.LOBBY_ID == 0:

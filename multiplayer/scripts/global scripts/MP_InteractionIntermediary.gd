@@ -62,7 +62,7 @@ func ExitGame(message_to_forward : String = ""):
 		ingame_lobby_ui.lobby.leave_lobby()
 	GlobalVariables.running_short_intro_in_lobby_scene = true
 	GlobalVariables.disband_lobby_after_exiting_main_scene = false
-	get_tree().change_scene_to_file("res://multiplayer/scenes/mp_lobby.tscn")
+	SceneChanger.change("res://multiplayer/scenes/mp_lobby.tscn")
 
 func InteractionPipe(alias : String, button_class_main : MP_ButtonClassMain):
 	match alias:

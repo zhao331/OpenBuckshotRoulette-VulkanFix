@@ -21,4 +21,4 @@ func JoinGameOutsideLobby(lobby_id):
 	GlobalVariables.running_short_intro_in_lobby_scene = true
 	await get_tree().create_timer(.5, false).timeout
 	GlobalVariables.command_line_checked = true
-	get_tree().change_scene_to_file("res://multiplayer/scenes/mp_lobby.tscn")
+	SceneChanger.change("res://multiplayer/scenes/mp_lobby.tscn")

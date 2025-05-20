@@ -203,7 +203,7 @@ func Start():
 	savefile.ClearSave()
 	await get_tree().create_timer(4, false).timeout
 	print("changing scene to: main")
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	SceneChanger.change("res://scenes/main.tscn")
 
 func StartMultiplayer():
 	if !GlobalSteam.ONLINE:
@@ -224,7 +224,7 @@ func StartMultiplayer():
 	savefile.ClearSave()
 	await get_tree().create_timer(4, false).timeout
 	print("changing scene to: lobby")
-	get_tree().change_scene_to_file("res://multiplayer/scenes/mp_lobby.tscn")
+	SceneChanger.change("res://multiplayer/scenes/mp_lobby.tscn")
 
 func Credits():
 	Show("credits")

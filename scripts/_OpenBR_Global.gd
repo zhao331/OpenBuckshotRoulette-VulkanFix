@@ -4,6 +4,8 @@ extends Control
 var options_manager: OptionsManager
 var round_manager: RoundManager
 var ending_manager: EndingManager
+var main
+var menu
 
 var is_fullscreen:= true
 var frames:= 0
@@ -15,6 +17,7 @@ func _ready() -> void:
 	if ProjectSettings.get_setting("rendering/renderer/rendering_method") == 'mobile': _is_mobile_renderer = true
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	set_max_fps(-1)
+	#scale_viewport_to_screen()
 
 func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed('fullscreen'):
@@ -27,6 +30,7 @@ func _input(event: InputEvent) -> void:
 		#if round_manager != null:
 			#print(round_manager.currentRound)
 			#round_manager.currentRound = 2
+		print(get_viewport().size)
 		pass
 	
 	if round_manager != null:
@@ -44,7 +48,7 @@ func _input(event: InputEvent) -> void:
 			print('Opponent health: ', round_manager.health_opponent)
 
 func is_android() -> bool:
-	return true
+	#return true
 	if OS.get_name() == 'Android': return true
 	return false
 
@@ -71,6 +75,7 @@ func set_max_fps(fps:int = 60):
 	Engine.max_fps = fps
 
 func action(act:String):
+	print('Action: ', act)
 	match act:
 		'max_fps_30':
 			set_max_fps(30)
@@ -86,6 +91,20 @@ func action(act:String):
 			OpenBRConfig.put('visual', 'env_filter', true)
 		'env_filter_off':
 			OpenBRConfig.put('visual', 'env_filter', false)
+		'low_perf_mode_on':
+			OpenBRConfig.put('visual', 'low_perf_mode', true)
+		'low_perf_mode_off':
+			OpenBRConfig.put('visual', 'low_perf_mode', false)
+		'very_low_perf_mode_on':
+			if menu:
+				menu.shell_waterfall_1.hide()
+				menu.shell_waterfall_2.hide()
+			OpenBRConfig.put('visual', 'very_low_perf_mode', true)
+		'very_low_perf_mode_off':
+			if menu:
+				menu.shell_waterfall_1.show()
+				menu.shell_waterfall_2.show()
+			OpenBRConfig.put('visual', 'very_low_perf_mode', false)
 
 func interact_with(alias:String):
 	if alias == 'ending_finish':
@@ -93,6 +112,13 @@ func interact_with(alias:String):
 			if (ending_manager.waitingForInput): 
 				ending_manager.ExitGame()
 				ending_manager.waitingForInput = false
+	else:
+		print('Interact: ', alias)
+		if alias == 'pill choice yes':
+			if main != null:
+				await sleep(2.4)
+				main.omni_light_3d_bathroom.hide()
+				main.omni_light_3d_bathroom.show()
 
 func get_formatted_time() -> String:
 	var time_dict = Time.get_time_dict_from_system()
@@ -101,3 +127,20 @@ func get_formatted_time() -> String:
 		time_dict["minute"], 
 		time_dict["second"]
 	]
+
+func scale_viewport_to_screen():
+	var viewport:= get_viewport()
+	var screen_size:= get_window().size
+	var viewport_size:= get_viewport_rect().size
+
+	if viewport_size.x < screen_size.x:
+		viewport.size.x = screen_size.x
+		pass
+	if viewport_size.y < screen_size.y:
+		viewport.size.y = screen_size.y
+		pass
+	
+	print('Refresh viewport size')
+
+func sleep(sec:float):
+	await get_tree().create_timer(sec).timeout

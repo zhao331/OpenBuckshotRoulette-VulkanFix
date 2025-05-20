@@ -104,7 +104,7 @@ func ExitGame():
 	var unlocked = FileAccess.file_exists(unlocker.savepath)
 	if (unlocked): 
 		print("changing scene to: menu")
-		get_tree().change_scene_to_file("res://scenes/menu.tscn")
+		SceneChanger.change("res://scenes/menu.tscn")
 		return
 	else:
 		unlocker.UnlockRoutine()
