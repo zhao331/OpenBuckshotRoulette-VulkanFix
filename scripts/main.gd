@@ -24,7 +24,8 @@ extends Node3D
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_global overview",
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_friends",
 	$"player vehicle parent/vehicle/car door1/MeshInstance3D_EndingFinish",
-	mesh_instance_3d_bridge
+	mesh_instance_3d_bridge,
+	$"Camera/post processing/ColorRect_VeryLowPerfShader"
 ]
 @onready var invisible_nodes_android:= [
 	paperwork_4_001,
@@ -120,6 +121,7 @@ extends Node3D
 @onready var collision_shape_3d_backroom_door: CollisionShape3D = $"intro parent/backroom door/StaticBody3D/CollisionShape3D"
 @onready var omni_light_3d_bathroom: OmniLight3D = $"backroom main parent/light main door3 LS"
 @onready var omni_light_3d_active: OmniLight3D = $"light parent/lght_backroom main2"
+@onready var color_rect_very_low_perf_shader: ColorRect = $"Camera/post processing/ColorRect_VeryLowPerfShader"
 
 func _ready() -> void:
 	OpenBRGlobal.main = self
@@ -132,8 +134,8 @@ func _ready() -> void:
 	refresh_collision_shape()
 
 func init_invisible_nodes():
-	for node:Node3D in invisible_nodes:
-		node.hide()
+	for node in invisible_nodes:
+		if node != null: node.hide()
 	if OpenBRGlobal.is_android():
 		light_main_door_3_ls.shadow_enabled = false
 		club_light_underside_club_us.shadow_enabled = false
@@ -153,9 +155,11 @@ func init_invisible_nodes():
 		for node in invisible_nodes_low_perf:
 			node.hide()
 		if OpenBRConfig.fetch('visual', 'very_low_perf_mode', false):
-			for node in invisible_nodes_very_low_perf:
-				node.hide()
-			mesh_instance_3d_bridge.show()
+			#for node in invisible_nodes_very_low_perf:
+				#node.hide()
+			#mesh_instance_3d_bridge.show()
+			#color_rect_very_low_perf_shader.show()
+			pass
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion or event is InputEventMouseButton:

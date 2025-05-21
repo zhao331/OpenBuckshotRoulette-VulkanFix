@@ -1,6 +1,8 @@
 extends Control
 @onready var label_fps: Label = $Label_FPS
 
+const PATH_PROJ_SETTINGS:= 'user://project_settings.ini'
+
 var options_manager: OptionsManager
 var round_manager: RoundManager
 var ending_manager: EndingManager
@@ -9,6 +11,7 @@ var menu
 
 var is_fullscreen:= true
 var frames:= 0
+var fps:= 7
 
 var _is_mobile_renderer:= false
 
@@ -30,7 +33,6 @@ func _input(event: InputEvent) -> void:
 		#if round_manager != null:
 			#print(round_manager.currentRound)
 			#round_manager.currentRound = 2
-		print(get_viewport().size)
 		pass
 	
 	if round_manager != null:
@@ -46,9 +48,16 @@ func _input(event: InputEvent) -> void:
 		if Input.is_action_just_pressed('OpenBR_substract_dealer_health'):
 			round_manager.health_opponent -= 1
 			print('Opponent health: ', round_manager.health_opponent)
+	
+	if Input.is_action_pressed('OpenBR_faster'):
+		Engine.time_scale = 2
+	elif Input.is_action_pressed('OpenBR_slower'):
+		Engine.time_scale = 0.5
+	else:
+		Engine.time_scale = 1
 
 func is_android() -> bool:
-	#return true
+	return true
 	if OS.get_name() == 'Android': return true
 	return false
 
@@ -64,6 +73,7 @@ func _process(delta: float) -> void:
 	frames += 1
 
 func _on_timer_fps_timeout() -> void:
+	fps = frames
 	label_fps.text = 'FPS: ' + str(frames)
 	frames = 0
 	pass # Replace with function body.
@@ -128,19 +138,10 @@ func get_formatted_time() -> String:
 		time_dict["second"]
 	]
 
-func scale_viewport_to_screen():
-	var viewport:= get_viewport()
-	var screen_size:= get_window().size
-	var viewport_size:= get_viewport_rect().size
-
-	if viewport_size.x < screen_size.x:
-		viewport.size.x = screen_size.x
-		pass
-	if viewport_size.y < screen_size.y:
-		viewport.size.y = screen_size.y
-		pass
-	
-	print('Refresh viewport size')
-
 func sleep(sec:float):
 	await get_tree().create_timer(sec).timeout
+
+func get_touch_delay() -> float:
+	var delay:= 1 - float(fps) * 0.03
+	if delay < 0.07: delay = 0.07
+	return delay
