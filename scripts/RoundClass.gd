@@ -18,7 +18,3 @@ class_name RoundClass extends Resource
 
 func _ready():
 	pass
-
-
-func _process(delta):
-	pass

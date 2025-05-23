@@ -3,6 +3,8 @@
 [ext_resource type="FontVariation" uid="uid://cb5nxwm0sb4pu" path="res://resources/font_variation_global.tres" id="1_d4nwg"]
 
 [resource]
+ItemList/fonts/font = ExtResource("1_d4nwg")
 Label/colors/font_shadow_color = Color(0, 0, 0, 1)
 Label/font_sizes/font_size = 26
 Label/fonts/font = ExtResource("1_d4nwg")
+TextEdit/fonts/font = ExtResource("1_d4nwg")

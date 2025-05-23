@@ -31,6 +31,7 @@ shader_parameter/GREEN_COMPONENT = 7.0
 shader_parameter/BLUE_COMPONENT = 7.0
 
 [node name="death" type="Node3D"]
+visible = false
 script = ExtResource("1_npx8y")
 
 [node name="standalone managers" type="Node" parent="."]
@@ -53,47 +54,64 @@ script = ExtResource("3")
 [node name="post processing" type="Node" parent="Camera"]
 
 [node name="vignette" type="Control" parent="Camera/post processing"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = -3.05176e-05
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
+metadata/_edit_lock_ = true
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="Camera/post processing/vignette"]
 position = Vector2(482, 270)
 scale = Vector2(4.87, 2.75)
 copy_mode = 2
+metadata/_edit_lock_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Camera/post processing/vignette/BackBufferCopy"]
 visible = false
 material = SubResource("ShaderMaterial_esxgt")
-offset_left = -99.0
-offset_top = -98.0
-offset_right = 140.0
-offset_bottom = 138.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 1944.0
+offset_bottom = 1143.0
+grow_horizontal = 2
+grow_vertical = 2
 rotation = 0.00159616
 mouse_filter = 2
 
 [node name="posterization test" type="Control" parent="Camera/post processing"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
+metadata/_edit_lock_ = true
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="Camera/post processing/posterization test"]
 position = Vector2(482, 270)
 scale = Vector2(4.87, 2.75)
 copy_mode = 2
+metadata/_edit_lock_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Camera/post processing/posterization test/BackBufferCopy"]
 material = SubResource("ShaderMaterial_pk1ep")
-offset_left = -99.0
-offset_top = -98.0
-offset_right = 140.0
-offset_bottom = 139.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 1938.0
+offset_bottom = 1128.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_lock_ = true
 
 [node name="color precision" type="Control" parent="Camera/post processing"]
 visible = false
@@ -163,10 +181,12 @@ mouse_filter = 2
 [node name="dialogue UI" type="Node" parent="Camera"]
 
 [node name="death screen" type="Control" parent="Camera/dialogue UI"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_lock_ = true
 
 [node name="TextureRect" type="TextureRect" parent="Camera/dialogue UI/death screen"]
 visible = false
@@ -177,26 +197,28 @@ texture = ExtResource("9")
 expand_mode = 1
 
 [node name="viewblocker parent" type="Control" parent="Camera/dialogue UI"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="viewblcoker" type="ColorRect" parent="Camera/dialogue UI/viewblocker parent"]
-layout_mode = 0
-offset_left = -10.0
-offset_top = -3.0
-offset_right = 972.0
-offset_bottom = 553.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10")
 pitch_scale = 0.66
 panning_strength = 0.0
+metadata/_edit_lock_ = true
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5

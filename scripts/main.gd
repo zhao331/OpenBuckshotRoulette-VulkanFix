@@ -122,13 +122,13 @@ extends Node3D
 @onready var omni_light_3d_bathroom: OmniLight3D = $"backroom main parent/light main door3 LS"
 @onready var omni_light_3d_active: OmniLight3D = $"light parent/lght_backroom main2"
 @onready var color_rect_very_low_perf_shader: ColorRect = $"Camera/post processing/ColorRect_VeryLowPerfShader"
+@onready var bathroom_wall_main_crt_hole: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole"
+@onready var animator_intro: AnimationPlayer = $"intro parent/animator_intro"
+@onready var match_fixing: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing"
 
 func _ready() -> void:
 	OpenBRGlobal.main = self
-	#if OpenBRGlobal.is_android():
-		#press_any_key_to_exit.text = tr('TOUCH_SCREEN_EXIT')
-	#print('main')
-	#TranslationServer.set_locale('ZHS')
+	TranslationServer.set_locale('ZHS')
 	init_invisible_nodes()
 	viewblocker_parent.show()
 	refresh_collision_shape()
@@ -160,18 +160,29 @@ func init_invisible_nodes():
 			#mesh_instance_3d_bridge.show()
 			#color_rect_very_low_perf_shader.show()
 			pass
+	
+	bathroom_wall_main_crt_hole.hide()
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion or event is InputEventMouseButton:
-		var viewport = get_viewport()
-		var mouse_pos = viewport.get_mouse_position()
-		
-		# 获取鼠标下的Control节点
-		var control_under_mouse = viewport.gui_get_focus_owner()
-		if control_under_mouse:
-			print("鼠标在UI节点上:", control_under_mouse.name)
+	if event is InputEventKey and event.keycode == KEY_BACK and event.is_pressed():
+		print('Back')
 
 func refresh_collision_shape():
 	var vec:= get_window().size
 	if (float(vec.x) / vec.y) < 1.32:
 		collision_shape_3d_backroom_door.scale.z = 2.5
+
+
+func _on_area_3d_mouse_entered() -> void:
+	print('11111')
+	pass # Replace with function body.
+
+
+func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
+	print('11aaa111')
+	pass # Replace with function body.
+
+
+func _on_area_3d_mouse_exited() -> void:
+	print('22222')
+	pass # Replace with function body.

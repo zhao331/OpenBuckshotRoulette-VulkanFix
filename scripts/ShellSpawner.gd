@@ -153,18 +153,3 @@ func PlayAudioIndicators():
 		else: speaker_audioIndicator.stream = soundArray_indicators[1]
 		speaker_audioIndicator.play()
 		await get_tree().create_timer(.07, false).timeout
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

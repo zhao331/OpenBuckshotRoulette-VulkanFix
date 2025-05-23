@@ -57,7 +57,7 @@ func _input(event: InputEvent) -> void:
 		Engine.time_scale = 1
 
 func is_android() -> bool:
-	return true
+	#return true
 	if OS.get_name() == 'Android': return true
 	return false
 
@@ -115,6 +115,11 @@ func action(act:String):
 				menu.shell_waterfall_1.show()
 				menu.shell_waterfall_2.show()
 			OpenBRConfig.put('visual', 'very_low_perf_mode', false)
+		'match_fixing_close':
+			main.animator_intro.play_backwards('camera check match fixing')
+			main.match_fixing.control.hide()
+			await main.animator_intro.animation_finished
+			main.match_fixing.focused = false
 
 func interact_with(alias:String):
 	if alias == 'ending_finish':
@@ -124,11 +129,17 @@ func interact_with(alias:String):
 				ending_manager.waitingForInput = false
 	else:
 		print('Interact: ', alias)
-		if alias == 'pill choice yes':
-			if main != null:
-				await sleep(2.4)
-				main.omni_light_3d_bathroom.hide()
-				main.omni_light_3d_bathroom.show()
+		match alias:
+			'pill choice yes':
+				if main != null:
+					await sleep(2.4)
+					main.omni_light_3d_bathroom.hide()
+					main.omni_light_3d_bathroom.show()
+			'camera check match fixing':
+				if main.match_fixing.focused: return
+				main.animator_intro.play('camera check match fixing')
+				await main.animator_intro.animation_finished
+				main.match_fixing.control.show()
 
 func get_formatted_time() -> String:
 	var time_dict = Time.get_time_dict_from_system()
@@ -142,6 +153,6 @@ func sleep(sec:float):
 	await get_tree().create_timer(sec).timeout
 
 func get_touch_delay() -> float:
-	var delay:= 1 - float(fps) * 0.03
+	var delay:= 1 - float(fps) * 0.04
 	if delay < 0.07: delay = 0.07
 	return delay

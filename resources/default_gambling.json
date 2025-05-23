@@ -1,0 +1,97 @@
+[
+    [
+        {
+            "health_of_dealer": 2,
+            "health_of_player": 2,
+            "rounds": [
+                {
+                    "number_of_items": 0,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 1
+                },
+                {
+                    "number_of_items": 0,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 3
+                },
+                {
+                    "number_of_items": 0,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 3
+                },
+                {
+                    "number_of_items": 0,
+                    "number_of_blank_shells": 3,
+                    "number_of_live_shells": 3
+                },
+                {
+                    "number_of_items": 0,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 5
+                }
+            ]
+        },
+        {
+            "health_of_dealer": 4,
+            "health_of_player": 4,
+            "rounds": [
+                {
+                    "number_of_items": 2,
+                    "number_of_blank_shells": 1,
+                    "number_of_live_shells": 1
+                },
+                {
+                    "number_of_items": 2,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 2
+                },
+                {
+                    "number_of_items": 2,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 3
+                },
+                {
+                    "number_of_items": 2,
+                    "number_of_blank_shells": 3,
+                    "number_of_live_shells": 3
+                },
+                {
+                    "number_of_items": 2,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 5
+                }
+            ]
+        },
+        {
+            "health_of_dealer": 6,
+            "health_of_player": 6,
+            "rounds": [
+                {
+                    "number_of_items": 4,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 1
+                },
+                {
+                    "number_of_items": 4,
+                    "number_of_blank_shells": 4,
+                    "number_of_live_shells": 4
+                },
+                {
+                    "number_of_items": 4,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 3
+                },
+                {
+                    "number_of_items": 4,
+                    "number_of_blank_shells": 2,
+                    "number_of_live_shells": 4
+                },
+                {
+                    "number_of_items": 4,
+                    "number_of_blank_shells": 3,
+                    "number_of_live_shells": 5
+                }
+            ]
+        }
+    ]
+]

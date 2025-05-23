@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=4 uid="uid://v12wwqqfbd7h"]
+
+[ext_resource type="Texture2D" uid="uid://df3k8c64gt433" path="res://models/backroom blockout3/backroom blockout4_worn metal png.png" id="1_rq1wj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dljww"]
+albedo_texture = ExtResource("1_rq1wj")
+metallic = 0.7
+
+[sub_resource type="BoxMesh" id="BoxMesh_1j0s1"]
+material = SubResource("StandardMaterial3D_dljww")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dgj0u"]
+resource_name = "screen"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_m4xrw"]
+_surfaces = [{
+"aabb": AABB(-1.72215, 0.621248, -1.68726, 3.4276, 1.00732e-05, 2.95357),
+"format": 34359742465,
+"index_count": 66,
+"index_data": PackedByteArray("CQAXAAoAFwAVABYAFQAUABMAFAADAAIAAwAMAA0ADAAJAAsACQAVABcAFQADABQAAwAJAAwAFQAJAAMAAAADAAEAAAACAAMABwABAAgAAQAOAAAADgAQAA8AEAASABEAEgAFAAQABQAHAAYABwAOAAEADgASABAAEgAHAAUADgAHABIA"),
+"name": "screen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("YrK2PxoKHz/tFaI/YrK2PxsKHz8y+Ne/ihSqvxkKHz/tFaI/ihSqvxoKHz8y+Ne/VkzaPxsKHz/B1sa/d8/YPxsKHz/8ZM2/1ZLUPxsKHz+789K/jjvOPxsKHz9eqta/xMDGPxsKHz8y+Ne/B+/avxoKHz8nZs2/a2/cvxoKHz+l2Ma/YKjWvxoKHz9H9NK/G0LQvxoKHz+Dqta/pLXIvxoKHz8y+Ne/xMDGPxoKHz/tFaI/jjvOPxoKHz8ZyKA/1JLUPxoKHz9zEZ0/ds/YPxoKHz+2gpc/VkzaPxoKHz959JA/HELQvxkKHz8+yKA/pbXIvxkKHz/tFaI/YajWvxkKHz8DEp0/CO/avxkKHz/jg5c/a2/cvxkKHz9f9pA/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rq1wj"]
+resource_name = "crt main1_bvm_front_001"
+_surfaces = [{
+"aabb": AABB(-1.72215, 0.621248, -1.68726, 3.4276, 1.00732e-05, 2.95357),
+"attribute_data": PackedByteArray("VjlnP8iQdz9WOWc/yJB3P6kQZz8g1yQ9qRBnPyDXJD18/P49jb93P3z8/j2Nv3c/QLf9PWDDJz1At/09YMMnPbUwez/4R6g9yVh6P7Bfhz0/83c/oPlWPYxddD+gvTE9ZSNwP0C1JD1FmIM8wCeJPa8PUTygD6o9hNfQPMB+Wj3MQSI9ICs1PZx/Zj3ABCg9BkxwP6WOdz/xhXQ/MLx2P9oaeD+2ZnQ/JH96Pz7pcD+wVXs/zstsP4HHJD0183Y/KAppPZrDdz+1ydU8sJ90P2RkiDy8I3E/TU5aPCoHbT8="),
+"format": 34359742487,
+"index_count": 66,
+"index_data": PackedByteArray("DQAbAA4AGwAZABoAGQAYABcAGAAGAAQABgAQABEAEAANAA8ADQAZABsAGQAGABgABgANABAAGQANAAYAAQAHAAMAAQAFAAcACwACAAwAAgASAAAAEgAUABMAFAAWABUAFgAJAAgACQALAAoACwASAAIAEgAWABQAFgALAAkAEgALABYA"),
+"material": SubResource("StandardMaterial3D_dgj0u"),
+"name": "screen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("YrK2PxoKHz/tFaI/YrK2PxoKHz/tFaI/YrK2PxsKHz8y+Ne/YrK2PxsKHz8y+Ne/ihSqvxkKHz/tFaI/ihSqvxkKHz/tFaI/ihSqvxoKHz8y+Ne/ihSqvxoKHz8y+Ne/VkzaPxsKHz/B1sa/d8/YPxsKHz/8ZM2/1ZLUPxsKHz+789K/jjvOPxsKHz9eqta/xMDGPxsKHz8y+Ne/B+/avxoKHz8nZs2/a2/cvxoKHz+l2Ma/YKjWvxoKHz9H9NK/G0LQvxoKHz+Dqta/pLXIvxoKHz8y+Ne/xMDGPxoKHz/tFaI/jjvOPxoKHz8ZyKA/1JLUPxoKHz9zEZ0/ds/YPxoKHz+2gpc/VkzaPxoKHz959JA/HELQvxkKHz8+yKA/pbXIvxkKHz/tFaI/YajWvxkKHz8DEp0/CO/avxkKHz/jg5c/a2/cvxkKHz9f9pA//3/+/+P//7//f///4///v/9//v/k//+//3///+P//7//f/7/5P//v/9////j//+//3/+/+P//7//f///4///v/9//v/j//+//3/+/+P//7//f/7/4v//v/9//v/j//+//3/+/+T//7//f/7/4///v/9//v/j//+//3/+/+H//7//f/7/4///v/9//v/j//+//3/+/+T//7//f/7/5f//v/9//v/k//+//3/+/+L//7//f/7/5P//v/9//v/i//+//3/+/+P//7//f/7/4///v/9//v/l//+//3/+/+P//78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_m4xrw")
+
+[node name="MatchFixing" type="Node3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.305736, 0, 0, 0, 3.59652, 0, 0, 0, 0.79271, 0, 0, 0)
+mesh = SubResource("BoxMesh_1j0s1")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.305736, 0, 0, 0, 3.59652, 0, 0, 0, 0.79271, 4.7739, 0, 0)
+mesh = SubResource("BoxMesh_1j0s1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1.7e-08, -4.8704, 0, 0.388915, -2.12892e-07, 0, 0, 0, 0.79271, 2.344, 1.604, 0)
+mesh = SubResource("BoxMesh_1j0s1")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1.79815e-08, -4.8704, 0, 0.411369, -2.12892e-07, 0, 0, 0, 0.79271, 2.344, -1.592, 0)
+mesh = SubResource("BoxMesh_1j0s1")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(1.37961, 0, 0, 0, -4.37114e-08, -1.04409, 0, 1, -4.56387e-08, 2.38724, -0.177826, -0.600106)
+mesh = SubResource("ArrayMesh_rq1wj")

@@ -163,7 +163,7 @@ func SetupRoundArray():
 	roundArray = []
 	for i in range(batchArray.size()):
 		if (batchArray[i].batchIndex == mainBatchIndex):
-			var matched = batchArray[i]
+			var matched:= batchArray[i]
 			for z in range(matched.roundArray.size()):
 				roundArray.append(matched.roundArray[z])
 				pass
@@ -178,7 +178,7 @@ func RoundIndicator():
 	camera.BeginLerp("health counter")
 	await get_tree().create_timer(.8, false).timeout
 	statue.CheckStatus()
-	var activePos = roundIndicatorPositions[roundArray[0].indicatorNumber]
+	var activePos:= roundIndicatorPositions[roundArray[0].indicatorNumber]
 	roundIndicator.transform.origin = activePos
 	roundIndicatorParent.visible = true
 	speaker_roundHum.play()
@@ -245,23 +245,23 @@ func LoadShells():
 
 func CheckIfOutOfHealth():
 	#CHECK IF OUT OF HEALTH
-	var outOfHealth_player = health_player == 0
-	var outOfHealth_enemy = health_opponent == 0
-	var outOfHealth = outOfHealth_player or outOfHealth_enemy
+	var outOfHealth_player:= health_player == 0
+	var outOfHealth_enemy:= health_opponent == 0
+	var outOfHealth:= outOfHealth_player or outOfHealth_enemy
 	if (outOfHealth):
 		if (outOfHealth_player): OutOfHealth("player")
 		if (outOfHealth_enemy):  OutOfHealth("dealer")
 		return outOfHealth
 
-var waitingForReturn = false
-var waitingForHealthCheck = false
-var waitingForHealthCheck2 = false
-var requestedWireCut = false
-var wireToCut = ""
-var wireIsCut_dealer = false
-var wireIsCut_player = false
+var waitingForReturn:= false
+var waitingForHealthCheck:= false
+var waitingForHealthCheck2:= false
+var requestedWireCut:= false
+var wireToCut:= ""
+var wireIsCut_dealer:= false
+var wireIsCut_player:= false
 
-var ignoring = false
+var ignoring:= false
 func EndTurn(playerCanGoAgain : bool):
 	#USINGITEMS: ASSIGN PLAYER CAN GO AGAIN FROM ITEMS HERE
 	#USINGITEMS: MAKE SHOTGUN GROW NEW BARREL
@@ -308,7 +308,7 @@ func ReturnFromCuffCheck(brokeFree : bool):
 
 func BeginPlayerTurn():
 	if (playerCuffed):
-		var returning = false
+		var returning:= false
 		if (playerAboutToBreakFree == false):
 			handcuffs.CheckPlayerHandCuffs(false)
 			await get_tree().create_timer(1.4, false).timeout
@@ -362,19 +362,19 @@ func OutOfHealth(who : String):
 		await get_tree().create_timer(1, false).timeout
 		EndMainBatch()
 
-var doubling = false
-var prevscore = 0
-var mainscore = 0
-var elapsed = 0
-var dur = 3
-var double_or_nothing_rounds_beat = 0
-var double_or_nothing_score = 0
-var double_or_nothing_initial_score = 0
-var doubled = false
+var doubling:= false
+var prevscore:= 0
+var mainscore:= 0
+var elapsed:= 0
+var dur:= 3
+var double_or_nothing_rounds_beat:= 0
+var double_or_nothing_score:= 0
+var double_or_nothing_initial_score:= 0
+var doubled:= false
 
-var lerpingscore = false
+var lerpingscore:= false
 var startscore
-var endscore = 0
+var endscore:= 0
 @export var ui_score : Label3D
 @export var ui_doubleornothing : Label3D
 @export var speaker_key : AudioStreamPlayer2D

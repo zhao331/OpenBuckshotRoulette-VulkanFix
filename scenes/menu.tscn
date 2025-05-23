@@ -1780,7 +1780,6 @@ playing = true
 ui_opacity_active = 0.5
 
 [node name="options_audio video" type="Control" parent="Camera/dialogue UI/menu ui"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

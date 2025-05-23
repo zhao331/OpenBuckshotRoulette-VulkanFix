@@ -22,5 +22,9 @@ func removeSection(section:String):
 func hasKey(section:String, key:String) -> bool:
 	return cfg.has_section_key(section, key)
 
-func keys(section:String):
+func keys(section:String) -> PackedStringArray:
 	return cfg.get_section_keys(section)
+
+func remove(section:String, key:String):
+	cfg.erase_section_key(section, key)
+	cfg.save(PATH)

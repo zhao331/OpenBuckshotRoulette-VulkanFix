@@ -5,7 +5,7 @@
 
 Open Buckshot Roulette 可以较流畅地运行在安卓设备上  
 
-我们正在寻找在常规游戏下自定义回合参数和修复多人游戏的方法
+我们正在寻找努力完善自定义赌局
 
 ## 许可证
 - 自由软件许可证: [GNU General Public License v3 (GPL v3)](LICENSE)

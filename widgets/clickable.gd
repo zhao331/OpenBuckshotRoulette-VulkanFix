@@ -4,17 +4,18 @@ class_name Clickable extends Control
 @onready var audio_stream_player_2d_hover: AudioStreamPlayer2D = $AudioStreamPlayer2D_Hover
 
 @export var action:String = ''
-@export var cursor : CursorManager
+@export var cursor: CursorManager
+@export var handler:Node
 
 func _ready() -> void:
 	texture_rect.hide()
 
 func _on_button_pressed() -> void:
-	print('On clickable pressed')
 	audio_stream_player_2d_press.stop()
 	audio_stream_player_2d_press.play()
 	if action.is_empty(): return
-	OpenBRGlobal.action(action)
+	if handler == null: OpenBRGlobal.action(action)
+	else: handler.action(action)
 	pass # Replace with function body.
 
 
