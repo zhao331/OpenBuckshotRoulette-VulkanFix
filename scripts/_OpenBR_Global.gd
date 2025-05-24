@@ -50,9 +50,9 @@ func _input(event: InputEvent) -> void:
 			print('Opponent health: ', round_manager.health_opponent)
 	
 	if Input.is_action_pressed('OpenBR_faster'):
-		Engine.time_scale = 2
+		Engine.time_scale = 4
 	elif Input.is_action_pressed('OpenBR_slower'):
-		Engine.time_scale = 0.5
+		Engine.time_scale = 0.4
 	else:
 		Engine.time_scale = 1
 
@@ -119,6 +119,7 @@ func action(act:String):
 			main.animator_intro.play_backwards('camera check match fixing')
 			main.match_fixing.control.hide()
 			await main.animator_intro.animation_finished
+			if main.animator_intro.assigned_animation == 'camera check match fixing': main.animator_intro.play('camera idle bathroom')
 			main.match_fixing.focused = false
 
 func interact_with(alias:String):
@@ -140,6 +141,8 @@ func interact_with(alias:String):
 				main.animator_intro.play('camera check match fixing')
 				await main.animator_intro.animation_finished
 				main.match_fixing.control.show()
+			'bathroom door':
+				main.load_gambling()
 
 func get_formatted_time() -> String:
 	var time_dict = Time.get_time_dict_from_system()

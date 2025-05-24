@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bev1816xdksr3"]
+[gd_scene load_steps=5 format=3 uid="uid://bev1816xdksr3"]
 
 [ext_resource type="Script" uid="uid://cjo4guxd5xitg" path="res://widgets/clickable.gd" id="1_sn066"]
-[ext_resource type="Texture2D" uid="uid://dhovaahad40xo" path="res://misc/bracket selection_square1.png" id="1_yrge2"]
 [ext_resource type="AudioStream" uid="uid://dxjs3wreesre7" path="res://audio/button press3.ogg" id="3_lqu7f"]
 [ext_resource type="AudioStream" uid="uid://dvggwk7aie8v" path="res://audio/button_hover.ogg" id="4_b5gkh"]
 
@@ -34,16 +33,6 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ri552")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ri552")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ri552")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ri552")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_yrge2")
-expand_mode = 1
 
 [node name="AudioStreamPlayer2D_Press" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_lqu7f")

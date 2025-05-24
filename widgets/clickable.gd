@@ -8,7 +8,8 @@ class_name Clickable extends Control
 @export var handler:Node
 
 func _ready() -> void:
-	texture_rect.hide()
+	#texture_rect.hide()
+	pass
 
 func _on_button_pressed() -> void:
 	audio_stream_player_2d_press.stop()
@@ -22,10 +23,10 @@ func _on_button_pressed() -> void:
 func _on_button_mouse_entered() -> void:
 	audio_stream_player_2d_hover.stop()
 	audio_stream_player_2d_hover.play()
-	cursor.SetCursorImage("hover")
+	if cursor != null: cursor.SetCursorImage("hover")
 	pass # Replace with function body.
 
 
 func _on_button_mouse_exited() -> void:
-	cursor.SetCursorImage("point")
+	if cursor != null: cursor.SetCursorImage("point")
 	pass # Replace with function body.

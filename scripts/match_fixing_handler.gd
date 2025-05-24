@@ -1,4 +1,6 @@
 extends Node
+class_name MatchFixingHandler
+
 @onready var control_main: Control = $"../Control_Main"
 @onready var item_list_gamblings: ItemList = $"../Control_Main/ItemList_Gamblings"
 @onready var control_new_gambling: Control = $"../Control_NewGambling"
@@ -6,14 +8,44 @@ extends Node
 @onready var control_remove_yes_or_no: Control = $"../Control_RemoveYesOrNo"
 @onready var label_remove_gambling: Label = $"../Control_Main/Label_Remove"
 @onready var label_edit_gambling: Label = $"../Control_Main/Label_Edit"
+@onready var control_editor: Control = $"../Control_Editor"
+@onready var tab_container_levels: TabContainer = $"../Control_Editor/TabContainer_Levels"
+@onready var control_round_editor: Control = $"../Control_RoundEditor"
+@onready var label_true_item_count: Label = $"../Control_RoundEditor/Panel/Label_TrueItemCount"
+@onready var label_true_blank_count: Label = $"../Control_RoundEditor/Panel/Label_TrueBlankCount"
+@onready var label_true_live_count: Label = $"../Control_RoundEditor/Panel/Label_TrueLiveCount"
+@onready var animation_player: AnimationPlayer = $"../Control_RoundEditor/Panel/AnimationPlayer"
 
 @onready var pages:= [
 	control_main,
 	control_new_gambling,
-	control_remove_yes_or_no
+	control_remove_yes_or_no,
+	control_editor,
+	control_round_editor
+]
+@onready var levels:= [
+	{
+		'rounds': $"../Control_Editor/TabContainer_Levels/Control_Level1/ItemList_Rounds",
+		'player_HP': $"../Control_Editor/TabContainer_Levels/Control_Level1/Label_TruePlayerHP",
+		'dealer_HP': $"../Control_Editor/TabContainer_Levels/Control_Level1/Label_TrueDealerHP"
+	},
+	{
+		'rounds': $"../Control_Editor/TabContainer_Levels/Control_Level2/ItemList_Rounds",
+		'player_HP': $"../Control_Editor/TabContainer_Levels/Control_Level2/Label_TruePlayerHP",
+		'dealer_HP': $"../Control_Editor/TabContainer_Levels/Control_Level2/Label_TrueDealerHP"
+	},
+	{
+		'rounds': $"../Control_Editor/TabContainer_Levels/Control_Level3/ItemList_Rounds",
+		'player_HP': $"../Control_Editor/TabContainer_Levels/Control_Level3/Label_TruePlayerHP",
+		'dealer_HP': $"../Control_Editor/TabContainer_Levels/Control_Level3/Label_TrueDealerHP"
+	}
 ]
 
 var selected_gambling:= 'default'
+var selected_level:= 0
+var selected_round:= 0
+
+var gambling_json:Array
 
 func _ready() -> void:
 	switch_page(0)
@@ -23,6 +55,8 @@ func action(act:String):
 	match act:
 		'switch_to_main':
 			switch_page(0)
+		'switch_to_editor':
+			switch_page(3)
 		'new_gambling':
 			switch_page(1)
 		'true_new_gambling':
@@ -37,6 +71,90 @@ func action(act:String):
 		'true_remove_gambling':
 			OpenBRConfig.remove('gamblings', selected_gambling)
 			switch_page(0)
+		'edit_gambling':
+			init_gambling_editor()
+		'save':
+			OpenBRConfig.put('gamblings', selected_gambling, JSON.stringify(gambling_json))
+			switch_page(0)
+		'select_gambling':
+			OpenBRConfig.put('game', 'gambling', selected_gambling)
+		'player_HP_plus':
+			if gambling_json[selected_level]['health_of_player'] >= 6: return
+			gambling_json[selected_level]['health_of_player'] += 1
+			levels[selected_level]['player_HP'].text = str(int(gambling_json[selected_level]['health_of_player']))
+		'player_HP_reduce':
+			if gambling_json[selected_level]['health_of_player'] <= 1: return
+			gambling_json[selected_level]['health_of_player'] -= 1
+			levels[selected_level]['player_HP'].text = str(int(gambling_json[selected_level]['health_of_player']))
+		'dealer_HP_plus':
+			if gambling_json[selected_level]['health_of_dealer'] >= 6: return
+			gambling_json[selected_level]['health_of_dealer'] += 1
+			levels[selected_level]['dealer_HP'].text = str(int(gambling_json[selected_level]['health_of_dealer']))
+		'dealer_HP_reduce':
+			if gambling_json[selected_level]['health_of_dealer'] <= 1: return
+			gambling_json[selected_level]['health_of_dealer'] -= 1
+			levels[selected_level]['dealer_HP'].text = str(int(gambling_json[selected_level]['health_of_dealer']))
+		'remove_round':
+			var list:ItemList = levels[selected_level]['rounds']
+			if list.item_count < selected_round + 1 and gambling_json[selected_level]['rounds'] <= 1: return
+			gambling_json[selected_level]['rounds'].erase(gambling_json[selected_level]['rounds'][selected_round])
+			list.remove_item(selected_round)
+			list.select(0)
+			_on_item_list_rounds_item_selected(0)
+		'new_round':
+			var list:ItemList = levels[selected_level]['rounds']
+			gambling_json[selected_level]['rounds'].push_back({
+				'number_of_items': 0,
+				'number_of_blank_shells': 1,
+				'number_of_live_shells': 1
+			})
+			list.add_item(tr('NEW_ROUND'))
+		'item_count_plus':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			if round['number_of_items'] >= 8: return
+			round['number_of_items'] += 1
+			label_true_item_count.text = str(int(round['number_of_items']))
+			gambling_json[selected_level]['rounds'][selected_round] = round
+		'item_count_reduce':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			if round['number_of_items'] <= 0: return
+			round['number_of_items'] -= 1
+			label_true_item_count.text = str(int(round['number_of_items']))
+			gambling_json[selected_level]['rounds'][selected_round] = round
+		'blank_count_plus':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			if round['number_of_blank_shells'] >= 8: return
+			round['number_of_blank_shells'] += 1
+			label_true_blank_count.text = str(int(round['number_of_blank_shells']))
+			gambling_json[selected_level]['rounds'][selected_round] = round
+		'blank_count_reduce':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			if round['number_of_blank_shells'] <= 0: return
+			round['number_of_blank_shells'] -= 1
+			label_true_blank_count.text = str(int(round['number_of_blank_shells']))
+			gambling_json[selected_level]['rounds'][selected_round] = round
+		'live_count_plus':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			if round['number_of_live_shells'] >= 8: return
+			round['number_of_live_shells'] += 1
+			label_true_live_count.text = str(int(round['number_of_live_shells']))
+			gambling_json[selected_level]['rounds'][selected_round] = round
+		'live_count_reduce':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			if round['number_of_live_shells'] <= 0: return
+			round['number_of_live_shells'] -= 1
+			label_true_live_count.text = str(int(round['number_of_live_shells']))
+			gambling_json[selected_level]['rounds'][selected_round] = round
+		'save_round':
+			var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+			var blanks:int = round['number_of_blank_shells']
+			var lives:int = round['number_of_live_shells']
+			if blanks + lives > 8 or blanks + lives <= 0: animation_player.play("warn")
+			#elif lives <= 0: animation_player.play("warn_lives")
+			else:
+				switch_page(3)
+		'edit_round':
+			init_round_editor()
 
 func refresh_gamblings():
 	item_list_gamblings.clear()
@@ -55,12 +173,19 @@ func switch_page(index:= 0):
 			item_list_gamblings_select(get_current_gambling())
 		1:
 			text_edit_new_gambling_name.clear()
+		3:
+			tab_container_levels.set_tab_title(0, tr('LEVEL') % '1')
+			tab_container_levels.set_tab_title(1, tr('LEVEL') % '2')
+			tab_container_levels.set_tab_title(2, tr('LEVEL') % '3')
 
 func new_gambling(name:String):
+	OpenBRConfig.put('gamblings', name, get_default_json())
+
+static func get_default_json():
 	var file:= FileAccess.open('res://resources/default_gambling.json', FileAccess.READ)
 	var template:= file.get_as_text()
 	file.close()
-	OpenBRConfig.put('gamblings', name, template)
+	return template
 
 func get_current_gambling() -> String:
 	var gambling:String = OpenBRConfig.fetch('game', 'gambling', 'default')
@@ -86,3 +211,40 @@ func _on_item_list_gamblings_item_selected(index: int) -> void:
 		label_remove_gambling.show()
 		label_edit_gambling.show()
 	pass # Replace with function body.
+
+func init_gambling_editor():
+	switch_page(3)
+	tab_container_levels.current_tab = 0
+	_on_tab_container_levels_tab_selected(0)
+	
+	gambling_json = JSON.parse_string(OpenBRConfig.fetch('gamblings', selected_gambling, get_default_json()))
+	
+	for i in range(3):
+		var level:Dictionary = gambling_json[i]
+		levels[i]['player_HP'].text = str(int(level['health_of_player']))
+		levels[i]['dealer_HP'].text = str(int(level['health_of_dealer']))
+		var list:ItemList = levels[i]['rounds']
+		list.clear()
+		for o in level['rounds'].size():
+			var round:Dictionary = level['rounds'][o]
+			list.add_item(tr('ROUND') % o)
+		list.select(0)
+
+func _on_tab_container_levels_tab_selected(tab: int) -> void:
+	selected_level = tab
+	if levels.size() >= 1:
+		var list:ItemList = levels[tab]['rounds']
+		if list.item_count >= 1: list.select(0)
+	_on_item_list_rounds_item_selected(0)
+	pass # Replace with function body.
+
+func _on_item_list_rounds_item_selected(index: int) -> void:
+	selected_round = index
+	pass # Replace with function body.
+
+func init_round_editor():
+	switch_page(4)
+	var round:Dictionary = gambling_json[selected_level]['rounds'][selected_round]
+	label_true_item_count.text = str(int(round['number_of_items']))
+	label_true_blank_count.text = str(int(round['number_of_blank_shells']))
+	label_true_live_count.text = str(int(round['number_of_live_shells']))

@@ -7,4 +7,5 @@ ItemList/fonts/font = ExtResource("1_d4nwg")
 Label/colors/font_shadow_color = Color(0, 0, 0, 1)
 Label/font_sizes/font_size = 26
 Label/fonts/font = ExtResource("1_d4nwg")
+TabContainer/fonts/font = ExtResource("1_d4nwg")
 TextEdit/fonts/font = ExtResource("1_d4nwg")

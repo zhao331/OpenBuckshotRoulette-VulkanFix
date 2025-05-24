@@ -1,6 +1,7 @@
-[gd_scene load_steps=104 format=4 uid="uid://durgqahjmtjxr"]
+[gd_scene load_steps=105 format=4 uid="uid://durgqahjmtjxr"]
 
 [ext_resource type="Script" uid="uid://71ykd25qgqom" path="res://scripts/HeavenManager.gd" id="1"]
+[ext_resource type="Script" uid="uid://c566n8nq5ihug" path="res://scripts/heaven.gd" id="1_01rup"]
 [ext_resource type="Script" uid="uid://bxa2xb4se6h6a" path="res://scripts/InteractionManager.gd" id="2"]
 [ext_resource type="Script" uid="uid://bi30sfyp6471y" path="res://scripts/CursorManager.gd" id="3"]
 [ext_resource type="Texture2D" uid="uid://dedtwku3flpwn" path="res://misc/cursor xp_point.png" id="4"]
@@ -1425,6 +1426,7 @@ _data = {
 }
 
 [node name="heaven" type="Node3D"]
+script = ExtResource("1_01rup")
 
 [node name="standalone managers" type="Node" parent="."]
 

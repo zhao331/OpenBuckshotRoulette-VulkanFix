@@ -36,8 +36,12 @@ func SetupHealth():
 			ui_playerwin.text = tr("PLAYERWIN") % [playername_upper] 
 			#ui_playerwin.text = roundManager.playerData.playername.to_upper() + " " + tr("PLAYERWIN")
 			setting = false
-		roundManager.health_player = roundManager.roundArray[roundManager.currentRound].startingHealth
-		roundManager.health_opponent = roundManager.roundArray[roundManager.currentRound].startingHealth
+		if OpenBRGlobal.main.starting_health['enabled']:
+			roundManager.health_player = OpenBRGlobal.main.starting_health['player'][roundManager.currentRound]
+			roundManager.health_opponent = OpenBRGlobal.main.starting_health['dealer'][roundManager.currentRound]
+		else:
+			roundManager.health_player = roundManager.roundArray[roundManager.currentRound].startingHealth
+			roundManager.health_opponent = roundManager.roundArray[roundManager.currentRound].startingHealth
 		dialogueEntered_player = false
 		dialogueEntered_dealer = false
 

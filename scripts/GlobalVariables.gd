@@ -1,6 +1,6 @@
 extends Node
 
-var currentVersion_nr = "v0.2.0 / v2.2.0"
+var currentVersion_nr = "v0.2.1 / v2.2.0"
 var currentVersion_hotfix = 6
 var using_steam = false
 

@@ -125,6 +125,19 @@ extends Node3D
 @onready var bathroom_wall_main_crt_hole: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole"
 @onready var animator_intro: AnimationPlayer = $"intro parent/animator_intro"
 @onready var match_fixing: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing"
+@onready var label_3d_gambling_manipulated: Label3D = $"tabletop parent/main tabletop/health counter/health counter ui parent/round indicator parent/Label3D_GamblingManipulated"
+
+@onready var round_batchs:= [
+	$"standalone managers/round batch array/round batch_0",
+	$"standalone managers/round batch array/round batch_1",
+	$"standalone managers/round batch array/round batch_2"
+]
+
+var starting_health:= {
+	'enabled': false,
+	'dealer': [0, 0, 0],
+	'player': [0, 0, 0]
+}
 
 func _ready() -> void:
 	OpenBRGlobal.main = self
@@ -172,17 +185,53 @@ func refresh_collision_shape():
 	if (float(vec.x) / vec.y) < 1.32:
 		collision_shape_3d_backroom_door.scale.z = 2.5
 
-
-func _on_area_3d_mouse_entered() -> void:
-	print('11111')
-	pass # Replace with function body.
-
-
-func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
-	print('11aaa111')
-	pass # Replace with function body.
-
-
-func _on_area_3d_mouse_exited() -> void:
-	print('22222')
-	pass # Replace with function body.
+func load_gambling():
+	print('Loading gambling')
+	var gambling:String = OpenBRConfig.fetch('game', 'gambling')
+	if gambling != 'default' and OpenBRConfig.hasKey('gamblings', gambling):
+		label_3d_gambling_manipulated.show()
+		var json:Array = JSON.parse_string(OpenBRConfig.fetch('gamblings', gambling, MatchFixingHandler.get_default_json()))
+		for i in json.size():
+			var level:Dictionary = json[i]
+			var round_array:Array[RoundClass] = []
+			for o in level['rounds'].size():
+				round_array.push_back(new_round_class(i, o, level['rounds'][o], level['health_of_dealer'], level['health_of_player']))
+			round_batchs[i].roundArray = round_array
+			starting_health['enabled'] = true
+	else:
+		label_3d_gambling_manipulated.hide()
+func new_round_class(level:int, index:int, json:Dictionary, d_hp:int, p_hp:int) -> RoundClass:
+	var round:= RoundClass.new()
+	round.hasIntroductoryText = false
+	round.isFirstRound = false
+	round.startingHealth = 0
+	round.roundIndex = index
+	round.amountBlank = json['number_of_blank_shells']
+	round.amountLive = json['number_of_live_shells']
+	round.usingItems = false
+	round.showingIndicator = false
+	round.indicatorNumber = 0
+	round.bootingUpCounter = false
+	round.sequenceHidden = false
+	round.shufflingArray = false
+	round.insertingInRandomOrder = true
+	round.numberOfItemsToGrab = 0
+	round.hasIntro2 = false
+	
+	if index == 0:
+		round.isFirstRound = true
+		round.bootingUpCounter = true
+		round.showingIndicator = true
+		round.startingHealth = max(d_hp,p_hp)
+		round.indicatorNumber = level + 1
+		if level == 2:
+			round.hasIntro2 = true
+	elif level == 2:
+		round.shufflingArray = true
+	if json['number_of_items'] != 0:
+		round.usingItems = true
+		round.numberOfItemsToGrab = json['number_of_items']
+	starting_health['dealer'][level] = d_hp
+	starting_health['player'][level] = p_hp
+	
+	return round
