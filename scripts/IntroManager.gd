@@ -45,6 +45,7 @@ class_name IntroManager extends Node
 
 var allowingPills = false
 func _ready():
+	if OpenBRGlobal.is_multiplayer: return
 	parent_pills.visible = false
 	allowingPills = false
 	SetControllerState()
@@ -299,6 +300,7 @@ func Interaction_BathroomDoor():
 	controller.previousFocus = btn_backroom
 	btn_backroom.visible = true
 	intbranch_backroomdoor.interactionAllowed = true
+	if OpenBRGlobal.is_multiplayer: return
 	intbranch_pillbottle.interactionAllowed = false
 	intbranch_crt.interactionAllowed = false
 	counting = true

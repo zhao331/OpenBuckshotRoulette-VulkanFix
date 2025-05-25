@@ -36,6 +36,7 @@ var selection_range1 = 1
 var selection_range2 = 12
 
 func _ready():
+	if OpenBRGlobal.is_multiplayer: return
 	screenparent_stats.visible = true
 	screenparent_leaderboard.visible = false
 

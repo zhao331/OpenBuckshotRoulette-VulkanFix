@@ -25,7 +25,8 @@ extends Node3D
 	$"restroom_CLUB/bathroom wall main_crt hole/crt main parent/crt screen main/crt main icons/crt icon_friends",
 	$"player vehicle parent/vehicle/car door1/MeshInstance3D_EndingFinish",
 	mesh_instance_3d_bridge,
-	$"Camera/post processing/ColorRect_VeryLowPerfShader"
+	$"Camera/post processing/ColorRect_VeryLowPerfShader",
+	$OmniLight3D_Extra
 ]
 @onready var invisible_nodes_android:= [
 	paperwork_4_001,
@@ -110,7 +111,17 @@ extends Node3D
 	$"backroom visual parent/BezierCurve_006",
 	$"backroom visual parent/BezierCurve_003",
 	$"backroom main parent/Cube_120_CLUB/Empty_002",
-	$"restroom_CLUB/trig_pill bottle/OmniLight3D_Pill"
+	$"restroom_CLUB/trig_pill bottle/OmniLight3D_Pill",
+	$"smoking dude/smoking dude_armature",
+	$"backroom main parent/Cube_120_CLUB",
+	$"backroom visual parent/Plane_020",
+	$"backroom main parent",
+	$"intro parent/backroom door/Cube_121",
+	$"health counter main1/main counter/health counter parent",
+	$"tabletop parent/tabletop interior_table pivot/tabletop interior device parent",
+	$"tabletop parent/tabletop interior_table pivot/tabletop interior device parent_002",
+	$"tabletop parent/tabletop interior_table pivot/tabletop interior device parent_004",
+	$"tabletop parent/tabletop interior_table pivot/tabletop interior device parent_001"
 ]
 
 @onready var light_main_door_2_club_ls: OmniLight3D = $"backroom main parent/light main door2_CLUB LS"
@@ -173,6 +184,10 @@ func init_invisible_nodes():
 			#mesh_instance_3d_bridge.show()
 			#color_rect_very_low_perf_shader.show()
 			pass
+	if OpenBRGlobal.WATCH_ONLY:
+		for node in invisible_nodes_very_low_perf:
+			if node != null: node.hide()
+		$OmniLight3D_Extra.show()
 	
 	bathroom_wall_main_crt_hole.hide()
 

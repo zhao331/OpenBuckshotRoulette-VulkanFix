@@ -9,10 +9,10 @@ curve = SubResource("Curve_s7p0d")
 
 [resource]
 spread = 180.0
-gravity = Vector3(0, 0, 0)
 initial_velocity_min = 1.0
 initial_velocity_max = 2.0
+gravity = Vector3(0, 0, 0)
 scale_max = 20.0
 scale_curve = SubResource("CurveTexture_wqa6q")
-turbulence_noise_strength = 18.969999313354492
+turbulence_noise_strength = 18.97
 turbulence_noise_speed = Vector3(0, 0, 10.79)

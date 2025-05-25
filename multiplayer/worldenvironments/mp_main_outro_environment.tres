@@ -7,7 +7,7 @@ sky_material = ExtResource("1")
 
 [resource]
 background_mode = 2
-background_energy_multiplier = 0.25999999046325684
+background_energy_multiplier = 0.26
 sky = SubResource("Sky_dts7t")
 sky_rotation = Vector3(0, -2.60927, 0)
 ambient_light_color = Color(1, 1, 1, 1)
@@ -15,10 +15,10 @@ ambient_light_sky_contribution = 0.0
 ambient_light_energy = 0.0
 tonemap_mode = 3
 fog_light_color = Color(0.611765, 0, 0.0784314, 1)
-fog_light_energy = 0.4000000059604645
-fog_density = 0.005499999970197678
-volumetric_fog_length = 1.9700000286102295
+fog_light_energy = 0.4
+fog_density = 0.0055
+volumetric_fog_length = 1.97
 adjustment_enabled = true
-adjustment_brightness = 1.4900000095367432
-adjustment_contrast = 0.8500000238418579
-adjustment_saturation = 0.30000001192092896
+adjustment_brightness = 1.49
+adjustment_contrast = 0.85
+adjustment_saturation = 0.3

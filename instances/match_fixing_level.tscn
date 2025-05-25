@@ -40,7 +40,7 @@ grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635599, 1, 0.606096, 1)
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 20
 text = "PLAYER_HP"
 
 [node name="Label_TruePlayerHP" type="Label" parent="."]
@@ -49,9 +49,9 @@ anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -98.0
-offset_top = 16.0
+offset_top = 18.0
 offset_right = -61.0
-offset_bottom = 39.0
+offset_bottom = 41.0
 grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
@@ -72,8 +72,9 @@ grow_horizontal = 0
 
 [node name="Label_Plus" type="Label" parent="Control_PlayerHPController"]
 layout_mode = 1
-offset_right = 25.0
-offset_bottom = 30.0
+offset_top = 2.0
+offset_right = 29.0
+offset_bottom = 32.0
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
@@ -88,9 +89,10 @@ metadata/_edit_lock_ = true
 
 [node name="Label_Reduce" type="Label" parent="Control_PlayerHPController"]
 layout_mode = 1
-offset_left = 12.0
-offset_right = 36.0
-offset_bottom = 30.0
+offset_left = 15.0
+offset_top = 2.0
+offset_right = 46.0
+offset_bottom = 32.0
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
@@ -116,7 +118,7 @@ grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635599, 1, 0.606096, 1)
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 20
 text = "DEALER_HP"
 
 [node name="Label_TrueDealerHP" type="Label" parent="."]
@@ -125,9 +127,9 @@ anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -98.644
-offset_top = 55.997
+offset_top = 57.997
 offset_right = -61.6436
-offset_bottom = 78.997
+offset_bottom = 80.997
 grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
@@ -148,8 +150,10 @@ grow_horizontal = 0
 
 [node name="Label_Plus" type="Label" parent="Control_DealerHPController"]
 layout_mode = 1
-offset_right = 24.0
-offset_bottom = 30.0
+offset_left = 0.488701
+offset_top = 2.00301
+offset_right = 28.4887
+offset_bottom = 32.003
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
@@ -164,9 +168,10 @@ metadata/_edit_lock_ = true
 
 [node name="Label_Reduce" type="Label" parent="Control_DealerHPController"]
 layout_mode = 1
-offset_left = 12.0
-offset_right = 35.0
-offset_bottom = 30.0
+offset_left = 15.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 32.0
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)

@@ -31,6 +31,7 @@ enum search_distance {Close, Default, Far, Worldwide}
 @export var ui_copypaste_icon_copy : TextureRect
 @export var ui_copypaste_icon_paste : TextureRect
 @export var animator_consolepop_copypaste_ui : AnimationPlayer
+@onready var MP: Node = $"../../MP"
 
 @export var lobby_ui : MP_LobbyUI
 
@@ -166,7 +167,7 @@ func CreateLobby():
 	if (GlobalSteam.LOBBY_ID == 0):
 		GlobalSteam.is_lobby_friends_only = true
 		GlobalSteam.lobby_player_limit = 4
-		OpenMP.create_lobby(OpenMP.LOBBY_TYPE_FRIENDS_ONLY, GlobalSteam.lobby_player_limit)
+		MP.create_lobby(MP.LOBBY_TYPE_FRIENDS_ONLY, GlobalSteam.lobby_player_limit)
 		#Steam.setLobbyData(GlobalSteam.LOBBY_ID, "player_limit", str(GlobalSteam.lobby_player_limit))
 
 func _on_lobby_created(connect: int, this_lobby_id: int) -> void:

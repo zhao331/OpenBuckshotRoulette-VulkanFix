@@ -886,18 +886,11 @@ script = ExtResource("2")
 [node name="mp_lobby manager" type="Node" parent="standalone managers" node_paths=PackedStringArray("menu_manager", "command_line")]
 script = ExtResource("3")
 is_menu = true
-is_lobby = null
-connecting_join_requested = null
 connecting_lobby_chat_update = false
 connecting_lobby_created = false
-connecting_lobby_joined = null
 connecting_persona_state_change = false
 menu_manager = NodePath("../menu manager")
 command_line = NodePath("../mp_command line checker")
-using_console = null
-updating_list = null
-get_lobby_members_on_ready = null
-checking_clipboard_ui = null
 
 [node name="menu manager" type="Node" parent="standalone managers" node_paths=PackedStringArray("savefile", "cursor", "animator_intro", "speaker_music", "speaker_start", "buttons", "buttons_options", "screens", "parent_main", "parent_creds", "parent_suboptions", "parent_audiovideo", "parent_language", "parent_controller", "parent_rebinding", "title", "waterfalls", "optionmanager", "controller", "mouseblocker", "anim_creds", "version", "firstFocus_main", "firstFocus_subOptions", "firstFocus_credits", "firstFocus_audioVideo", "firstFocus_language", "firstFocus_controller", "firstFocus_rebinding")]
 script = ExtResource("4")
@@ -1247,6 +1240,14 @@ text = "MP_UI MULTIPLAYER"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Clickable" parent="Camera/dialogue UI/menu ui/main screen/button_multiplayer" instance=ExtResource("43_850ru")]
+layout_mode = 1
+offset_left = 323.0
+offset_top = 6.0
+offset_right = -325.0
+offset_bottom = -7.0
+action = "multiplayer"
+
 [node name="button_options" type="Label" parent="Camera/dialogue UI/menu ui/main screen"]
 layout_mode = 1
 anchors_preset = 7
@@ -1344,6 +1345,7 @@ speaker_hover = NodePath("../../../../../../speaker_hover")
 ui_opacity_active = 0.5
 
 [node name="true button_multiplayer" type="Button" parent="Camera/dialogue UI/menu ui/main screen"]
+visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -1780,6 +1782,7 @@ playing = true
 ui_opacity_active = 0.5
 
 [node name="options_audio video" type="Control" parent="Camera/dialogue UI/menu ui"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

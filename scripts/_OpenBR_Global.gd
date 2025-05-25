@@ -2,6 +2,7 @@ extends Control
 @onready var label_fps: Label = $Label_FPS
 
 const PATH_PROJ_SETTINGS:= 'user://project_settings.ini'
+const WATCH_ONLY:= false
 
 var options_manager: OptionsManager
 var round_manager: RoundManager
@@ -12,6 +13,7 @@ var menu
 var is_fullscreen:= true
 var frames:= 0
 var fps:= 7
+var is_multiplayer:= false
 
 var _is_mobile_renderer:= false
 
@@ -121,6 +123,10 @@ func action(act:String):
 			await main.animator_intro.animation_finished
 			if main.animator_intro.assigned_animation == 'camera check match fixing': main.animator_intro.play('camera idle bathroom')
 			main.match_fixing.focused = false
+		'multiplayer':
+			OS.alert('多人游戏的实现十分复杂(尤其是从SteamAPI移植到普通的网络通信)，1503Dev暂时没有能力去修复多人游戏\n\n如有疑问，反馈和开发日志在Github', '为什么此选项不可用？')
+			#OS.alert('在线多人游戏的实现十分复杂(尤其是从SteamAPI移植到普通的网络通信)，1503Dev暂时没有能力去修复在线多人游戏\n\n如需要继续进入离线多人游戏(玩家vs人机)，请关闭警告', '为什么此选项被标记为不可用？')
+			#SceneChanger.change('res://multiplayer/scenes/mp_lobby.tscn')
 
 func interact_with(alias:String):
 	if alias == 'ending_finish':
@@ -142,6 +148,7 @@ func interact_with(alias:String):
 				await main.animator_intro.animation_finished
 				main.match_fixing.control.show()
 			'bathroom door':
+				if OpenBRGlobal.is_multiplayer: return
 				main.load_gambling()
 
 func get_formatted_time() -> String:

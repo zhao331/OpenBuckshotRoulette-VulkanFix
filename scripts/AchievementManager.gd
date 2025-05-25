@@ -1,6 +1,7 @@
 class_name Achievement extends Node
 
 func UnlockAchievement(apiname : String):
+	print("Unlocking achievement: ", apiname)
 	if GlobalVariables.using_steam:
 		#Steam.setAchievement(apiname)
 		#Steam.storeStats()

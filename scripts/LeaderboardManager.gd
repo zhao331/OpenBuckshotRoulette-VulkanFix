@@ -57,6 +57,7 @@ func Timeout(s : bool):
 		checking = false
 
 func ClearDisplay():
+	if OpenBRGlobal.is_multiplayer: return
 	display_overview.visible = false
 	text_globalpos.text = ""
 	for disp in display_instances_act:

@@ -2,7 +2,7 @@ class_name OptionsManager extends Node
 
 @export var controller : ControllerManager
 
-@export var defaultOption_language : String = "EN"
+@export var defaultOption_language : String = "ZHS"
 @export var defaultOption_windowed : bool
 @export var defaultOption_controllerActive : bool
 var defaultOption_inputmap_keyboard = {

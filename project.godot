@@ -650,7 +650,6 @@ camera/depth_of_field/depth_of_field_bokeh_shape=0
 camera/depth_of_field/depth_of_field_bokeh_quality=0
 environment/ssao/quality=0
 environment/ssil/quality=0
-scaling_3d/scale=0.8
 scaling_3d/fsr_sharpness=0.0
 environment/screen_space_reflection/roughness_quality=0
 environment/subsurface_scattering/subsurface_scattering_quality=0

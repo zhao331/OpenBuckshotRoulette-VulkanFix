@@ -15,6 +15,8 @@ class_name MatchFixingHandler
 @onready var label_true_blank_count: Label = $"../Control_RoundEditor/Panel/Label_TrueBlankCount"
 @onready var label_true_live_count: Label = $"../Control_RoundEditor/Panel/Label_TrueLiveCount"
 @onready var animation_player: AnimationPlayer = $"../Control_RoundEditor/Panel/AnimationPlayer"
+@onready var label_return: Label = $"../Label_Return"
+@onready var label_active_gambling: Label = $"../Control_Main/Label_ActiveGambling"
 
 @onready var pages:= [
 	control_main,
@@ -78,6 +80,7 @@ func action(act:String):
 			switch_page(0)
 		'select_gambling':
 			OpenBRConfig.put('game', 'gambling', selected_gambling)
+			label_active_gambling.text = tr('CURRENT_GAMBLING') + ': ' + selected_gambling
 		'player_HP_plus':
 			if gambling_json[selected_level]['health_of_player'] >= 6: return
 			gambling_json[selected_level]['health_of_player'] += 1
@@ -96,7 +99,7 @@ func action(act:String):
 			levels[selected_level]['dealer_HP'].text = str(int(gambling_json[selected_level]['health_of_dealer']))
 		'remove_round':
 			var list:ItemList = levels[selected_level]['rounds']
-			if list.item_count < selected_round + 1 and gambling_json[selected_level]['rounds'] <= 1: return
+			if list.item_count < selected_round + 1 or gambling_json[selected_level]['rounds'].size() <= 1: return
 			gambling_json[selected_level]['rounds'].erase(gambling_json[selected_level]['rounds'][selected_round])
 			list.remove_item(selected_round)
 			list.select(0)
@@ -155,6 +158,9 @@ func action(act:String):
 				switch_page(3)
 		'edit_round':
 			init_round_editor()
+		'new_gambling_backspace':
+			var text:= text_edit_new_gambling_name.text
+			if text.length() >= 1: text_edit_new_gambling_name.text = text.substr(0, text.length() - 1)
 
 func refresh_gamblings():
 	item_list_gamblings.clear()
@@ -167,10 +173,13 @@ func switch_page(index:= 0):
 	for page in pages:
 		page.hide()
 	pages[index].show()
+	label_return.hide()
 	match index:
 		0:
 			refresh_gamblings()
 			item_list_gamblings_select(get_current_gambling())
+			label_return.show()
+			label_active_gambling.text = tr('CURRENT_GAMBLING') + ': ' + get_current_gambling()
 		1:
 			text_edit_new_gambling_name.clear()
 		3:

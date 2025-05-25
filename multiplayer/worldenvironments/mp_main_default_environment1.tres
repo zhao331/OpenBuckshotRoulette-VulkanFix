@@ -10,12 +10,12 @@ sky_material = SubResource("PanoramaSkyMaterial_5awcj")
 
 [resource]
 background_mode = 2
-background_energy_multiplier = 0.25999999046325684
+background_energy_multiplier = 0.26
 sky = SubResource("Sky_oefs8")
 ambient_light_color = Color(1, 1, 1, 1)
 ambient_light_energy = 0.0
 tonemap_mode = 3
 adjustment_enabled = true
-adjustment_brightness = 1.4900000095367432
-adjustment_contrast = 0.8500000238418579
-adjustment_saturation = 0.30000001192092896
+adjustment_brightness = 1.49
+adjustment_contrast = 0.85
+adjustment_saturation = 0.3

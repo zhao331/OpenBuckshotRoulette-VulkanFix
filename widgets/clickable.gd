@@ -1,5 +1,5 @@
 class_name Clickable extends Control
-@onready var texture_rect: TextureRect = $TextureRect
+#@onready var texture_rect: TextureRect = $TextureRect
 @onready var audio_stream_player_2d_press: AudioStreamPlayer2D = $AudioStreamPlayer2D_Press
 @onready var audio_stream_player_2d_hover: AudioStreamPlayer2D = $AudioStreamPlayer2D_Hover
 
