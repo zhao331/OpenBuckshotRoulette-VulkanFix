@@ -137,6 +137,9 @@ extends Node3D
 @onready var animator_intro: AnimationPlayer = $"intro parent/animator_intro"
 @onready var match_fixing: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing"
 @onready var label_3d_gambling_manipulated: Label3D = $"tabletop parent/main tabletop/health counter/health counter ui parent/round indicator parent/Label3D_GamblingManipulated"
+@onready var item_amounts: Amounts = $"standalone managers/item amounts"
+@onready var interaction_branch_match_fixing: InteractionBranch = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing/InteractionBranch_MatchFixing"
+@onready var mesh_instance_3d_match_fixing: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing"
 
 @onready var round_batchs:= [
 	$"standalone managers/round batch array/round batch_0",
@@ -206,7 +209,18 @@ func load_gambling():
 	if gambling != 'default' and OpenBRConfig.hasKey('gamblings', gambling):
 		label_3d_gambling_manipulated.show()
 		var json:Array = JSON.parse_string(OpenBRConfig.fetch('gamblings', gambling, MatchFixingHandler.get_default_json()))
+		
+		if json.size() <= 3:
+			json.push_back({
+				'allow_all_items': false
+			})
+		if json[3].allow_all_items:
+			for aa in range(item_amounts.array_amounts.size()):
+				if aa >= 5:
+					item_amounts.array_amounts[aa].amount_main = item_amounts.array_amounts[aa].amount_don
+		
 		for i in json.size():
+			if i >= 3: return
 			var level:Dictionary = json[i]
 			var round_array:Array[RoundClass] = []
 			for o in level['rounds'].size():
@@ -250,3 +264,12 @@ func new_round_class(level:int, index:int, json:Dictionary, d_hp:int, p_hp:int) 
 	starting_health['player'][level] = p_hp
 	
 	return round
+
+func interact_with(alias:String):
+	match alias:
+		'pill bottle':
+			mesh_instance_3d_match_fixing.is_managered = true
+			interaction_branch_match_fixing.interactionAllowed = false
+		'pill choice no':
+			mesh_instance_3d_match_fixing.is_managered = false
+			interaction_branch_match_fixing.interactionAllowed = true

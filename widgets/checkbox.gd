@@ -18,8 +18,12 @@ func _on_button_pressed():
 	super._on_button_pressed()
 	checked = !checked
 	refresh_icon()
-	if checked && !check_action.is_empty(): OpenBRGlobal.action(check_action)
-	elif !checked && !uncheck_action.is_empty(): OpenBRGlobal.action(uncheck_action)
+	if checked && !check_action.is_empty(): 
+		if handler != null: handler.action(check_action)
+		else: OpenBRGlobal.action(check_action)
+	elif !checked && !uncheck_action.is_empty():
+		if handler != null: handler.action(uncheck_action)
+		else: OpenBRGlobal.action(uncheck_action)
 
 func set_checked(_checked:bool):
 	checked = _checked

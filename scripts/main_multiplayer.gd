@@ -27,7 +27,8 @@ extends Node3D
 	mesh_instance_3d_bridge,
 	$"Camera/post processing/ColorRect_VeryLowPerfShader",
 	$OmniLight3D_Extra,
-	$"Camera/dialogue UI/viewblocker parent"
+	$"Camera/dialogue UI/viewblocker parent",
+	$"tabletop parent/main tabletop/health counter/health counter ui parent/round indicator parent/Label3D_GamblingManipulated"
 ]
 @onready var invisible_nodes_android:= [
 ]
@@ -49,6 +50,8 @@ extends Node3D
 @onready var match_fixing: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing"
 @onready var label_3d_gambling_manipulated: Label3D = $"tabletop parent/main tabletop/health counter/health counter ui parent/round indicator parent/Label3D_GamblingManipulated"
 @onready var cursor_manager: CursorManager = $"standalone managers/cursor manager"
+@onready var round_manager: RoundManager = $"standalone managers/round manager"
+@onready var permission_manager: PermissionManager = $"standalone managers/permission manager"
 
 func _ready() -> void:
 	OpenBRGlobal.main = self
@@ -90,6 +93,9 @@ func init_invisible_nodes():
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.keycode == KEY_BACK and event.is_pressed():
 		print('Back')
+	if Input.is_action_pressed('OpenBR_test'):
+		permission_manager.SetInteractionPermissions(false)
+		round_manager.EndTurn(false)
 
 func refresh_collision_shape():
 	var vec:= get_window().size

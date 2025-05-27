@@ -17,6 +17,7 @@ class_name MatchFixingHandler
 @onready var animation_player: AnimationPlayer = $"../Control_RoundEditor/Panel/AnimationPlayer"
 @onready var label_return: Label = $"../Label_Return"
 @onready var label_active_gambling: Label = $"../Control_Main/Label_ActiveGambling"
+@onready var checkbox_allow_all_items: Checkbox = $"../Control_Editor/Control_AllowAllItems/Checkbox_AllowAllItems"
 
 @onready var pages:= [
 	control_main,
@@ -161,6 +162,10 @@ func action(act:String):
 		'new_gambling_backspace':
 			var text:= text_edit_new_gambling_name.text
 			if text.length() >= 1: text_edit_new_gambling_name.text = text.substr(0, text.length() - 1)
+		'allow_all_items_on':
+			gambling_json[3].allow_all_items = true
+		'allow_all_items_off':
+			gambling_json[3].allow_all_items = false
 
 func refresh_gamblings():
 	item_list_gamblings.clear()
@@ -186,6 +191,7 @@ func switch_page(index:= 0):
 			tab_container_levels.set_tab_title(0, tr('LEVEL') % '1')
 			tab_container_levels.set_tab_title(1, tr('LEVEL') % '2')
 			tab_container_levels.set_tab_title(2, tr('LEVEL') % '3')
+		
 
 func new_gambling(name:String):
 	OpenBRConfig.put('gamblings', name, get_default_json())
@@ -228,10 +234,19 @@ func init_gambling_editor():
 	
 	gambling_json = JSON.parse_string(OpenBRConfig.fetch('gamblings', selected_gambling, get_default_json()))
 	
+	if gambling_json.size() <= 3:
+		gambling_json.push_back({
+			'allow_all_items': false
+		})
+		
+	var config:Dictionary = gambling_json[3]
+	if config.has('allow_all_items') && config.allow_all_items: checkbox_allow_all_items.set_checked(1)
+	
 	for i in range(3):
 		var level:Dictionary = gambling_json[i]
 		levels[i]['player_HP'].text = str(int(level['health_of_player']))
 		levels[i]['dealer_HP'].text = str(int(level['health_of_dealer']))
+		
 		var list:ItemList = levels[i]['rounds']
 		list.clear()
 		for o in level['rounds'].size():

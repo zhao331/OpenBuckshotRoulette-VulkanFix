@@ -91,5 +91,8 @@
                 "number_of_live_shells": 5
             }
         ]
+    },
+    {
+        "allow_all_items": false
     }
 ]

@@ -223,7 +223,7 @@ func GrabItem():
 	interaction_intake.interactionAllowed = false
 	var selectedResource : ItemResource
 	
-	#SET PLAYER AVAILABLE ITEMS ACCORDING TO MAX COUNTS
+	# 根据最大数量设置玩家可用道具列表
 	var amountArray : Array[AmountResource] = amounts.array_amounts
 	availableItemsToGrabArray_player = []
 	for res in amountArray:

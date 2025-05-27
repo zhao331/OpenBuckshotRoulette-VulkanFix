@@ -11,13 +11,14 @@
 layout_mode = 3
 anchors_preset = 0
 metadata/_tab_index = 0
+metadata/_edit_vertical_guides_ = [-132.0, -175.0]
 
 [node name="ItemList_Rounds" type="ItemList" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -101.0
+offset_right = 636.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_e324w")
@@ -25,6 +26,7 @@ theme_override_colors/font_selected_color = Color(0.635294, 1, 0.607843, 1)
 theme_override_colors/font_hovered_selected_color = Color(0.635294, 1, 0.607843, 1)
 theme_override_colors/font_hovered_color = Color(0.709804, 1, 0.682353, 1)
 theme_override_colors/font_color = Color(0.823529, 1, 0.803922, 1)
+theme_override_font_sizes/font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxEmpty_e324w")
 theme_override_styles/panel = SubResource("StyleBoxEmpty_4du2b")
 
@@ -33,14 +35,14 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -98.0
-offset_right = 76.0
-offset_bottom = 23.0
+offset_left = -175.0
+offset_right = 133.0
+offset_bottom = 32.0
 grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635599, 1, 0.606096, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 26
 text = "PLAYER_HP"
 
 [node name="Label_TruePlayerHP" type="Label" parent="."]
@@ -48,15 +50,15 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -98.0
-offset_top = 18.0
-offset_right = -61.0
-offset_bottom = 41.0
+offset_left = -175.0
+offset_top = 26.0
+offset_right = -138.0
+offset_bottom = 54.0
 grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635599, 1, 0.606096, 1)
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 22
 text = "0"
 
 [node name="Control_PlayerHPController" type="Control" parent="."]
@@ -64,23 +66,24 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -75.0
-offset_top = 18.0
-offset_right = -57.0
-offset_bottom = 32.0
+offset_left = -152.0
+offset_top = 26.0
+offset_right = -134.0
+offset_bottom = 40.0
 grow_horizontal = 0
 
 [node name="Label_Plus" type="Label" parent="Control_PlayerHPController"]
 layout_mode = 1
 offset_top = 2.0
-offset_right = 29.0
-offset_bottom = 32.0
+offset_right = 35.0
+offset_bottom = 39.0
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
 theme_override_font_sizes/font_size = 24
 text = "+"
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Clickable" parent="Control_PlayerHPController/Label_Plus" instance=ExtResource("2_4du2b")]
 layout_mode = 1
@@ -89,16 +92,17 @@ metadata/_edit_lock_ = true
 
 [node name="Label_Reduce" type="Label" parent="Control_PlayerHPController"]
 layout_mode = 1
-offset_left = 15.0
+offset_left = 19.0
 offset_top = 2.0
-offset_right = 46.0
-offset_bottom = 32.0
+offset_right = 54.0
+offset_bottom = 39.0
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
 theme_override_font_sizes/font_size = 24
 text = "-"
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Clickable" parent="Control_PlayerHPController/Label_Reduce" instance=ExtResource("2_4du2b")]
 layout_mode = 1
@@ -110,15 +114,15 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -98.644
-offset_top = 39.997
-offset_right = 75.3564
-offset_bottom = 62.997
+offset_left = -175.0
+offset_top = 56.0
+offset_right = 132.0
+offset_bottom = 88.0
 grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635599, 1, 0.606096, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 26
 text = "DEALER_HP"
 
 [node name="Label_TrueDealerHP" type="Label" parent="."]
@@ -126,15 +130,15 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -98.644
-offset_top = 57.997
-offset_right = -61.6436
-offset_bottom = 80.997
+offset_left = -174.644
+offset_top = 81.997
+offset_right = -137.644
+offset_bottom = 109.997
 grow_horizontal = 0
 scale = Vector2(0.574, 0.756)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635599, 1, 0.606096, 1)
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 22
 text = "0"
 
 [node name="Control_DealerHPController" type="Control" parent="."]
@@ -142,24 +146,25 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -75.4887
-offset_top = 57.997
-offset_right = -57.4887
-offset_bottom = 71.997
+offset_left = -151.489
+offset_top = 81.997
+offset_right = -133.489
+offset_bottom = 95.997
 grow_horizontal = 0
 
 [node name="Label_Plus" type="Label" parent="Control_DealerHPController"]
 layout_mode = 1
-offset_left = 0.488701
+offset_left = 0.488693
 offset_top = 2.00301
-offset_right = 28.4887
-offset_bottom = 32.003
+offset_right = 35.4887
+offset_bottom = 39.003
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
 theme_override_font_sizes/font_size = 24
 text = "+"
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Clickable" parent="Control_DealerHPController/Label_Plus" instance=ExtResource("2_4du2b")]
 layout_mode = 1
@@ -168,16 +173,17 @@ metadata/_edit_lock_ = true
 
 [node name="Label_Reduce" type="Label" parent="Control_DealerHPController"]
 layout_mode = 1
-offset_left = 15.0
+offset_left = 19.0
 offset_top = 2.0
-offset_right = 45.0
-offset_bottom = 32.0
+offset_right = 54.0
+offset_bottom = 39.0
 scale = Vector2(0.48, 0.46)
 theme = ExtResource("1_e324w")
 theme_override_colors/font_color = Color(0.635294, 1, 0.607843, 1)
 theme_override_font_sizes/font_size = 24
 text = "-"
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Clickable" parent="Control_DealerHPController/Label_Reduce" instance=ExtResource("2_4du2b")]
 layout_mode = 1

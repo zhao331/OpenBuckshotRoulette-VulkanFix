@@ -105,6 +105,7 @@ func PickupItemFromTable(itemName : String):
 		"adrenaline":
 			hand_adrenaline.visible = true
 	itemManager.itemArray_instances_dealer.remove_at(matchIndex)
+	if activeInstance == null: return
 	var tempindicator = activeInstance.get_child(0)
 	var gridname = tempindicator.dealerGridName
 	if (!stealing): itemManager.gridParentArray_enemy_available.append(gridname)
@@ -220,27 +221,3 @@ func LerpHandMovement():
 			handParent_R.transform.origin = pos
 			handParent_R.rotation_degrees = rot
 		pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

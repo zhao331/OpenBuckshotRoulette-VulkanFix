@@ -52,6 +52,7 @@ var dealerShotTrue = false
 
 func MainSlowDownRoutine(whoCopy : String, fromDealer : bool):
 	var who = whoCopy
+	if shellSpawner.sequenceArray.size() <= 0: return
 	var currentRoundInChamber = shellSpawner.sequenceArray[0]
 	var healthAfterShot = 1
 	if (!fromDealer):
@@ -203,6 +204,9 @@ func CheckAchievement_style():
 	if ("handsaw" in roundManager.playerCurrentTurnItemArray): ach.UnlockAchievement("ach15")
 
 func PlayShootingSound():
+	if shellSpawner.sequenceArray.size() <= 0:
+		speaker_blank.play()
+		return
 	var currentRoundInChamber = shellSpawner.sequenceArray[0]
 	if (currentRoundInChamber == "live"):
 		CheckIfFinalShot()

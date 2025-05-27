@@ -135,6 +135,7 @@ func interact_with(alias:String):
 				ending_manager.ExitGame()
 				ending_manager.waitingForInput = false
 	else:
+		if main != null: main.interact_with(alias)
 		print('Interact: ', alias)
 		match alias:
 			'pill choice yes':

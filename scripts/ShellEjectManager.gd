@@ -21,7 +21,7 @@ func _ready():
 func EjectShell():
 	shellSpawner.roundManager.playerData.stat_shellsEjected += 1
 	animator_fader.play("RESET")
-	if (shellSpawner.sequenceArray[0] == "live"): mesh.set_surface_override_material(1, mat_live)
+	if (shellSpawner.sequenceArray.size() > 0 and shellSpawner.sequenceArray[0] == "live"): mesh.set_surface_override_material(1, mat_live)
 	else: mesh.set_surface_override_material(1, mat_blank)
 	mesh.visible = true
 	if(!isDealerSide): animator.play("ejecting shell_player1")
@@ -59,6 +59,7 @@ func BeerEjection_dealer():
 
 func DeathEjection():
 	animator_fader.play("RESET")
+	if shellSpawner.sequenceArray.size() <= 0: return
 	if (shellSpawner.sequenceArray[0] == "live"): mesh.set_surface_override_material(1, mat_live)
 	else: mesh.set_surface_override_material(1, mat_blank)
 	mesh.visible = true

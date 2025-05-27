@@ -44,7 +44,7 @@ func LoadShells():
 		var stringshow
 		if (diaindex == 0): stringshow = tr("SHELL INSERT1")
 		if (diaindex == 1): stringshow = tr("SHELL INSERT2")
-		dialogue.ShowText_ForDuration(stringshow, 3)
+		if stringshow != null: dialogue.ShowText_ForDuration(stringshow, 3)
 		diaindex += 1
 		await get_tree().create_timer(3, false).timeout
 		roundManager.playerData.numberOfDialogueRead += 1
