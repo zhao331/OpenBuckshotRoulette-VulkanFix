@@ -129,6 +129,7 @@ func action(act:String):
 			#SceneChanger.change('res://multiplayer/scenes/mp_lobby.tscn')
 
 func interact_with(alias:String):
+	if OpenBRGlobal.is_multiplayer: return
 	if alias == 'ending_finish':
 		if ending_manager != null:
 			if (ending_manager.waitingForInput): 

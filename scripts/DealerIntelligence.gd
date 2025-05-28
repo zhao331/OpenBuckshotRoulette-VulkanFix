@@ -426,7 +426,6 @@ func CoinFlip():
 		var c_live = shellSpawner.sequenceArray.count("live")
 		var c_blank = shellSpawner.sequenceArray.count("blank")
 		if (c_live == c_blank): result = randi_range(0, 1)
-		if (c_live > c_blank): result = 1
-		if (c_live < c_blank): result = 0
+		elif (c_live > c_blank): result = 1
+		elif (c_live < c_blank): result = 0
 	return result
-

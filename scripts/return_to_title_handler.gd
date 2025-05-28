@@ -11,5 +11,5 @@ func action(act:String):
 			$"..".hide()
 
 func _input(event: InputEvent) -> void:
-	if (event is InputEventKey and event.keycode == KEY_BACK) or Input.is_action_just_pressed('debug_back'):
+	if (event is InputEventKey and event.keycode == KEY_BACK and event.is_pressed()) or Input.is_action_just_pressed('debug_back'):
 		$"..".visible = !$"..".visible

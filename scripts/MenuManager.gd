@@ -190,6 +190,7 @@ func ResetButtons():
 	cursor.SetCursorImage("point")
 
 func Start():
+	OpenBRGlobal.is_multiplayer = false
 	Buttons(false)
 	ResetButtons()
 	for screen in screens: screen.visible = false
@@ -201,11 +202,12 @@ func Start():
 	speaker_start.play()
 	cursor.SetCursor(false, false)
 	savefile.ClearSave()
-	await get_tree().create_timer(4, false).timeout
+	if !OpenBRGlobal.WATCH_ONLY: await get_tree().create_timer(4, false).timeout
 	print("changing scene to: main")
 	SceneChanger.change("res://scenes/main.tscn")
 
 func StartMultiplayer():
+	OpenBRGlobal.is_multiplayer = true
 	if !GlobalSteam.ONLINE:
 		GlobalVariables.message_to_forward = tr("MP_UI LOBBY NO CONNECTION")
 		GlobalVariables.returning_to_main_menu_on_popup_close = true

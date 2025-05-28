@@ -154,8 +154,9 @@ var starting_health:= {
 }
 
 func _ready() -> void:
+	OpenBRGlobal.is_multiplayer = false
 	OpenBRGlobal.main = self
-	TranslationServer.set_locale('ZHS')
+	#TranslationServer.set_locale('ZHS')
 	init_invisible_nodes()
 	viewblocker_parent.show()
 	refresh_collision_shape()
