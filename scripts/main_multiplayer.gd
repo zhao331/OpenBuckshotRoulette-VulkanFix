@@ -53,6 +53,9 @@ extends Node3D
 @onready var round_manager: RoundManager = $"standalone managers/round manager"
 @onready var permission_manager: PermissionManager = $"standalone managers/permission manager"
 
+func _enter_tree() -> void:
+	OpenBRGlobal.is_multiplayer = true
+
 func _ready() -> void:
 	OpenBRGlobal.main = self
 	OpenBRGlobal.is_multiplayer = true

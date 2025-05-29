@@ -1,6 +1,6 @@
 # Open Buckshot Roulette
 这是一个把 Buckshot Roulette (恶魔轮盘) 开源并扩展的项目  
-如果你想修改或使用 Open Buckshot Roulette 请确保 Buckshot Roulette 你在 itch.io 或 Steam 上可用
+如果你想修改或使用 Open Buckshot Roulette 请确保 Buckshot Roulette 你在 itch.io 或 Steam 账户上可用
 
 你需要使用 Godot Engine 4.4.1 编辑它  
 

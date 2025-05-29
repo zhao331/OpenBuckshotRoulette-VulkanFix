@@ -34,7 +34,7 @@ func BeginDealerTurn():
 func DealerChoice():
 	print('Enemy is making a choice')
 	return
-	var dealerWantsToUse = ""
+	var dealerWantsToUse:= ""
 	var dealerFinishedUsingItems = false
 	var hasHandsaw = false
 	var hasCigs = false
@@ -136,9 +136,9 @@ func DealerChoice():
 			roundManager.currentShotgunDamage = 2
 			break
 		if (itemManager.itemArray_dealer[i] == "burner phone" && roundManager.shellSpawner.sequenceArray.size() > 2):
-			var sequence  = roundManager.shellSpawner.sequenceArray
-			var len = sequence.size()
-			var randindex =  randi_range(1, len - 1)
+			var sequence:= roundManager.shellSpawner.sequenceArray
+			var _len:= sequence.size()
+			var randindex:=  randi_range(1, _len - 1)
 			if(randindex == 8): randindex -= 1
 			sequenceArray_knownShell[randindex] = true
 			dealerWantsToUse = "burner phone"
@@ -327,3 +327,7 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed('debug_n5'):
 		if itemManager.itemArray_dealer.size() >= 1:
 			use_item(itemManager.itemArray_dealer[0])
+	
+	if Input.is_action_just_pressed('debug_]'): print(roundManager.shellSpawner.sequenceArray)
+	if Input.is_action_just_pressed('debug_;'): roundManager.shellSpawner.sequenceArray = ['blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank', 'blank']
+	if Input.is_action_just_pressed('debug_.'): roundManager.shellSpawner.sequenceArray = ['live']

@@ -527,3 +527,7 @@ func EndMainBatch():
 	#TRACK MANAGER
 	await get_tree().create_timer(2, false).timeout
 	musicManager.LoadTrack_FadeIn()
+
+func set_shells(sequence_array: Array):
+	shellSpawner.sequenceArray = sequence_array
+	pass
