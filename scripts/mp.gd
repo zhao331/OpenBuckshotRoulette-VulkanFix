@@ -5,6 +5,7 @@ const PROTOCOL:= 1
 @export var interaction_branch_bathroom_door: InteractionBranch
 @export var interaction_manager: InteractionManagerMP
 @export var shell_spawner: ShellSpawnerMP
+@export var permission_manager: PermissionManager
 
 signal on_response_get_server_info(info:Dictionary)
 signal on_response_get_shells(shells:Array)
@@ -12,13 +13,15 @@ signal on_response_get_shells(shells:Array)
 @onready var control: Control = $Control
 @onready var control_main: Control = $Control/Control_Main
 @onready var control_wait_for_player: Control = $Control/Control_WaitForPlayer
+@onready var control_disconnected: Control = $Control/Control_Disconnected
 
 @onready var visibles:= [
 	control,
 	control_main
 ]
 @onready var invisibles:= [
-	control_wait_for_player
+	control_wait_for_player,
+	control_disconnected
 ]
 
 var peer:= ENetMultiplayerPeer.new()
@@ -38,15 +41,25 @@ func action(act:String):
 			control_wait_for_player.show()
 			peer.create_server(8050, 4)
 			peer.peer_connected.connect(func(id):
-				print('Peer connected: ', id)
 				control.hide()
+				control_wait_for_player.hide()
 				interaction_branch_bathroom_door.interactionAllowed = true
 			)
+			peer.peer_disconnected.connect(func(id):
+				control.show()
+				control_disconnected.show()
+				interaction_branch_bathroom_door.interactionAllowed = false
+			)
 			multiplayer.multiplayer_peer = peer
-			print('Server started on 8050, my id is ', peer.get_unique_id())
 		'join_match':
 			peer.create_client('127.0.0.1', 8050)
+			peer.peer_disconnected.connect(func(id):
+				control.show()
+				control_disconnected.show()
+				interaction_branch_bathroom_door.interactionAllowed = false
+			)
 			control.hide()
+			control_main.hide()
 			interaction_branch_bathroom_door.interactionAllowed = true
 			multiplayer.multiplayer_peer = peer
 
@@ -54,6 +67,8 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed('debug_r_alt'): rpc_id(get_opponent_id(), 'rpc_talk', get_id(), 0, 'hello')
 	#if Input.is_action_just_pressed('debug_.'): interaction_manager.InteractWith('bathroom door')
 	#if Input.is_action_just_pressed('debug_;'): rpc_interact_with(get_id(), 0, 'bathroom door')
+func _exit_tree() -> void:
+	peer.disconnect_peer(get_opponent_id())
 
 func get_id() -> int:
 	return multiplayer.get_unique_id()

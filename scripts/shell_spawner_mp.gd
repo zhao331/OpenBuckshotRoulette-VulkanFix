@@ -22,7 +22,7 @@ func MainShellRoutine():
 	var temp_live = roundManager.roundArray[roundManager.currentRound].amountLive
 	var temp_blank = roundManager.roundArray[roundManager.currentRound].amountBlank
 	var temp_shuf = roundManager.roundArray[roundManager.currentRound].shufflingArray
-	SpawnShells(temp_nr, temp_live, temp_blank, temp_shuf)
+	await SpawnShells(temp_nr, temp_live, temp_blank, temp_shuf)
 	seq = sequenceArray
 	anim_compartment.play("show shells")
 	PlayLatchSound()

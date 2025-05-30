@@ -43,6 +43,7 @@ var mainBatchIndex : int
 @export var intbranch_yes : InteractionBranch
 @export var intbranch_no : InteractionBranch
 @export var speaker_slot : AudioStreamPlayer2D
+@export var mp: MP
 
 var endless = false
 var shellLoadingSpedUp = false
@@ -263,6 +264,7 @@ var wireIsCut_player:= false
 
 var ignoring:= false
 func EndTurn(playerCanGoAgain : bool):
+	print("EndTurn: ", playerCanGoAgain)
 	#USINGITEMS: ASSIGN PLAYER CAN GO AGAIN FROM ITEMS HERE
 	#USINGITEMS: MAKE SHOTGUN GROW NEW BARREL
 	#var isOutOfHealth = CheckIfOutOfHealth()

@@ -14,6 +14,7 @@ class_name ShellLoader extends Node
 @export var animator_dealerHands : AnimationPlayer
 @export var animator_dealerHandRight : AnimationPlayer
 @export var dealerAI : DealerIntelligence
+@export var mp: MP
 @export_multiline var introductionDialogues : Array[String]
 @export_multiline var loadingDialogues : Array[String]
 var diaindex = 0
@@ -96,4 +97,8 @@ func LoadShells():
 	perm.SetIndicators(true)
 	perm.SetInteractionPermissions(true)
 	roundManager.SetupDeskUI()
+	if mp:
+		camera.BeginLerp("enemy")
+		perm.SetInteractionPermissions(false)
+		dealerAI.DealerChoice()
 	pass
