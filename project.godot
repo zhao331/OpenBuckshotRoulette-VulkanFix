@@ -40,7 +40,7 @@ window/size/viewport_width=960
 window/size/viewport_height=540
 window/size/window_width_override=1280
 window/size/window_height_override=675
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://misc/cursor xp_point.png"
 mouse_cursor/custom_image_hotspot=Vector2(9, 0)
@@ -678,10 +678,6 @@ debug_r_alt={
 ]
 }
 
-[input_devices]
-
-pointing/emulate_touch_from_mouse=true
-
 [internationalization]
 
 locale/translation_remaps={}
@@ -700,6 +696,7 @@ camera/depth_of_field/depth_of_field_bokeh_shape=0
 camera/depth_of_field/depth_of_field_bokeh_quality=0
 environment/ssao/quality=0
 environment/ssil/quality=0
+scaling_3d/scale=0.8
 scaling_3d/fsr_sharpness=0.0
 environment/screen_space_reflection/roughness_quality=0
 environment/subsurface_scattering/subsurface_scattering_quality=0

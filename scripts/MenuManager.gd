@@ -190,6 +190,7 @@ func ResetButtons():
 	cursor.SetCursorImage("point")
 
 func Start():
+	print("Start")
 	OpenBRGlobal.is_multiplayer = false
 	Buttons(false)
 	ResetButtons()
@@ -203,15 +204,15 @@ func Start():
 	cursor.SetCursor(false, false)
 	savefile.ClearSave()
 	if !OpenBRGlobal.WATCH_ONLY: await get_tree().create_timer(4, false).timeout
-	print("changing scene to: main")
 	SceneChanger.change("res://scenes/main.tscn")
 
 func StartMultiplayer():
-	OpenBRGlobal.is_multiplayer = true
-	if !GlobalSteam.ONLINE:
-		GlobalVariables.message_to_forward = tr("MP_UI LOBBY NO CONNECTION")
-		GlobalVariables.returning_to_main_menu_on_popup_close = true
-		GlobalVariables.running_short_intro_in_lobby_scene = true
+	OS.alert(tr('MULTIPLAYER_IN_BETA'))
+	# OpenBRGlobal.is_multiplayer = true
+	# if !GlobalSteam.ONLINE:
+	# 	GlobalVariables.message_to_forward = tr("MP_UI LOBBY NO CONNECTION")
+	# 	GlobalVariables.returning_to_main_menu_on_popup_close = true
+	# 	GlobalVariables.running_short_intro_in_lobby_scene = true
 	print("StartMultiplayer")
 	Buttons(false)
 	ResetButtons()
@@ -225,8 +226,7 @@ func StartMultiplayer():
 	cursor.SetCursor(false, false)
 	savefile.ClearSave()
 	await get_tree().create_timer(4, false).timeout
-	print("changing scene to: lobby")
-	SceneChanger.change("res://multiplayer/scenes/mp_lobby.tscn")
+	SceneChanger.change("res://scenes/main_multiplayer.tscn")
 
 func Credits():
 	Show("credits")

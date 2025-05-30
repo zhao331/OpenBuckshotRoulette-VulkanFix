@@ -97,7 +97,7 @@ func LoadShells():
 	perm.SetIndicators(true)
 	perm.SetInteractionPermissions(true)
 	roundManager.SetupDeskUI()
-	if mp:
+	if mp && !mp.is_server():
 		camera.BeginLerp("enemy")
 		perm.SetInteractionPermissions(false)
 		dealerAI.DealerChoice()

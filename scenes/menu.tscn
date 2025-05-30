@@ -860,7 +860,7 @@ material = SubResource("StandardMaterial3D_46y0v")
 [node name="menu" type="Node3D"]
 script = ExtResource("1_lqq6t")
 metadata/_edit_vertical_guides_ = [480.0]
-metadata/_edit_horizontal_guides_ = [267.0]
+metadata/_edit_horizontal_guides_ = [270.0]
 
 [node name="standalone managers" type="Node" parent="."]
 
@@ -1232,21 +1232,13 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.760005, 1)
 pivot_offset = Vector2(480, 0)
-theme_override_colors/font_color = Color(0.360784, 0.360784, 0.360784, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("28_ur5vm")
 theme_override_font_sizes/font_size = 26
 text = "MP_UI MULTIPLAYER"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Clickable" parent="Camera/dialogue UI/menu ui/main screen/button_multiplayer" instance=ExtResource("43_850ru")]
-layout_mode = 1
-offset_left = 323.0
-offset_top = 6.0
-offset_right = -325.0
-offset_bottom = -7.0
-action = "multiplayer"
 
 [node name="button_options" type="Label" parent="Camera/dialogue UI/menu ui/main screen"]
 layout_mode = 1
@@ -1345,7 +1337,6 @@ speaker_hover = NodePath("../../../../../../speaker_hover")
 ui_opacity_active = 0.5
 
 [node name="true button_multiplayer" type="Button" parent="Camera/dialogue UI/menu ui/main screen"]
-visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -1364,7 +1355,6 @@ scale = Vector2(8.18198, 3.01166)
 focus_neighbor_top = NodePath("../true button_start")
 focus_neighbor_right = NodePath("../true button_discord")
 focus_neighbor_bottom = NodePath("../true button_options")
-disabled = true
 
 [node name="button class_multiplayer" type="Node" parent="Camera/dialogue UI/menu ui/main screen/true button_multiplayer" node_paths=PackedStringArray("cursor", "ui", "speaker_press", "speaker_hover")]
 script = ExtResource("28")
@@ -1564,6 +1554,33 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("27")
 theme_override_font_sizes/font_size = 26
 text = "insert version number here"
+
+[node name="Label_CheckUpdate" type="Label" parent="Camera/dialogue UI/menu ui/main screen"]
+modulate = Color(1, 1, 1, 0.560784)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -243.0
+offset_top = -41.0
+offset_right = 26.0
+offset_bottom = -9.0
+grow_vertical = 0
+scale = Vector2(0.455, 0.463)
+pivot_offset = Vector2(480, 0)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("27")
+theme_override_font_sizes/font_size = 26
+text = "CHECK_UPDATE"
+
+[node name="Clickable" parent="Camera/dialogue UI/menu ui/main screen/Label_CheckUpdate" node_paths=PackedStringArray("cursor", "handler") instance=ExtResource("43_850ru")]
+layout_mode = 1
+action = "check_update"
+cursor = NodePath("../../../../../../standalone managers/cursor manager")
+handler = NodePath("../../../../../..")
+metadata/_edit_lock_ = true
+
+[node name="HTTPRequest_CheckUpdate" type="HTTPRequest" parent="Camera/dialogue UI/menu ui/main screen/Label_CheckUpdate"]
 
 [node name="sub options select" type="Control" parent="Camera/dialogue UI/menu ui"]
 visible = false
@@ -4898,6 +4915,108 @@ speaker_hover = NodePath("../../../../../../speaker_hover")
 playing = true
 ui_opacity_active = 0.5
 
+[node name="Control_NewVersion" type="Control" parent="Camera/dialogue UI/menu ui"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Camera/dialogue UI/menu ui/Control_NewVersion"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.658824)
+metadata/_edit_lock_ = true
+
+[node name="Label_Title" type="Label" parent="Camera/dialogue UI/menu ui/Control_NewVersion"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.5
+offset_top = -96.0
+offset_right = 184.5
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("42_jxp4i")
+text = "NEW_VERSION_AVAILABLE"
+horizontal_alignment = 1
+
+[node name="Label_Version" type="Label" parent="Camera/dialogue UI/menu ui/Control_NewVersion"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.5
+offset_top = -12.5
+offset_right = 184.5
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("42_jxp4i")
+theme_override_font_sizes/font_size = 20
+text = "VERSION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Update" type="Label" parent="Camera/dialogue UI/menu ui/Control_NewVersion"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 64.5
+offset_top = 64.0
+offset_right = 169.5
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("42_jxp4i")
+text = "UPDATE"
+horizontal_alignment = 1
+
+[node name="Clickable" parent="Camera/dialogue UI/menu ui/Control_NewVersion/Label_Update" node_paths=PackedStringArray("cursor", "handler") instance=ExtResource("43_850ru")]
+layout_mode = 1
+action = "update"
+cursor = NodePath("../../../../../../standalone managers/cursor manager")
+handler = NodePath("../../../../../..")
+
+[node name="Label_Cancel" type="Label" parent="Camera/dialogue UI/menu ui/Control_NewVersion"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -169.5
+offset_top = 64.0
+offset_right = -64.5
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("42_jxp4i")
+text = "CANCEL"
+horizontal_alignment = 1
+
+[node name="Clickable" parent="Camera/dialogue UI/menu ui/Control_NewVersion/Label_Cancel" node_paths=PackedStringArray("cursor", "handler") instance=ExtResource("43_850ru")]
+layout_mode = 1
+action = "update_cancel"
+cursor = NodePath("../../../../../../standalone managers/cursor manager")
+handler = NodePath("../../../../../..")
+
 [node name="mouse blocker" type="Control" parent="Camera/dialogue UI/menu ui"]
 visible = false
 layout_mode = 1
@@ -5122,3 +5241,4 @@ transform = Transform3D(0.890749, 1.77636e-15, 0, -2.27374e-13, 0.551399, 2.2351
 mesh = SubResource("BoxMesh_jxp4i")
 
 [connection signal="pressed" from="Camera/dialogue UI/menu ui/main screen/true button_github" to="." method="_on_true_button_github_pressed"]
+[connection signal="request_completed" from="Camera/dialogue UI/menu ui/main screen/Label_CheckUpdate/HTTPRequest_CheckUpdate" to="." method="_on_http_request_check_update_request_completed"]

@@ -58,10 +58,9 @@ func MainShellRoutine():
 	if(roundManager.shellLoadingSpedUp): await get_tree().create_timer(.2, false).timeout
 	else: await get_tree().create_timer(.5, false).timeout
 	#CHECK IF INSERTING INTO CHAMBER IN RANDOM ORDER.
-	if (roundManager.roundArray[roundManager.currentRound].insertingInRandomOrder):
-		sequenceArray.shuffle()
-		sequenceArray.shuffle()
-		
+	#if mp.is_server() and roundManager.roundArray[roundManager.currentRound].insertingInRandomOrder:
+		#sequenceArray.shuffle()
+		#sequenceArray.shuffle()
 	roundManager.LoadShells()
 	return
 	pass
@@ -94,13 +93,15 @@ func SpawnShells(numberOfShells : int, numberOfLives : int, numberOfBlanks : int
 		sequenceArray.append(tempSequence[i])
 		ai.sequenceArray_knownShell.append(false)
 		pass
-		
+	
+	sequenceArray.shuffle()
+	
 	if !mp.is_server():
-		mp._rpc_get_shells()
 		mp.on_response_get_shells.connect(func(shells):
-			print('Got shells: ', shells)
+			print('shells: ', shells)
 			sequenceArray = shells
 		)
+		mp._rpc_get_shells()
 		await mp.on_response_get_shells
 	
 	locationIndex = 0
@@ -108,6 +109,7 @@ func SpawnShells(numberOfShells : int, numberOfLives : int, numberOfBlanks : int
 	for i in range(numberOfShells):
 		spawnedShell = shellInstance.instantiate()
 		shellBranch = spawnedShell.get_child(0)
+		if sequenceArray.size() <= i: return
 		if (sequenceArray[i] == "live"): shellBranch.isLive = true
 		else: shellBranch.isLive = false
 		shellBranch.ApplyStatus()
@@ -132,3 +134,6 @@ func PlayAudioIndicators():
 		else: speaker_audioIndicator.stream = soundArray_indicators[1]
 		speaker_audioIndicator.play()
 		await get_tree().create_timer(.07, false).timeout
+
+func print_shells(tag):
+	print(tag, ': ', sequenceArray)

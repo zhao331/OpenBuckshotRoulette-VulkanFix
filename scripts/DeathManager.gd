@@ -23,6 +23,7 @@ class_name DeathManager extends Node
 @export var animator_pp : AnimationPlayer
 @export var speaker_heartbeat : AudioStreamPlayer2D
 @export var rm : RoundManager
+@export var mp: MP
 
 func _ready():
 	defibParent.visible = false
@@ -142,20 +143,17 @@ func MainDeathRoutine():
 		if (rm.endscore != null):
 			if (rm.endscore > 1000000): ach.UnlockAchievement("ach10")
 		await get_tree().create_timer(.5, false).timeout
-		print("changing scene to: death / 1")
-		SceneChanger.change("res://scenes/death.tscn")
+		SceneChanger.change("res://scenes/main.tscn")
 		return
 	if (shotgunShooting.roundManager.wireIsCut_player): 
 		shotgunShooting.roundManager.playerData.enteringFromTrueDeath = true
 		loadingHeaven = true
 	shotgunShooting.roundManager.playerData.playerEnteringFromDeath = true
-	await(savefile.SaveGame())
+	if mp == null: await(savefile.SaveGame())
 	await get_tree().create_timer(.5, false).timeout
 	if (!loadingHeaven): 
-		print("changing scene to: death / 2")
 		SceneChanger.change("res://scenes/main.tscn")
 	else: 
-		print("changing scene to: heaven")
 		SceneChanger.change("res://scenes/heaven.tscn")
 	pass
 

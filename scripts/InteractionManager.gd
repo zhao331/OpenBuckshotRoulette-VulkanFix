@@ -22,7 +22,7 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed) or (event is InputEventScreenTouch and event.pressed):
+	if (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed):
 		if OpenBRGlobal.is_android():
 			await OpenBRGlobal.fetch_tree().create_timer(OpenBRGlobal.get_touch_delay()).timeout
 		MainInteractionEvent()

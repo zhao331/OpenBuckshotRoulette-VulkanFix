@@ -140,6 +140,7 @@ extends Node3D
 @onready var item_amounts: Amounts = $"standalone managers/item amounts"
 @onready var interaction_branch_match_fixing: InteractionBranch = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing/InteractionBranch_MatchFixing"
 @onready var mesh_instance_3d_match_fixing: MeshInstance3D = $"restroom_CLUB/bathroom wall main_crt hole/MeshInstance3D_MatchFixing"
+@onready var round_manager: RoundManager = $"standalone managers/round manager"
 
 @onready var round_batchs:= [
 	$"standalone managers/round batch array/round batch_0",
@@ -205,6 +206,8 @@ func refresh_collision_shape():
 		collision_shape_3d_backroom_door.scale.z = 2.5
 
 func load_gambling():
+	label_3d_gambling_manipulated.hide()
+	if round_manager.endless: return
 	print('Loading gambling')
 	var gambling:String = OpenBRConfig.fetch('game', 'gambling')
 	if gambling != 'default' and OpenBRConfig.hasKey('gamblings', gambling):

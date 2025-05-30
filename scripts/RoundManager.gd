@@ -358,6 +358,7 @@ func ClearDeskUI(includingParent : bool):
 	pass
 
 func OutOfHealth(who : String):
+	print('OutOfHealth: ', who)
 	if (who == "player"): 
 		death.MainDeathRoutine()
 	else:

@@ -348,6 +348,7 @@ func EndTurnMain():
 	roundManager.EndTurn(true)
 
 func Shoot(who : String):
+	print('Shooting ', who)
 	var currentRoundInChamber = shellSpawner.sequenceArray[0]
 	dealerCanGoAgain = false
 	var playerDied = false

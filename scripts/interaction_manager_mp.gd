@@ -10,6 +10,7 @@ func InteractWith(alias:String):
 	print('interact_with ', alias)
 	if mp != null && !alias.begins_with('no_rpc'):
 		mp._rpc_interact_with(alias)
+		mp.interact_with(alias)
 	elif alias.begins_with('no_rpc'):
 		alias = alias.substr('no_rpc '.length())
 		print('processed_interaction: ', alias)

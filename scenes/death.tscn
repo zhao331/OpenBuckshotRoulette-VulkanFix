@@ -189,7 +189,6 @@ offset_bottom = 40.0
 metadata/_edit_lock_ = true
 
 [node name="TextureRect" type="TextureRect" parent="Camera/dialogue UI/death screen"]
-visible = false
 layout_mode = 0
 offset_right = 960.0
 offset_bottom = 540.0
